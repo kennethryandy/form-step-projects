@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+	<header class="main-nav">
+		<div class="logo container">
+			<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+		</div>
+	</header>
+
+	<div class="page-header">
+		<h1 class="page-header__title">
+			<span>
+				WE’RE LOOKING FOR <br class="hidden-desktop">PEOPLE
+				IN AUSTRALIA
+			</span>
+			<br>
+			to try a revolutionary, invisible <br class="hidden-desktop">
+			hearing aid for free.
+		</h1>
+		<!-- <p class="page-header__subtitle">Test this hearing aid for yourself from
+			<br class="hidden-desktop"> the comfort of your own home!</p> -->
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<p class="main__title hidden-mobile">Answer 4 questions to see if you fit the profile
+					to try this device for FREE!</p>
+				<div class="col-md-6 order-sm-3">
+					<p class="main__title hidden-desktop">Answer 4 questions to see if you qualify:</p>
+					<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+						<div class="question__wrapper">
+							<p class="question__title">Please Select Your Age:</p>
+							<div class="question__answers">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required onchange="this.form.submit()" id="age1" value="49 or under">
+										<label class="btn-radio" for="age1">49 or under</label>
+									</div>
+									<div class="col-md-6">
+										<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required onchange="this.form.submit()" id="age2" value="50 to 59">
+										<label class="btn-radio" for="age2">50 to 59</label>
+									</div>
+									<div class="col-md-6">
+										<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required onchange="this.form.submit()" id="age3" value="60 to 64">
+										<label class="btn-radio" for="age3">60 to 64</label>
+									</div>
+									<div class="col-md-6">
+										<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required onchange="this.form.submit()" id="age4" value="65 or over">
+										<label class="btn-radio" for="age4">65 or over</label>
+									</div>
+									<div class="error-container" id="ageBracket-error-container"></div>
+								</div>
+							</div>
+						</div>
+						<div class="question__progress">
+							<div class="question__progress--circle"></div>
+							<div class="question__progress--circle"></div>
+							<div class="question__progress--circle"></div>
+							<div class="question__progress--circle"></div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 order-lg-2">
+					<div class="color-picker">
+						<div class="row">
+							<div class="col-6 color-picker__container">
+								<p class="color-picker__title">Color options:</p>
+								<div class="color-picker__btns">
+									<button class="btn-color-picker selected" style="background:#c5977f;"></button>
+									<button class="btn-color-picker" style="background:#c1916a;"></button>
+									<button class="btn-color-picker" style="background:#93745e;"></button>
+									<button class="btn-color-picker" style="background:#69524a;"></button>
+									<button class="btn-color-picker" style="background:#1d1d1d;"></button>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="color-picker__preview">
+									<img src="https://coreg-landers.s3.amazonaws.com/ec4217d052994e718d295fc7507f8fba.png" alt="" class="img-fluid">
+									<img src="https://coreg-landers.s3.amazonaws.com/4e4244617b0d4298b66dc1940c483149.png" alt="" class="img-fluid d-none">
+									<img src="https://coreg-landers.s3.amazonaws.com/fe28da7457c548a4b7be4a53ed0c1be7.png" alt="" class="img-fluid d-none">
+									<img src="https://coreg-landers.s3.amazonaws.com/a3a74b94b3fb41bcb394a44b8906ef3b.png" alt="" class="img-fluid d-none">
+									<img src="https://coreg-landers.s3.amazonaws.com/13bcee0096e848d0925d496eabe8b72a.png" alt="" class="img-fluid d-none">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="check-list">
+						<li class="check-list__item">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>No batteries needed</p>
+						</li>
+						<li class="check-list__item">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>No obligation to buy</p>
+						</li>
+						<li class="check-list__item">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>Small, discreet and virtually invisible!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-text">
+		<p>
+			Hearing devices may vary depending <br class="hidden-desktop">
+			on the degree of hearing difficulty.
+		</p>
+	</div>
+
+	<footer class="pages-footer">
+		<div class="container pages-container">
+			<div class="pages-footer__content">
+				<p>
+					Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+					Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+				</p>
+				<p>Copyright 2018 Auditorey.com</p>
+				<div class="footer-links">
+					<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+					<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+					<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+					<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+					<a href="#">Cookies</a>
+				</div>
+				<p>Telephone 1800 512 783 (Toll Free)</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

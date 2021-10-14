@@ -1,0 +1,52 @@
+
+
+
+.check-list {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+	padding-bottom: 36px;
+	padding-top: 36px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 24px;
+
+		img {
+			width: 26px;
+			margin-right: 16px;
+		}
+		p {
+			font-size: 20px;
+    	line-height: 23px;
+			margin-bottom: 0;
+			font-weight: 700;
+			color: $blue;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-bottom: 12.5vw;
+		padding-top: 0;
+		&__item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 3.125vw;
+	
+			img {
+				width: 4.625vw;
+				margin-right: 3.125vw;
+			}
+			p {
+				margin-bottom: 0;
+				font-weight: 700;
+				color: $blue;
+				font-size: 4.6875vw;
+				line-height: 5.15625vw;
+			}
+		}
+	}
+
+
+}
