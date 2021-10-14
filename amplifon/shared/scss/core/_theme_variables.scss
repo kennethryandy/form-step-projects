@@ -1,0 +1,11 @@
+
+// Colours
+$main-pink: #d8003a;
+$main-purple: #5f0053;
+$error-red: #c92a2a;
+$muted: #e7e7e7;
+$success: #198754;
+
+// For reflex grid so that we can ensure that the namespace doesn't class
+// with the GeneratePress grid. So classes now become rf-col-md-8 and rf-grid
+$reflex-prefix  : rf- !default;

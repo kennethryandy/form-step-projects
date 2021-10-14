@@ -1,0 +1,163 @@
+
+
+
+.green-box {
+	border: 2px solid #096;
+	padding: 20px 60px;
+	margin-bottom: 25px;
+	&.btns {
+		padding: 20px;
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 2rem;
+    line-height: 2.4375rem;
+		margin-bottom: 0;
+    max-width: 450px;
+		text-align: left;
+		font-weight: 600;
+	}
+
+	&__flex {
+		display: flex;
+		margin-top: 20px;
+		&>img {
+			width: 51px;
+			height: 100px;
+			margin-top: -80px;
+		}
+	}
+
+	&__buttons {
+		margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+		justify-content: space-between;
+		&--item {
+			width: calc(50% - 8px);
+			&:last-of-type {
+				margin: auto;
+			}
+		}
+	}
+
+	&__list {
+		list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+		&--item {
+			padding-left: 28px;
+			margin-bottom: 20px;
+			font-size: 1.5rem;
+			display: flex;
+			align-items: flex-start;
+
+			&::before {
+				background-image: url(https://coreg-landers.s3.amazonaws.com/d1a14ca8ea124a0ba660f0b8177fc5a5.png);
+				background-position: left center;
+				background-size: cover;
+				content: '';
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				margin-right: 35px;
+				margin-left: -30px;
+				flex: 0 0 30px;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&__subtitle {
+			min-width: 470px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 10px;
+
+		&.btns {
+			background-color: #f1f1f1;
+			padding: 0;
+			border: none;
+			margin-top: 30px;
+		}
+
+		&__title {
+			margin-bottom: 25px;
+		}
+
+		&__buttons {
+			margin-top: 30px;
+			&--item {
+				&>a {
+					text-align: center;
+				}
+			}
+		}
+
+		&__list {
+			&--item {
+				padding-left: 20px;
+				margin-bottom: 15px;
+				font-size: 1rem;
+				&::before {
+					height: 20px;
+					width: 20px;
+					margin-right: 15px;
+					margin-left: -20px;
+					flex: 0 0 20px;
+				}
+			}
+		}
+	}
+}
+
+.blue-box {
+	background: #1a2441;
+	color: #fff;
+	padding: 25px 15px 50px;
+	margin: 0;
+
+	&__title {
+		font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 25px;
+	}
+
+	&__content {
+		display: flex;
+    flex-direction: row;
+	}
+
+	&__img {
+		max-width: 120px;
+	}
+
+	&__text {
+		margin-left: 25px;
+		h3 {
+			font-size: 20px;
+			margin-bottom: 0;
+			font-weight: 600;
+		}
+		p {
+			margin-top: 0;
+		}
+		a {
+			color: #a7d6f5;
+    	font-size: 20px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__content {
+			flex-direction: column;
+		}
+	}
+}

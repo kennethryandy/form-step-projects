@@ -1,0 +1,80 @@
+
+
+.form-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(138,139,137,0.95);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	opacity: 0;
+
+	&__inner {
+		max-width: 640px;
+		min-height: 250px;
+		width: 100%;
+		background: #fff;
+		margin-top: 180px;
+		position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+	}
+
+	&__progress-bar {
+		height: 24px;
+		display: flex;
+    list-style: none;
+    border-bottom: 3px solid #ccc;
+    background: #efefef;
+		margin: 0;
+		padding:0;
+		&>li {
+			width: 100%;
+			border-right: 2px solid #ccc;
+			transition: background 250ms ease;
+
+			&.active {
+				background: #18355e;
+			}
+		}
+	}
+}
+
+.question {
+	padding: 38px 40px 50px 40px;
+
+	&__title {
+		margin-bottom: 24px;
+		font-size: 24px;
+    line-height: 29px;
+		font-weight: 600;
+		color: #18355e;
+		text-align: center;
+	}
+
+	&__btn {
+		min-width: 265px;
+		height: 55px;
+		width: 100%;
+		font-size: 22px;
+	}
+
+	&__meta {
+		margin-bottom: 2.575rem;
+		&>p {
+			font-size: 12px;
+			color: gray;
+			font-style: italic;
+			margin-top: 12px;
+			margin-bottom: 0;
+			text-align: center
+		}
+	}
+
+	&__next {
+		height: 55px;
+		font-size: 22px;
+		margin: auto;
+	}
+}

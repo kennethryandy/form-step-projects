@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+
+body {
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #eff1f3;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #666666;
+}
+
+.content {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.content-wrapper {
+	max-width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.content-header {
+	text-align: center;
+	&__title {
+		font-size: 42px;
+    font-weight: bold;
+		margin-bottom: 15px;
+	}
+	&__subtitle {
+		font-size: 36px;
+    color: #404040;
+		font-weight: 700;
+	}
+}
+
+.color-blue {
+	color: #2989f5;
+}
+
+.gray-box {
+	background-color: #fafafa;
+	border: 3px solid #ffffff;
+	border-radius: 10px;
+}
+
+.hidden-mobile {
+	display: block;
+}
+
+.hidden-desktop {
+	display: none;
+}
+
+
+@include media-breakpoint-down(md) {
+	.content-header {
+		&__title {
+			font-size: 28px;
+		}
+		&__subtitle {
+			font-size: 22px;
+		}
+	}
+	.hidden-mobile {
+		display: none;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.hidden-desktop {
+		display: none;
+	}
+}
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+
+	@include media-breakpoint-down(md) {
+		font-size: 11px;
+	}
+}
+
+.form-custom {
+	border-radius: 5px;
+	padding: 16px 15px;
+	height: 51px;
+	border: 1px solid #e1e1e1;
+	color: #444444;
+	font-size: 16px;
+	outline: none ;
+	box-shadow: none ;
+	position: relative;
+	margin-bottom: 10px;
+
+	&:focus {
+		border: 2px solid #80bdff!important;
+		box-shadow: none;
+	}
+}
+#phone_number {
+	background: url(https://coreg-landers.s3.amazonaws.com/257020705a694eac9f898ee21e40c8e3.png) no-repeat center;
+}
+
+#first_name, #last_name {
+	background: url(https://coreg-landers.s3.amazonaws.com/4824a70bbe87456da34a887a05b06108.png) no-repeat center;
+}
+
+#first_name, #last_name, #phone_number {
+	padding-left: 35px;
+	background-position-y: 15px;
+	background-position-x: 10px;
+}

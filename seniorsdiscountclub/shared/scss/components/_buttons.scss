@@ -1,0 +1,54 @@
+
+
+.main-btn {
+	width: 100%;
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+	font-size: 29px;
+	border-radius: 50px;
+	background-color: $main-pink;
+	border-color: $main-pink;
+	font-weight: 700;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		border-color: $light-pink;
+    box-shadow: none;
+    background-color: $light-pink;
+    color: #fff;
+	}
+}
+
+.step-btn {
+	width: 100%;
+	font-size: 19px;
+	line-height: 20px;
+	padding: 16.5px;
+	background-color: $main-pink;
+	border-color: $main-pink;
+	color: #fff;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: none;
+	text-align: left;
+	font-weight: 700;
+
+	&>img {
+		margin-right: 5px;
+    height: 35px;
+    width: auto;
+	}
+
+	&:hover {
+		border-color: $light-pink;
+    background-color: $light-pink;
+    color: #fff;
+	}
+
+	@include media-breakpoint-down(lg) {
+		font-size: 15px;
+    line-height: 21px;
+    padding: 15px;
+	}
+}

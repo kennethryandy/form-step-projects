@@ -1,0 +1,54 @@
+
+
+.list {
+	padding-top: 10.15625vw;
+	padding-bottom: 15.625vw;
+
+	&__title {
+		color: #4d4d4f;
+    margin-bottom: 7.03125vw;
+	}
+
+	&__container {
+		list-style-type: none;
+    display: flex;
+    flex-direction: column;
+		margin: 0;
+    padding: 0;
+	}
+	&__list-item {
+		margin-bottom: 6.25vw;
+		display: flex;
+		align-items: center;
+	}
+	&__check {
+		color: $light-green;
+		margin-right: 3.28125vw;
+		font-size: 4.0625vw;
+	}
+	&__text {
+		font-weight: 400;
+    color: #333333;
+		margin-bottom: 0;
+	}
+
+
+	@include media-breakpoint-up(lg) {
+		padding-top: 5vw;
+		padding-bottom: 3.625vw;
+	
+		&__title {
+			margin-bottom: 3vw;
+		}
+
+		&__list-item {
+			margin-bottom: 2.825vw;
+		}
+		&__check {
+			margin-right: 2.28125vw;
+			font-size: 2.6875vw;
+		}
+	}
+
+
+}

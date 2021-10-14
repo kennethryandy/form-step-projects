@@ -1,0 +1,145 @@
+
+
+.testimonial {
+	position: relative;
+	padding: 32px 0 0;
+	&__quote {
+		position: absolute;
+		top: 40px;
+    left: 0;
+    width: 55px;
+	}
+
+	&__slider {
+		width: 387px;
+		overflow: hidden;
+
+		.swiper-wrapper {
+			.swiper-slide {
+				padding-left: 88px;
+				// margin-left: 90px;
+				&:not(.swiper-slide-active) { opacity: 0 !important; }
+			}
+		}
+	}
+
+	&__navigation {
+		margin-top: 21px;
+		display: flex;
+    position: relative;
+    bottom: unset !important;
+		left: -25px !important;
+
+		&-item {
+			width: 15px;
+			height: 15px;
+			margin: 0 !important;
+			border-radius: 50%;
+			opacity: .2;
+			background-color: #fff;
+			&:not(:last-of-type) {
+				margin-right: 5px !important;
+			}
+		}
+		&-active {
+			opacity: 1;
+		}
+	}
+
+	&__text {
+		height: 56px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+		color: #fff;
+	}
+
+	&__name {
+		font-size: 20px;
+    line-height: 31px;
+		color: #fff;
+		font-weight: 600;
+	}
+
+
+	&::before {
+		content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+		top: 0;
+		right: 0;
+    height: 4px;
+    border-radius: 2px;
+		width: 100%;
+	}
+
+	&::after {
+		content: '';
+    display: block;
+    position: absolute;
+		bottom: 60px;
+    width: 298px;
+		right: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+	}
+
+	@include media-breakpoint-down(md) {
+		&__quote {
+			top: 12.25vw;
+    	left: -2.1875vw;
+			width: 9.6875vw;
+			height: 8.125vw;
+			margin-right: 4.0625vw;
+		}
+		&__slider {
+			width: 270px;
+			overflow: hidden;
+	
+			.swiper-wrapper {
+				.swiper-slide {
+					padding-left: 13.75vw;
+				}
+			}
+		}
+		&__navigation {
+			margin-top: 4.6875vw;
+			&-item {
+				width: 3.75vw;
+				height: 3.75vw;
+				&:not(:last-of-type) {
+					margin-right: 1.25vw !important;
+				}
+			}
+		}
+		&__text {
+			height: 10.625vw;
+			margin-bottom: 2.5vw;
+			font-weight: 300;
+			font-size: 4.21875vw;
+			line-height: 5.3125vw;
+		}
+		&__name {
+			font-style: italic;
+			font-size: 4.21875vw;
+			line-height: 5.3125vw;
+		}
+
+		&::before {
+			right: 7.8125vw;
+			height: .625vw;
+			border-radius: .3125vw;
+		}
+		&::after {
+			right: 7.8125vw;
+			height: .625vw;
+			border-radius: .3125vw;
+			bottom: 6.5625vw;
+			width: 53.375vw;
+		}
+	}
+
+
+}

@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="	https://coreg-landers.s3.amazonaws.com/165465b08763464bb92ed15dc0aa944e.ico" />
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/navbar-static-top/"> -->
+
+    <title>Steps Form</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css" integrity="sha384-ZlNfXjxAqKFWCwMwQFGhmMh3i89dWDnaFU2/VZg9CvsMGA7hXHQsPIqS+JIAmgEq" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+
+	<!-- Owl Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link href="/css/11" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<style>
+		body { margin-bottom: 0; }
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="top_header">
+      <div class="container">
+          <a  href="#"><img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png"></a>
+      </div>
+    </div>
+
+	
+	<section class="step1">
+
+		<div class="container">
+		  <div class="row header-title">
+			<div class="col-md-8 mo_head"><br>
+				<h2>Congratulations!</h2>
+				<h4>You fit our profile <img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" width="26px"></h4>
+				<h3>Try this revolutionary, rechargeable hearing aid for FREE!</h3>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="step-wrapper step-wrapper-5" style="padding-bottom:75px;">
+			<div class="container" style="position:relative;">
+			<img src="https://coreg-landers.s3.amazonaws.com/126f9df6eaa741508fe6eb60c97f6319.png" class="hand_bg"> 
+				<div class="row">
+					<div class="col-md-12">
+						<article class="step2 padding_resius mo_pad" style="height:fit-content;">
+							
+							<!-- Put on Question -->
+							<div class="question">
+								<h4>Please leave your details below and we’ll contact you shortly via phone with more information.</h4>
+								<form class="form-inline" action="[[FORM_URL]]" method="post" novalidate data-parsley-validate>
+									<!-- [[UUID_TAG]] -->
+									<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14"/>
+
+									<div>
+										<div class="input-group input-group-lg my-2 custom-input-group mr-4 mb-3" id="first_name_group" style="flex-wrap: nowrap;">
+											<div class="input-group-prepend">
+												<div class="input-group-text"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+											</div>
+											<input type="text" class="form-control" name="first_name" placeholder="First Name" data-parsley-class-handler="#first_name_group" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" required>
+										</div>
+										<div class="error-container mr-4" id="first_name_error_container"></div>
+									</div>
+
+									<div>
+										<div class="input-group input-group-lg my-2 custom-input-group mr-4 mb-3" id="last_name_group" style="flex-wrap: nowrap;">
+											<div class="input-group-prepend">
+												<div class="input-group-text"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+											</div>
+											<input type="text" class="form-control" name="last_name" placeholder="Last Name" data-parsley-class-handler="#last_name_group" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" required>
+										</div>
+										<div class="error-container mr-4" id="last_name_error_container"></div>
+									</div>
+				
+				
+				
+									<div>
+										<div class="input-group input-group-lg my-2 custom-input-group mr-4 mb-3" id="phone_number_group" style="flex-wrap: nowrap;">
+											<div class="input-group-prepend">
+												<div class="input-group-text"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></div>
+											</div>
+											<input type="tel" class="form-control" name="phone_number" pattern="0\d{9}" placeholder="Phone Number" data-parsley-class-handler="#phone_number_group" data-parsley-required-message="Please add an 8-10 digit phone number" data-parsley-errors-container="#phone_number_error_container" required />
+										</div>
+										<div class="error-container mr-4" id="phone_number_error_container"></div>
+									</div>
+
+									<div class="form-group col-md-12 mx-0 px-0">
+										<button type="submit" class="btn btn-danger width_100" onclick="submitFn()">Finnish your booking <span>WE'LL BE IN TOUCH SOON</span></button>
+									</div>
+								</form>
+
+							</div>
+							<!-- Put on Question -->
+							
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="icon_wrapp">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<ul class="icons-list">
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/921e42a027ca4911a31f9997f1a4b5f3.png" border="0" class="icon icon--1">
+							<p class="text">Over 300 locations<br> nationwide</p>
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/169b1daa1efd418e9e968648a36f1933.png" border="0" class="icon icon--2">
+							<p class="text">Free hearing<br> aid batteries</p>
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/e8a95bfde85246e3b71002fad7c1ea91.png" border="0" class="icon icon--3">
+							<p class="text">60-day money-<br> back guarantee</p>
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/96c664a666a24cb788e67a7bf0036703.png" border="0" class="icon icon--4">
+							<p class="text">Covid-19 secure<br> hearing clinics</p>
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/5b9311a58d2a4b10bdde7d3e5240a08d.png" border="0" class="icon icon--5">
+							<p class="text">Over 100,000<br> satisfied customers</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="answer_pro">
+						<h3>Your answers match our profile:</h3>
+						
+						<ul>
+							<li>You are a female over 55</li>
+							<li>You want to try this revolutionary hearing aid</li>
+							<li>You have difficulty understanding speech in noisy environments</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="information_list">
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" /> VIRTUALLY INVISIBLE DESIGNS
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" /> IMPROVED SPEECH CLARITY
+						</li>
+						<li>
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" /> TRY LATEST HIGH-TECH HEARING DEVICES FREE!
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<footer class="other_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js" integrity="sha256-XqEmjxbIPXDk11mQpk9cpZxYT+8mRyVIkko8mQzX3y8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+	<script>
+		AOS.init({
+		  duration: 1200,
+		})
+	</script>
+  </body>
+</html>

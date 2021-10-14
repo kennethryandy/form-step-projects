@@ -1,0 +1,35 @@
+
+
+
+.question {
+	&__item {
+		&--title {
+			font-size: 36px;
+			text-align: center;
+			color: #e74c3c;
+		}
+	}
+
+	&__meta {
+		&>p {
+			font-size: 12px;
+			color:gray; 
+			font-style: italic;
+			margin-top:12px;
+			margin-bottom:0;
+			text-align: center;
+
+			&>a {
+				font-size: 12px;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__item {
+			&--title {
+				font-size: 25px;
+			}
+		}
+	}
+}

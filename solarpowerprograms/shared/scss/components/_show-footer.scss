@@ -1,0 +1,22 @@
+
+
+
+.show-footer {
+	margin-top: 32px;
+	margin-bottom: 32px;
+
+	&__title {
+		margin-top: 12px;
+		margin-bottom: 12px;
+    font-weight: 700;
+		font-size: 36px;
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 25px;
+		}
+	}
+
+	
+}

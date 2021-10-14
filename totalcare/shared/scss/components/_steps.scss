@@ -1,0 +1,129 @@
+
+
+.step {
+	&__container {
+		padding: 0vw 7.8125vw;
+	}
+	&__one {
+		background: linear-gradient(to bottom, #4d4d4f 75.15625vw, #dadada 0);
+	}
+
+	&__two {
+		overflow: hidden;
+	}
+
+	&__three {
+		&--header {
+			padding-top: 5.15625vw;
+		}
+		&--title {
+			color: #80c342;
+			text-align: center;
+			margin-bottom: 1.5625vw;
+		}
+		&--subtitle {
+			text-align: center;
+			line-height: 5.3125vw;
+			color: #4d4d4f;
+			font-weight: 400;
+		}
+		&--question {
+			padding: 8.59375vw 8.125vw 7.1875vw;
+    	width: 100%;
+			background: #e6e6e6;
+		}
+
+		&--input-wrapper {
+			margin-bottom: 2.96875vw;
+		}
+
+		&--meta {
+			margin-bottom: 4.6875vw;
+			font-size: 3.125vw;
+			color: #959595;
+			text-align: center;
+			span {
+				text-decoration: underline;
+				cursor: pointer;
+				color: #009ee0;
+				font: inherit;
+			}
+		}
+	}
+
+	&__flag {
+		margin-top: 3.75vw;
+    width: 100%;
+    height: 23.90625vw;
+    background: #80c342;
+    padding-top: 4.6875vw;
+    position: relative;
+    z-index: 2;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 0;
+			border-left: 4.6875vw solid transparent;
+			border-right: 4.6875vw solid transparent;
+			border-top: 4.6875vw solid #80c342;
+			bottom: -3.125vw;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		h4 {
+			line-height: 5vw;
+			color: #fff;
+			font-weight: 700;
+			text-align: center;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&__three {
+			&--header {
+				padding-top: 3.15625vw;
+			}
+
+			&--subtitle {
+				line-height: inherit;
+			}
+			&--question {
+				padding: 6.275vw 6.275vw 7.1875vw;
+			}
+	
+			&--input-wrapper {
+				margin-bottom: 2.125vw;
+			}
+	
+			&--meta {
+				margin-bottom: 4.6875vw;
+				font-size: 1.725vw;
+				span {
+					text-decoration: underline;
+					cursor: pointer;
+					color: #009ee0;
+					font: inherit;
+				}
+			}
+		}
+		&__flag {
+			margin-top: 3.75vw;
+			padding: 1.875vw 0vw;
+			height: 100%;
+	
+			&::after {
+				border-left: 2.6875vw solid transparent;
+				border-right: 2.6875vw solid transparent;
+				border-top: 2.6875vw solid #80c342;
+				bottom: -2.125vw;
+			}
+	
+			h4 {
+				line-height: inherit;
+			}
+		}
+	}
+}

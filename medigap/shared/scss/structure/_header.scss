@@ -1,0 +1,79 @@
+
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 8px 0;
+
+	&__logo {
+		max-width: 256px;
+		width: 100%;
+		height: auto;
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		img {
+			width: 35px;
+			height: 35px;
+			margin: auto 15px;
+		}
+		.qoute {
+			color: $dark-blue;
+			margin: 0;
+			font-size: 20px;
+		}
+	}
+
+	&__tel-num {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		color: $light-purple;
+		a {
+			color: $light-red;
+			font-size: 24px;
+			font-weight: normal;
+			text-decoration: none;
+			line-height: 1;
+		}
+		p {
+			font-size: 13px;
+			span {
+				color: $light-red;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+
+.widget {
+	background: linear-gradient(180deg, #122d51 40%, #2f496b 80%);
+	padding: 20px 20px 0 20px;
+
+	&__header {
+		margin-top: 24px;
+		h1 {
+			color: #ffffff;
+			font-family: Montserrat, sans-serif;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 1;
+			letter-spacing: -0.7px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+
+		&__header {
+			h1 {
+				font-size: 28px;
+			}
+		}
+	}
+}

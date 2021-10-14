@@ -1,0 +1,26 @@
+
+
+
+.question {
+	&__title {
+		margin-bottom: 16px;
+		font-size: 26px;
+		text-align: left;
+    color: #264255;
+		line-height: 1em;
+	}
+
+	&__btn {
+		&>button,&>a {
+			margin: 0 auto;
+			display: block;
+			background: #2168A2;
+			border: 1px solid #2576b7;
+			border-radius: 4px;
+			color: #FFF;
+			padding: .25em 1.5em;
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+}

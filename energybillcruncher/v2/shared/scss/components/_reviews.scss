@@ -1,0 +1,68 @@
+
+
+.reviews {
+
+	&__summary {
+		text-align: center;
+		font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+		margin-top: 3rem;
+	}
+
+	&__items {
+		margin-top: 1rem;
+	}
+
+	&__item {
+		background-color: #f8f9fa;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 0 rgb(182 196 210 / 40%);
+    line-height: 18px;
+    margin: 10px 0 16px;
+    overflow: hidden;
+    padding: 16px;
+
+		&--author {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			&>p {
+				margin: 0;
+			}
+		}
+
+		&--reply {
+			background-image: url(https://coreg-landers.s3.amazonaws.com/d0a87ca4f4c748b5b51aa37307672504.png);
+			background-position: 16px 10px;
+			background-repeat: no-repeat;
+			background-color: #fff;
+			border-left: 3px solid #00b67a;
+			border-radius: 2px;
+			font-size: 12px;
+			height: auto;
+			margin: 16px 0 12px;
+			padding: 10px 8px 8px 40px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__item {
+			padding: 0;
+			&--author {
+				img {
+					width: 80px;
+				}
+			}
+		}
+		&__summary {
+			p {
+				img {
+					width: 80px;
+				}
+			}
+		}
+	}
+
+}

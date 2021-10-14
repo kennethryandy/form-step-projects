@@ -1,0 +1,93 @@
+* {
+		font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container.pages-container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+	@media (min-width: 768px) {
+		max-width: 750px;
+	}
+	@media (min-width: 992px) {
+		max-width: 970px;
+	}
+	@media (min-width: 1200px) {
+		max-width: 1170px;
+	}
+	
+	
+}
+
+.flex-container {
+	margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+	
+	@media only screen and (min-width: 992px) {
+		max-width: 980px;
+	}
+}
+
+.single-page-container {
+	margin: 0 auto;
+    width: 90%;
+	
+	@media only screen and (min-width: 992px) {
+		max-width: 980px;
+	}
+}
+
+.italic {
+	font-style: italic;
+}
+
+br.desktop {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	br.desktop {
+		display: block;
+	}
+}
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+
+	@include media-breakpoint-down(md) {
+		font-size: .8rem;
+	}
+}

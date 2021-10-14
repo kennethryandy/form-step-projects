@@ -1,0 +1,252 @@
+
+body {
+	background-color: #F5F7F9;
+	color: #262c2d
+}
+
+p {
+	font-size: 14px;
+}
+
+.page-layout-container {
+	max-width: $reflex-sm;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+
+	.layout {
+		margin-top: 40px;
+		margin-bottom: 40px;
+
+		&>.paper {
+			border-top: 4px solid #66dd74;
+		}
+	}
+}
+
+.paper {
+	max-width: 560px;
+	width: 100%;
+	margin: 8px auto;
+	box-shadow: 0px 2px 4px -1px RGB(0 0 0 / 20%), 0px 4px 5px 0px RGB(0 0 0 / 14%), 0px 1px 10px 0px RGB(0 0 0 / 12%);
+	padding: 2rem 2.5rem;
+	border-radius: 6px;
+
+	@include media-breakpoint-down(md) {
+		padding: 2rem 1rem;
+	}
+}
+
+.divider {
+	height: 2px;
+	width: 100%;
+	background: #eaeeef;
+	margin: 1.28571rem 0;
+}
+
+.pages-btn {
+	color: #fff;
+	background-color: #66dd74;
+	border-width: 0px;
+	border-radius: 6px;
+	display: block;
+    width: 100%;
+	outline: none;
+	padding: .825rem 1rem;
+	line-height: 1.2;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 14px;
+    font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #5cc768;
+	}
+}
+
+.btn-submit {
+	color: #fff;
+	background-color: #66dd74;
+	border-width: 0px;
+	border-radius: 6px;
+	display: block;
+    width: 100%;
+	outline: none;
+	padding: .825rem 1rem;
+	line-height: 1.2;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 14px;
+    font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #5cc768;
+	}
+
+	&.muted {
+		color: rgba(0, 0, 0, 0.26);
+		box-shadow: none;
+		background-color: rgba(0, 0, 0, 0.12);
+		&:hover {
+			cursor: not-allowed;
+			background-color: rgba(0, 0, 0, 0.12);
+		}
+	}
+
+	&.final {
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		&>span {
+			margin-top: 4px;
+			font-size: 1rem;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: .625rem .8rem;
+
+		&.final {
+			font-size: 1rem;
+			&>span {
+				margin-top: 4px;
+				font-size: .8rem;
+			}
+		}
+	}
+}
+
+.text-small {
+	font-size: 12px;
+	color: #797e82;
+	margin: 0 0 .85714rem;
+
+	&>a {
+		border-bottom: 1px dotted;
+		color: #07bbc4;
+		text-decoration: none;
+
+		&:hover {
+			color: #069fa7;
+		}
+	}
+}
+
+input.w-icon {
+	border: 2px solid #eaeeef;
+	border-radius: 6px !important;
+	border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+	box-sizing: border-box;
+    line-height: 1.2;
+    padding: .625rem;
+    color: #262c2d;
+	margin-left: -3px !important;
+
+	.input-group-text {
+		border-radius: 6px !important;
+		border-top-right-radius: 0 !important;
+    	border-bottom-right-radius: 0 !important;
+	}
+
+	&:focus, .is-ivalid:focus {
+		border-color: #07bbc4;
+    	outline: none;
+		box-shadow: none !important;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 14px !important;
+	}
+}
+
+.input-group-prepend{
+	border: 2px solid #eaeeef;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	&.is-invalid {
+		border-color:#ff7061;
+		&>.input-group-text {
+			color: #ff7061;
+		}
+	}
+	&.is-valid {
+		&>.input-group-text {
+			color: #66dd74;
+		}
+		border-color: #66dd74;
+	}
+
+	@include media-breakpoint-down(md) {
+		&>.input-group-text>i {
+			font-size: 14px !important;
+		}
+	}
+}
+
+
+.form-control{
+	transition: border 300ms ease-in-out;
+	&.is-invalid {
+		border-color:#ff7061 !important;
+		box-shadow: none;
+	}
+	&.is-valid {
+		border-color: #66dd74 !important;
+	}
+}
+
+.required {
+	&::after {
+		content: " * ";
+		color: #ff7061;
+	}
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.auto-row {
+	width: calc(100% + 16px);
+    margin: -8px;
+	display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+	&>.row-item {
+		padding: 8px;
+	}
+}
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+
+	@include media-breakpoint-down(md) {
+		font-size: .8rem;
+	}
+}

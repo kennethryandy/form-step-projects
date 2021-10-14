@@ -1,0 +1,39 @@
+
+
+
+.nav-bar {
+	border-bottom: 1px solid #bbb;
+
+	.rf-container {
+		margin-bottom: .8rem;
+	}
+	
+	.nav-items {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&>.logo-container {
+			width: 25%;
+			&>img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		border-bottom: none;
+		.rf-container {
+			border-bottom: 1px solid #bbb;
+		}
+		.nav-items {
+			
+			justify-content: center;
+
+			&>.logo-container {
+				width: 50%;
+			}
+		}
+	}
+}

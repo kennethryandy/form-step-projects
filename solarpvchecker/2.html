@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SolaPVChecker</title>
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+	<header class="nav-bar step-container">
+		<div class="nav">
+			<img src="https://coreg-landers.s3.amazonaws.com/c898cf9899c94d98b805f8b7fec80438.png" alt="">
+			<div class="d-flex align-items-center">
+				<span class="me-3">It Only Takes a Minute to Check!</span>
+				<a href="#" class="btn-secondary">Eligibility Check</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="hero" style="background-image: url(https://coreg-landers.s3.amazonaws.com/bc8cbf5c8b0f4c47848ff46b5d595733.jpg);">
+		<div class="step-container">
+			<div class="row justify-content-md-center">
+				<h1 class="hero__title">Australian Solar and Battery Systems</h1>
+				<h2 class="hero__subtitle">Help Cover the Cost with the Government Rebate Scheme</h2>
+				<div class="col-lg-8">
+					<div class="paper">
+						<div class="progress position-relative">
+							<div class="progress-label " style="position: absolute; top: 8px; font-size: 16px; font-weight: bold; text-align: center; width: 100%;">0%</div>
+							<div class="progress-bar bg-success" role="progressbar" style="background-color: #28a745 !important;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="form-wrapper">
+							<form action="/solaPVChecker1example/2" method="post" class="question" novalidate data-parsley-validate>
+								<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />
+
+								<div class="question__item first-step">
+									<h2 class="question__title">Are you a homeowner?</h2>
+									<div class="question__answers my-5">
+										<div class="radio">
+											<input type="radio" id="home_owner1" name="home_owner" value="Yes" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#home_owner_error_container" data-parsley-group="home_owner" required>
+											<label class="d-block text-center btn btn-success py-4 px-1 mb-3" for="home_owner1">
+												Yes
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="home_owner2" name="home_owner" value="No" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#home_owner_error_container" data-parsley-group="home_owner" required>
+											<label class="d-block text-center btn btn-danger py-4 px-1 mb-3" for="home_owner2">
+												No
+											</label>
+										</div>
+									</div>
+									<div class="error-container" id="home_owner_error_container" style="margin-top:-3rem;"></div>
+								</div>
+
+								<div class="question__item">
+									<h2 class="question__title">Do you already have solar panels installed?</h2>
+									<div class="question__answers my-5">
+										<div class="radio">
+											<input type="radio" id="already_have_solar2" name="already_have_solar" value="No" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#already_have_solar_error_container" data-parsley-group="already_have_solar" required>
+											<label class="d-block text-center btn btn-success py-4 px-1 mb-3" for="already_have_solar2">
+												No
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="already_have_solar1" name="already_have_solar" value="Yes" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#already_have_solar_error_container" data-parsley-group="already_have_solar" required>
+											<label class="d-block text-center btn btn-danger py-4 px-1 mb-3" for="already_have_solar1">
+												Yes
+											</label>
+										</div>
+									</div>
+									<div class="error-container" id="already_have_solar_error_container" style="margin-top:-3rem;"></div>
+									<div class="question__nav">
+										<button type="button" class="previous-button">Previous</button>
+									</div>
+								</div>
+
+								<div class="question__item">
+									<h2 class="question__title">Are you interested in a solar battery system?</h2>
+									<div class="question__answers my-5">
+										<div class="radio">
+											<input type="radio" id="solar_battery1" name="solar_battery" value="Yes" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#solar_battery_error_container" data-parsley-group="solar_battery" required>
+											<label class="d-block text-center btn btn-success py-4 px-1 mb-3" for="solar_battery1">
+												Yes
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="solar_battery2" name="solar_battery" value="No" class="btn-check" data-parsley-required-message="Homeowner is required." data-parsley-errors-container="#solar_battery_error_container" data-parsley-group="solar_battery" required>
+											<label class="d-block text-center btn btn-danger py-4 px-1 mb-3" for="solar_battery2">
+												No
+											</label>
+										</div>
+									</div>
+									<div class="error-container" id="solar_battery_error_container" style="margin-top:-3rem;"></div>
+									<div class="question__nav">
+										<button type="button" class="previous-button">Previous</button>
+									</div>
+								</div>
+
+								<div class="question__item">
+									<h2 class="question__title">How much is your quarterly electricity bill?</h2>
+									<div class="question__answers my-5">
+										<div class="radio">
+											<input type="radio" id="electricity_bill1" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="$0 - $250" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill1">
+												$0 - $250
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="electricity_bill2" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="$250 - $500" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill2">
+												$250 - $500
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="electricity_bill3" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="$500 - $1000" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill3">
+												$500 - $1000
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="electricity_bill4" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="$1000 - $1500" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill4">
+												$1000 - $1500
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="electricity_bill5" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="$1500 +" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill5">
+												$1500 +
+											</label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="electricity_bill6" name="electricity_bill" data-parsley-group="electricity_bill" data-parsley-errors-container="#electricity_bill_error_container" value="Not Sure" data-parsley-required-message="Quarterly electricity bill is required.">
+											<label class="d-block text-center custom py-4 px-1 mb-3 next-tab" for="electricity_bill6">
+												Not Sure
+											</label>
+										</div>
+									</div>
+									<div class="error-container" id="electricity_bill_error_container" style="margin-top:-3rem;"></div>
+									<div class="question__nav">
+										<button type="button" class="previous-button">Previous</button>
+									</div>
+								</div>
+
+								<div class="question__item">
+									<div class="alert alert-success">We'll use your address to create a satellite image to see if your property is suitable for solar</div>
+									<div class="row">
+										<div class="col-md-12 mb-3">
+											<label for="postcode">Address</label>
+											<input type="text" class="form-control google-address-lookup pac-target-input" id="address1" name="address1" autocomplete="off" placeholder="Address" data-parsley-errors-container="#address1_error_container" data-parsley-required-message="This field is required." data-parsley-group="address_info" required>
+											<div class="error-container mt-2" id="address1_error_container"></div>
+										</div>
+										<div class="col-md-12 mb-3">
+											<input type="text" class="form-control" id="town" name="town" placeholder="City" data-parsley-errors-container="#city_error_container" data-parsley-required-message="This field is required." data-parsley-group="address_info" required>
+											<div class="error-container mt-2" id="city_error_container"></div>
+										</div>
+										<div class="col-md-12 mb-3">
+											<select name="county" id="county" class="form-control" data-parsley-required-message="This field is required." data-parsley-errors-container="#county_error_container" data-parsley-group="address_info" data-parsley-required="true">
+												<option value="">State</option>
+												<option value="NSW">NSW</option>
+												<option value="QLD">QLD</option>
+												<option value="SA">SA</option>
+												<option value="TAS">TAS</option>
+												<option value="VIC">VIC</option>
+												<option value="WA">WA</option>
+												<option value="ACT">ACT</option>
+												<option value="NT">NT</option>
+											</select>
+											<div class="error-container mt-2" id="county_error_container"></div>
+										</div>
+										<div class="col-md-12">
+											<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" data-parsley-group="address_info" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" data-parsley-required-message="This field is required." data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-errors-container="#postcode_error_container" required>
+											<div class="error-container mt-2" id="postcode_error_container"></div>
+										</div>
+										<div class="mt-3">
+											<button class="btn btn-success mt-5 btn-lg w-100 mb-2 py-3 next-button" style="display:block;" type="button" data-group="address_info">Continue</button>
+											<div class="question__nav">
+												<button type="button" class="previous-button">Previous</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="question__item searching">
+									<div class="row">
+										<div class="col-12">
+											<p class="text-center">Hold on - we are finding a supplier who suits your needs!</p>
+											<p class="text-center">Did you know that Solar Panels can increase your property value?</p>
+											<p class="text-center"><img src="https://coreg-landers.s3.amazonaws.com/30c2cad1a8614af4acd760f928153af2.gif" alt=""></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="question__item">
+									<div class="row">
+										<div class="col-12">
+											<div class="mb-3">
+												<label for="title">Title</label>
+												<select id="title" name="title" class="form-control" data-parsley-required-message="This field is required." data-parsley-errors-container="#title_error_container" data-parsley-group="person_info" required>
+													<option value="">Select</option>
+													<option value="Mr">Mr</option>
+													<option value="Mrs">Mrs</option>
+													<option value="Miss">Miss</option>
+													<option value="Ms">Ms</option>
+													<option value="Dr">Dr</option>
+												</select>
+											</div>
+											<div class="error-container mt-2" id="title_error_container"></div>
+										</div>
+										<div class="col-12">
+											<div class="mb-3">
+												<label for="name">Full Name</label>
+												<input type="text" id="name" name="name" autocomplete="" class="form-control" data-parsley-required-message="First and Last name is required." data-parsley-errors-container="#fullname_error_container" data-parsley-group="person_info" required>
+											</div>
+											<div class="error-container mt-2" id="fullname_error_container"></div>
+										</div>
+										<div class="col-12">
+											<div class="mb-3">
+												<label for="phone">Telephone Number</label>
+												<input type="text" id="phone" name="phone" autocomplete="" class="form-control" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Telephone is not valid." data-parsley-errors-container="#telephone_error_container" required>
+											</div>
+											<div class="error-container mt-2" id="telephone_error_container"></div>
+										</div>
+										<div class="col-12">
+											<div class="mb-3">
+												<label for="email1">Email Address</label>
+												<input type="text" id="email1" name="email1" class="form-control" placeholder="Optional" data-parsley-type="email" data-parsley-error-message="Invalid email address" data-parsley-errors-container="#email_error_container" data-parsley-trigger="keypress" data-parsley-required="false">
+											</div>
+											<div class="error-container mt-2" id="email_error_container"></div>
+										</div>
+										<div class="mt-3">
+											<button class="btn btn-success mt-5 btn-lg w-100 mb-2 py-3 next-button" style="display:block;" type="submit">Compare Prices</button>
+											<div class="question__nav">
+												<button type="button" class="previous-button">Previous</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+						<div class="form-footer">
+							<img src="https://coreg-landers.s3.amazonaws.com/980bcc6a20f549d6b82ca0d0574049ad.png" alt="Privacy Guaranteed">
+							<a href="#" class="js-privacy-modal">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-6 mb-4 mb-md-0 editContent">
+					<h2 class="content-07_title">Be Part of the Small-Scale Renewable Energy Scheme (SRES)</h2>
+					<h3 class="content-07_subtitle">Get Help Towards the Cost of Solar</h3>
+					<p>Many households and small businesses across Australia that install a renewable energy system such as Solar Panels and Battery Storage are able to receive a benefit under SRES to help reduce the upfront costs of installation with <strong>some households being ables to cover 100% of the cost</strong>.</p>
+				</div>
+				<div class="col-md-6 col-lg-5 offset-lg-1">
+					<img src="https://coreg-landers.s3.amazonaws.com/07b3b270b1f64ac4b488f3fbdda653d1.jpg" class="w-100" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="feature">
+		<div class="container">
+			<h2 class="feature__title">A Few Benefits of Going Solar</h2>
+			<div class="row">
+				<div class="col-md-4 editContent mb-5 mb-md-0 text-center">
+					<img src="	https://coreg-landers.s3.amazonaws.com/8ba7f6661f8c444fbaf7e0f5cec9d60c.png" class="mb-3 mb-md-4 feature__icon" alt="">
+					<h3 class="feature__subtitle">Save Thousands On Bills</h3>
+					<p>Store the energy to use when needed and get paid for any unused energy to maximize savings.</p>
+				</div>
+				<div class="col-md-4 editContent mb-5 mb-md-0 text-center">
+					<img src="https://coreg-landers.s3.amazonaws.com/ce065614174f466e90003792ee5b79e4.png" class="mb-3 mb-md-4 feature__icon" alt="">
+					<h3 class="feature__subtitle">Free From Rising Energy Costs</h3>
+					<p>Generating your own solar energy limits your exposure to inevitable price increases. The sun provides free energy!</p>
+				</div>
+				<div class="col-md-4 editContent mb-3 mb-md-0 text-center">
+					<img src="https://coreg-landers.s3.amazonaws.com/fa752264f5f2478ebdf0aedd03c21ee8.png" class="mb-3 mb-md-4 feature__icon" alt="">
+					<h3 class="feature__subtitle">Cleaner Greener Source</h3>
+					<p>Solar energy is clean and renewable. Fit and forget with a low cost and high carbon benefit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cta" style="background: url(https://coreg-landers.s3.amazonaws.com/b09d52bb060946e5b961608c55a94ce0.jpg) no-repeat;">
+		<div class="container text-center">
+			<h2 class="cta__title">It’s Quick and Simple. Our Quotes Are Free and You’re Under No Obligation</h2>
+			<a href="#" class="btn btn-secondary btn-lg">See if You’re Eligible Today</a>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="rf-container">
+			<div class="rf-grid">
+				<div class="rf-col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="shared/js/59.js"></script>
+</body>
+
+</html>

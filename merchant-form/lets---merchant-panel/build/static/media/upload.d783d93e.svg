@@ -1,0 +1,14 @@
+<svg id="Component_29_4" data-name="Component 29 – 4" xmlns="http://www.w3.org/2000/svg" width="72.001" height="72" viewBox="0 0 72.001 72">
+  <g id="Rectangle_3040" data-name="Rectangle 3040" fill="rgba(75,164,255,0.2)" stroke="#4ba4ff" stroke-linecap="round" stroke-width="3" stroke-dasharray="4 6">
+    <rect width="72.002" height="72" rx="10" stroke="none"/>
+    <rect x="1.5" y="1.5" width="69.002" height="69" rx="8.5" fill="none"/>
+  </g>
+  <g id="Group_2873" data-name="Group 2873" transform="translate(-9.646 22.799)">
+    <g id="Icon_feather-upload-cloud" data-name="Icon feather-upload-cloud" transform="translate(30.048)">
+      <path id="Path_3837" data-name="Path 3837" d="M23.414,23.707,17.707,18,12,23.707" transform="translate(-2.005 -5.162)" fill="none" stroke="#4ba4ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_3838" data-name="Path 3838" d="M18,18V30.841" transform="translate(-2.298 -5.162)" fill="none" stroke="#4ba4ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_3839" data-name="Path 3839" d="M29.165,26.458a7.134,7.134,0,0,0-3.41-13.4h-1.8a11.414,11.414,0,1,0-19.6,10.416" transform="translate(-1.492 -4.503)" fill="none" stroke="#4ba4ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_3840" data-name="Path 3840" d="M23.414,23.707,17.707,18,12,23.707" transform="translate(-2.005 -5.162)" fill="none" stroke="#4ba4ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

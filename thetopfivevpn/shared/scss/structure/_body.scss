@@ -1,0 +1,66 @@
+
+
+a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.page {
+	padding: 0 24px;
+	max-width: 1248px;
+	margin: 0 auto;
+}
+
+.page-container {
+	padding: 20px;
+	padding-top: 0px;
+	margin-right: 20px;
+}
+
+@include media-breakpoint-down(md) {
+	.page {
+		padding: 0 12px;
+		max-width: 100vw;
+	}
+	.page-container {
+		margin-right: 0px;
+	}
+	.hidden-mobile {
+		display: none;
+	}
+	.hidden-desktop {
+		display: block;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.hidden-desktop {
+		display: none;
+	}
+	.hidden-mobile {
+		display: block;
+	}
+	
+}
+
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+	font-size: 1rem;
+	line-height: 30px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 11px;
+	}
+}

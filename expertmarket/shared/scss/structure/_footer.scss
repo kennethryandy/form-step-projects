@@ -1,0 +1,46 @@
+
+
+
+.footer-cta {
+	background-color: #4bb5ea;
+	margin-top: 1.5rem;
+	padding: 1.2rem 0;
+	text-align: center;
+	position: relative;
+	text-align: center;
+
+	a {
+		color: #fff;
+		font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+	}
+}
+
+
+.main-footer {
+	background-color: #e5e5e5;
+	padding: 1rem 0;
+
+	&__two-cols {
+		border-bottom: #b2b2b2 solid 1px;
+		padding: 1.4rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around
+	}
+
+	&__disclaimer {
+		text-align: center;
+		p {
+			font-size: .7rem;
+			margin: 1rem 0;
+		}
+
+		.ccpa-policy {
+			padding: .8rem 0;
+			font-size: .7rem;
+			border-top: #b2b2b2 solid 1px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+// Colours
+$gray: rgba(0,0,0,0.12);
+
+// For reflex grid so that we can ensure that the namespace doesn't class
+// with the GeneratePress grid. So classes now become rf-col-md-8 and rf-grid
+$reflex-prefix  : rf- !default; 
+
+// Use maximum width of 1366px not default 1600px;
+//1366px is best according to statistics.
+$reflex-xlg     : 1200 !default;

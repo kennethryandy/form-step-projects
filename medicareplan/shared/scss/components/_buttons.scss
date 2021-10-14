@@ -1,0 +1,65 @@
+.pages-btn {
+	display: block;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	overflow: hidden;
+	border-radius: 4px;
+	color: #fff;
+	padding: 16px;
+	width: 100%;
+	position: relative;
+	background: #2f9ee9;
+	border-bottom: 3px solid #257eba;
+	margin-bottom: 16px;
+	text-transform: none;
+	transition: background-color 0.5s ease-out;
+	letter-spacing: 0.02em;
+	font-size: 1em;
+	font-weight: 400;
+	cursor: pointer;
+
+	& > span:not(.text) {
+		color: #fff;
+		&::after {
+			transition: opacity 0.2s, top 0.2s, right 0.2s;
+			opacity: 1;
+			border-color: #fff;
+			right: 16px;
+			top: 60%;
+			content: " ";
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			margin-top: -10px;
+			background: rgba(0, 0, 0, 0);
+			border: 3px solid #fff;
+			border-top: none;
+			border-right: none;
+			transform: rotate(-135deg);
+		}
+	}
+
+	& > .text {
+		display: block;
+		color: #fff;
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 2px;
+		padding-top: 4px;
+	}
+
+	&.btn-big {
+		font-size: 1.5em;
+		line-height: 1.5;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	@include media-breakpoint-down(md) {
+		& > .text {
+			font-size: 8px;
+		}
+	}
+}

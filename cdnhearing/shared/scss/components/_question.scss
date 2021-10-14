@@ -1,0 +1,135 @@
+
+
+
+.question {
+	margin: 0;
+	padding: 25px 8px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+
+	&__answers {
+		max-width: 740px;
+		min-height: 566px;
+		.step-input {
+			margin-bottom: 10%;
+		}
+	}
+	
+	&__title {
+		padding-bottom: 0;
+    margin-bottom: 30px;
+		font-size: 22px;
+    line-height: 130%;
+    font-weight: 500;
+		color: $gray;
+		text-align: center;
+	}
+
+	&__progress {
+		height: 38vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&--wrapper {
+			position: relative;
+			width: 100%;
+			height: 53px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			border-radius: 20px;
+			overflow: hidden;
+			mask-image: radial-gradient(white, black);
+		}
+
+		&--label {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			letter-spacing: -.02em;
+			line-height: 25px;
+			text-align: center;
+			color: #3a3a3a;
+			z-index: 10;
+		}
+
+		&--bar {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			border-radius: 20px;
+			background-color: #b6e7ee;
+			transform: translateX(-100%);
+			animation: loading 2s linear;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	&__btn {
+		margin-bottom: 3vh;
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&--container {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 10px;
+    	margin-bottom: 12px;
+
+			.gender {
+				margin: 0 12px;
+				width: 80px;
+				height: 80px;
+				background-color: #ebe9e9;
+				border: 1px solid #707070;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			span {
+				margin-top: 8px;
+			}
+		}
+
+	}
+}
+
+
+@keyframes loading {
+	0% {
+		transform: translateX(-100%);
+	}
+	10% {
+		transform: translateX(-92%);
+	}
+	20% {
+		transform: translateX(-83%);
+	}
+	80% {
+		transform: translateX(-23%);
+	}
+	90% {
+		transform: translateX(-12%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

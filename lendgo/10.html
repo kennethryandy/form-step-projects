@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Northern Mindanao Mortgage Rates at 1.75% FIXED (1.81% APR)</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+	<div class="page">
+		<header class="main-nav">
+			<div class="page-container">
+				<img src="https://coreg-landers.s3.amazonaws.com/0a56d785ff9d40dd8bcc8f00834fa51e.png" alt="" class="logo">
+				<div class="progress-box">
+					<div class="progress-box__bar">
+						<div class="progress-box__percent" style="transform: translateX(-37%)"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="main-content">
+
+			<section class="sec">
+				<div class="page-container">
+					<h1 class="question__title">How long ago was your bankruptcy?</h1>
+					<form method="post" action="/lendgo1example/10" class="question">
+						<div class="question__answers">
+							<div class="question__sldrBox">
+								<label for="priceRange" class="form-label question__rangeLabel" id="rangeLabel">Never had a bankruptcy</label>
+								<input type="range" class="form-range priceRange" min="1" max="8" value="1" id="priceRange">
+							</div>
+							<div class="btn-container">
+								<button class="btn btn-next" type="submit">NEXT</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+
+		<footer>
+			<div class="houses"></div>
+			<div class="bottom">
+				<div class="page-container">
+					<span>© Lendgo</span>
+					<a href="#">Licenses &amp; Disclosures</a>
+					<a href="#">Privacy</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(document).ready(function () {
+			const rangeLabel = $("#rangeLabel");
+			$("#priceRange").on('input', function (e) {
+				switch ($(this).val()) {
+					case '1':
+						rangeLabel.html('Never had a bankruptcy');
+						break;
+					case '2':
+						rangeLabel.html('5-6 years ago');
+						break;
+					case '3':
+						rangeLabel.html('4-5 years ago');
+						break;
+					case '4':
+						rangeLabel.html('3-4 years ago');
+						break;
+					case '5':
+						rangeLabel.html('2-3 years ago');
+						break;
+					case '6':
+						rangeLabel.html('1-2 years ago');
+						break;
+					case '7':
+						rangeLabel.html('less than a year ago');
+						break;
+					case '8':
+						rangeLabel.html('Currently in bankruptcy');
+						break;
+
+					default:
+						break;
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

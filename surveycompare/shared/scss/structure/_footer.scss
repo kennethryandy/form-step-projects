@@ -1,0 +1,29 @@
+
+
+.footer {
+	margin: 0;
+	text-align: center;
+	color: #e6eaf1;
+	background: #0579b2;
+	
+	&__wrapper {
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 2em 1%;
+		background: url(https://coreg-landers.s3.amazonaws.com/7b8c063db2bf497c9d84a521b79089d7.png) no-repeat center 10%;
+		background-position: left center;
+
+		p { 
+			padding: 10px 0;
+    	font-size: .85em;
+			margin-bottom: 10px;
+			margin-left: 6%;
+			a {
+				color: #fff;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

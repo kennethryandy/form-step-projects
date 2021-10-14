@@ -1,0 +1,70 @@
+
+
+.btn-radio {
+	background: $light-green;
+	border-radius: 8.59375vw;
+	color: #fff;
+	transition: all .3s ease;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 17.34375vw;
+	display: flex;
+	outline: none;
+	color: #fff;
+	transition: all .2s ease;
+	line-height: 1;
+	font-size: 4.6875vw;
+	font-weight: 700;
+	opacity: 1;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	@include media-breakpoint-up(lg) {
+		height: 6.34375vw;
+		font-size: 2.5vw;
+	}
+}
+
+.btn-submit {
+	background: $light-green;
+	border-radius: 8.59375vw;
+	color: #fff;
+	transition: all .3s ease;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 17.34375vw;
+	display: flex;
+	outline: none;
+	color: #fff;
+	transition: all .2s ease;
+	line-height: 1;
+	font-size: 4.6875vw;
+	font-weight: 700;
+	opacity: 1;
+	text-transform: uppercase;
+	&::after {
+		position: absolute;
+    content: "";
+    background: url(https://coreg-landers.s3.amazonaws.com/c1c10b8c4c3e42d0862962375efe34ae.png);
+    width: 4.53125vw;
+    height: 4.53125vw;
+    right: 23.75vw;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 6.34375vw;
+		font-size: 2.5vw;
+    max-width: 460px;
+		display: block;
+		margin: auto;
+		&::after {
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 2.125vw;
+			height: 2.125vw;
+			right: 23%;
+		}
+	}
+}

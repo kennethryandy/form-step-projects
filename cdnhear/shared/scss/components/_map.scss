@@ -1,0 +1,80 @@
+
+
+.map-info {
+	position: relative;
+	padding-top: 50px;
+	
+	&__title {
+		font-size: 30px;
+    font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	&__copy-desk {
+		font-size: 22px;
+		line-height: 1.5;
+    margin-bottom: 35px;
+	}
+
+	.jvectormap-container, .jvectormap-container>svg {
+		height: 100%;
+	}
+	.jvectormap-zoomin, .jvectormap-zoomout {
+		display: none;
+	}
+
+	&__regions {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 300px;
+		right: 16px;
+		&>a {
+			margin: 4px;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		align-items: baseline;
+		position: absolute;
+		bottom: -40px;
+    right: 40px;
+
+		img {
+			height: 100px;
+		}
+		.text {
+			font-size: 16px;
+			margin: 0 0 0 7px;
+			font-weight: 700;
+			line-height: 1.45;
+		}
+	}
+
+
+	&__logos {
+		padding-top: 80px;
+		.logos-title {
+			font-size: 25px;
+    	margin-bottom: 35px;
+			line-height: 1.38;
+			text-align: center;
+			font-weight: 700;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__regions {
+			position: initial;
+			flex-direction: row;
+			justify-content: center;
+		}
+		&__logos {
+			padding-top: 35px;
+		}
+	}
+
+
+}

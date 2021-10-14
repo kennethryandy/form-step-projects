@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- Preconnect hints - https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/ -->
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
+        <link rel="icon" href="https://d1q9rklc7ftoct.cloudfront.net/6f0204eb60c245c08276889122529961.png" sizes="192x192" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Webfonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Questrial">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css" integrity="sha384-ZlNfXjxAqKFWCwMwQFGhmMh3i89dWDnaFU2/VZg9CvsMGA7hXHQsPIqS+JIAmgEq" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	[[CSS]]
+
+<style>
+.divider-text {
+    position: relative;
+    text-align: center;
+    border-top: 2px solid rgba(0,0,0,0.25);
+}
+.divider-text > span {
+    position: relative;
+    top: -16px;
+    display: inline-block;
+    margin: auto;
+    padding: 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+}
+.brand-logos {
+    text-align: center;
+}
+.brand-logos img {
+    margin: auto;
+}
+.section-title {
+    font-size: 36px;
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.1;
+}
+.card-deck img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+.btnStart {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+/* ====== NEW CSS ====== */
+.header {
+	padding: 20px 15px;
+}
+.page{
+    background: linear-gradient(180deg, #ec7b22 50%, #ee8c3e );
+    padding-bottom: 60px;
+      position: relative;
+      overflow: hidden;
+       z-index:9;
+}
+
+.page:before,
+.page:after{
+    background-color: #ee8c3e;
+    content: "";
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    z-index: -1;
+    opacity: .8;
+}
+
+
+.page:before{
+   right: calc(100% - 10vw);
+}
+
+.page:after{
+    left: calc(100% - 9vw);
+}
+
+
+.hero{
+     background:none;
+     height:auto !important;
+}
+.hero:before{
+    background:inherit;
+}
+
+ .hero .hero-content{
+       position: inherit;
+       right: 0  !important;
+        left: 0  !important;
+        margin: 0 auto  !important;
+}
+
+.hero .hero-lead {
+    max-width: 640px;
+    font-family: 'Mulish', sans-serif !important;
+     font-weight: 700  !important;
+    font-size:29px;
+    line-height: 1.4 !important;
+     text-transform: capitalize;
+}
+
+.hero .hero-lead > small {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.65em;
+    letter-spacing: normal;
+    line-height: 1.4;
+}
+
+ .frontpage-form {
+       max-width: 668px !important;
+       right: 0  !important;
+       left: 0  !important;
+       margin: 0 auto  !important;
+       position: inherit;
+       top: 0;
+       -webkit-box-shadow: 0 2px 1px rgb(0 0 0 / 13%), 0 4px 4px rgb(0 0 0 / 13%), 0 8px 8px rgb(0 0 0 / 13%), 0 16px 12px rgb(0 0 0 / 13%), 0 32px 24px rgb(0 0 0 / 13%);
+    box-shadow: 0 2px 1px rgb(0 0 0 / 13%), 0 4px 4px rgb(0 0 0 / 13%), 0 8px 8px rgb(0 0 0 / 13%), 0 16px 12px rgb(0 0 0 / 13%), 0 32px 24px rgb(0 0 0 / 13%);
+    }
+ .frontpage-form  .check-button-group{    
+    margin-bottom:20px;
+}
+
+.frontpage-form .check-button-container{
+     border: 1px solid #c6c6c6;
+    position: relative;
+    padding: 8px;
+    border-radius: .3636rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 0 #444, 0 2px 2px #ccc;
+    box-shadow: 0 1px 0 #444, 0 2px 2px #ccc;
+    -webkit-transition: border-color .2s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    transition: border-color .2s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out,border-color .2s ease-in-out;
+    transition: box-shadow .3s ease-in-out,border-color .2s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #4b4b4b;
+    background-color: #f9f9f9;
+    height: 48px;
+}
+.frontpage-form .check-button-container div{
+  margin-left: 7px;
+}
+
+.form-check-button .check-button-container:before{
+    content: "" !important;
+   border: solid 2px #b2b2b2;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff;
+    border-radius:100%;
+}
+
+.form-check-button .check-button-container:hover:not(.is-checked), .form-check-button .check-button-container:focus:not(.is-checked){
+    border-color: #55bfe5;
+    background-color: #e5f5fb;
+    -webkit-box-shadow: 0 0 0 1px #55bfe5, 0 1px 1px rgb(0 0 0 / 8%), 0 3px 3px rgb(0 0 0 / 16%);
+    box-shadow: 0 0 0 1px #55bfe5, 0 1px 1px rgb(0 0 0 / 8%), 0 3px 3px rgb(0 0 0 / 16%);
+    -webkit-transform: none;
+    transform: none;
+}
+
+.frontpage-form .check-button-container:hover{
+   border-color: #55bfe5;
+    background-color: #e5f5fb;
+    -webkit-box-shadow: 0 0 0 1px #55bfe5, 0 1px 1px rgb(0 0 0 / 8%), 0 3px 3px rgb(0 0 0 / 16%);
+    box-shadow: 0 0 0 1px #55bfe5, 0 1px 1px rgb(0 0 0 / 8%), 0 3px 3px rgb(0 0 0 / 16%);
+    -webkit-transform: none;
+    transform: none;
+}
+
+.frontpage-form .check-button-container:hover:before{
+   border: solid 2px #5d5d60;
+   background-color: #fff;
+}
+
+.form-field-container.frontpage-form span.num01{
+    color: #444;
+    font-size: 16px;
+   font-weight: 700;
+   font-family: 'Mulish', sans-serif !important;
+    margin-bottom:15px;
+     display: inline-block;
+    width: 100%;
+}
+
+.form-field-label span{
+    color: #444;
+    font-size: 21px;
+   font-weight: 700;
+ font-family: 'Mulish', sans-serif !important;
+}
+
+.form-field-label span.num01 > em{
+   top: -0px;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    background: #39da96;
+    border-radius: 100%;
+}
+
+.step-progressbar .progressbar > li:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    margin: 0 auto 4px;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: #39da96;
+    border: 2px solid #39da96;
+    border-radius: 50%;
+}
+
+
+.step-progressbar .progressbar > li.is-active:before {
+    color: #39da96;
+    background: white;
+    border-color: #39da96;
+}
+
+.step-progressbar .progressbar > li:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    margin: 0 auto 4px;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: #39da96;
+    border: 2px solid #39da96;
+    border-radius: 50%;
+}
+.step-progressbar .progressbar > li:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #39da96;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    z-index: -1;
+}
+.btn.btn--continue{
+   background-image: radial-gradient(circle at 50% 50%, #7e57c1, #7e57c1);
+   -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 25%), 0 2px 2px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 25%), 0 2px 2px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 5%);
+    min-height: 60px;
+    border: 0;
+    padding: 1.1rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 999rem;
+    font-family: Muli,sans-serif;
+    font-size: 24px;
+     text-transform: capitalize; 
+    flex-wrap: wrap;
+}
+.btn.btn--continue:hover,
+.btn.btn--continue:focus{
+        background-image: radial-gradient(circle at 50% 50%, #f2f2f2, #7e57c1);
+         box-shadow: none;
+}
+
+@media (max-width: 767.98px) {
+
+	 .hero .hero-lead{
+		font-size:  20px;
+	}
+     .frontpage-form-wrapper {
+           position: relative;
+           padding: 0 15px;
+    }
+    .frontpage-form {
+	 max-width: 100% !important;
+	 width: 100%;
+   }
+}
+
+
+
+</style>
+<!-- Facebook Pixel Code -->
+<%= Pilot.Facebook.event("282762095908139", @conn, @visitor, "PageView") %>
+<!-- End Facebook Pixel Code -->
+</head>
+<body id="frontpage">
+<div class="page">
+
+	        <header class="header d-flex align-items-center" id="header">
+            <div class="container d-flex align-items-center">
+                <div class="d-inline-block logo"><img src="https://d1q9rklc7ftoct.cloudfront.net/36922778b7704664880413c625107e2d.png" alt="auditorey" class="d-block" style="max-width: 150px;"></div>
+            </div>
+<!-- Start VWO Async SmartCode -->
+<script type='text/javascript'>
+window._vwo_code = window._vwo_code || (function(){
+var account_id=528546,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script>
+<!-- End VWO Async SmartCode -->
+        </header>
+
+
+<section class="hero">
+		<div class="container-fluid">
+			<div class="hero-content">
+				<h1 class="hero-lead font-weight-bold">
+				    <u>Australia</u>: We Need People to Try High-Tech Hearing Aids - Free!
+				    
+				</h1>
+			</div>
+		</div>
+	</section>
+
+	<div id="mainForm" class="frontpage-form-wrapper">
+	<div class="form-field-container frontpage-form">
+		<!-- Progress bar -->
+		<div class="step-progressbar">
+			<ol class="progressbar">
+				<li></li>
+				<li></li>
+				<li class="is-active"></li>
+				
+				<li></li>
+			</ol>
+		</div>
+
+		<!-- FORM -->
+		<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate>
+                [[UUID_TAG]]
+
+
+			<div class="form-field-label">
+		<span class="num01"><em>3</em> Your Postcode?:</span>
+	</div>
+
+	<div class="input-group input-group-lg mb-1 custom-input-group" id="postcode-group">
+		<div class="input-group-prepend">
+			<div class="input-group-text"><i class="fa fa-map-marked-alt fa-lg" aria-hidden="true"></i></div>
+		</div>
+		<input type="tel" class="form-control"
+		 id="post_code" name="post_code"  placeholder="Postcode"
+		 data-parsley-class-handler="#post_code-group"
+data-parsley-required-message="Please enter your 3 or 4 digit postcode"
+		 data-parsley-errors-container="#post_code-error-container"
+data-parsley-pattern="\d{4}" required
+		 required>
+	</div>
+	
+	<div class="error-container" id="post_code-error-container"></div>
+	<p class="mt-1">Your postcode helps us direct you to the best Auditorey.com clinic</p>
+
+	<button type="submit" class="btn btn-secondary btn--continue">
+			    Continue
+				
+			</button>
+<p style="font-size: 16px;color:gray; font-style: italic;margin-top:16px;text-align: center;"> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+
+</div>
+
+		</form>
+		<!-- FORM -->
+
+	</div>
+</div>
+
+
+
+
+	<section class="section section--partner">
+		<div class="container">
+			<span class="h3 mr-2"></span>
+		</div>
+	</section><!-- .section--partner -->
+
+	
+					
+
+
+	</div><!-- .tabbed-content-wrap -->
+
+	</section>
+
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	<section class="section section--features">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- .card-deck -->
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	</section>
+
+	<section class="section section--disclaimer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="content col-md-10 offset-md-1">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="content col-12 text-center">
+					Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present. <br>Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.<br>
+					<br class="d-sm-none">Copyright 2018 Auditorey.com<br>
+					<br class="d-md-none"><a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span>|</span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>|</span><a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>|</span><a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>|</span><a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a> <br> Telephone 1800 512 783 (Toll Free)
+				</div> 
+
+			</div>
+		</div>
+	</footer>
+
+</div><!-- .page -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js" integrity="sha256-XqEmjxbIPXDk11mQpk9cpZxYT+8mRyVIkko8mQzX3y8=" crossorigin="anonymous"></script>
+
+[[JAVASCRIPT]]
+
+</body>
+</html>

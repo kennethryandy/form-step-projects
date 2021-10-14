@@ -1,0 +1,25 @@
+
+
+.cards {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e6eaf1;
+	padding-bottom: 2em;
+	
+	&__item {
+		width: 30%;
+		height: 200px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 1.4em;
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__item {
+			height: 300px;
+		}
+	}
+}

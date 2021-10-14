@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auditorey</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+	<header class="logo-container">
+		<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+	</header>
+
+	<div class="content">
+		<div class="box">
+			<h1 class="box__title">Find the Best Hearing Aids</h1>
+			<form action="/comparehearingaids/3" class="question" novalidate data-parsley-validate>
+				<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />
+
+				<div class="question__item">
+					<h3 class="question__title" data-step="2">Do you already have hearing aids?</h3>
+					<div class="row">
+
+						<div class="col-12 mb-3">
+							<div class="radio">
+								<input type="radio" id="hearing_aids1" name="hearing_aids" value="Yes" class="btn-check" data-parsley-required-message="Please answer either yes or no" data-parsley-errors-container="#hearing_aids_error_container" data-parsley-group="hearing_aids" onchange="this.form.submit()" required>
+								<label class="btn custom-btn" for="hearing_aids1">
+									<i></i> Yes, I already have hearing aids
+								</label>
+							</div>
+						</div>
+
+						<div class="col-12 mb-3">
+							<div class="radio">
+								<input type="radio" id="hearing_aids2" name="hearing_aids" value="No" class="btn-check" data-parsley-required-message="Please answer either yes or no" data-parsley-errors-container="#hearing_aids_error_container" data-parsley-group="hearing_aids" onchange="this.form.submit()" required>
+								<label class="btn custom-btn" for="hearing_aids2">
+									<i></i> No, I don't have hearing aids
+								</label>
+							</div>
+						</div>
+
+						<div class="col-12 mb-2">
+							<div class="error-container" id="hearing_aids_error_container"></div>
+						</div>
+
+						<div class="question__btn">
+							<button type="submit" class="btn btn-next">Continue</button>
+						</div>
+
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%;"></div>
+							<div class="progress-value">25% completed</div>
+						</div>
+
+						<div class="question__meta">
+							<div class="time-text">
+								<p><i class="fas fa-hourglass-end"></i> It will only take 60 seconds</p>
+							</div>
+							<div class="policy">
+								<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

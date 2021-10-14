@@ -1,0 +1,37 @@
+
+
+.site-hero {
+	// background-image: url(https://images.webforms.mvfglobal.com/surveycompare-themes/sc_ppc_x_v13/img/hero-desktop.jpg);
+	background-image: url(https://www2.auditorey.com/wp-content/uploads/2018/11/slider-1.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	// background-position: 0 0;
+	background-position: center center;
+	padding: 1rem 1rem 2.2rem 0;
+	color: $main-blue;
+
+	&__container {
+		max-width: 972px;
+		list-style-type: none;
+    margin: 0 auto;
+    width: 100%;
+		padding: 0;
+	}
+
+	&__title {
+		font-size: 30.4px;
+    font-weight: 500;
+    margin: .8rem 0 1.8rem 0;
+    padding: 0;
+		text-align: center;
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 24px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		padding: 0;
+	}
+}

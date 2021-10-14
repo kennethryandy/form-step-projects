@@ -1,0 +1,20 @@
+
+
+
+.paper-yellow {
+	background: #FFEDA6;
+	box-shadow: 0 0 16px rgb(50 50 50 / 50%);
+	border-radius: 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2rem 4rem;
+
+	.custom-progress {
+		margin-bottom: 10px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 30px 15px;
+	}
+
+}

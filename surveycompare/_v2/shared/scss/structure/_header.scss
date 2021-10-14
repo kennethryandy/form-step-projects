@@ -1,0 +1,49 @@
+
+
+.site-header {
+	background: #fff;
+	padding: 12px 0;
+	&>.site-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.logo {
+			img {
+				width: 145px;
+				height: auto;
+			}
+		}
+
+		.tagline {
+			p {
+				font-size: 20px;
+				font-weight: 700;
+				color: $main-blue;
+				
+				span {
+					color: $aqua;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&>.site-container {
+			.logo {
+				img {
+					width: 112px;
+					height: auto;
+				}
+			}
+	
+			.tagline {
+				p {
+					font-size: 12px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+
+}

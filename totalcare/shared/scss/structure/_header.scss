@@ -1,0 +1,67 @@
+.step-header {
+	width: 100%;
+	height: 15.3125vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4d4d4f;
+	img {
+		width: 26.5625vw;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 5.3125vw;
+		img {
+			width: 12.5625vw;
+		}
+	}
+}
+
+.page-header {
+	border-top: .15625vw solid #636363;
+	&__title {
+		margin-top: 8.90625vw;
+		text-align: center;
+		color: #fff;
+	}
+	&__subtitle {
+		margin-top: 3.125vw;
+		text-align: center;
+		font-weight: 500;
+		color: $light-green;
+		line-height: 1;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url(https://coreg-landers.s3.amazonaws.com/f8583a4da83b43a187bac00f10a431b9.png);
+			background-size: 100%;
+			width: 5.9375vw;
+			height: 3.28125vw;
+			left: 50%;
+			margin-left: -2.96875vw;
+			bottom: -7.65625vw;
+			animation: bounce 2s infinite;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 8.825vw;
+
+		&__title {
+			margin-top: 3.90625vw;
+		}
+		&__subtitle {
+			margin-top: 2.325vw;
+
+			&::after {
+				width: 4.285vw;
+				height: 2.4vw;
+				bottom: -4.825vw;
+			}
+		}
+	}
+
+
+}
+

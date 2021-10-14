@@ -1,0 +1,15 @@
+
+
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14.0625vw;
+	background: #fff;
+
+	&>img {
+		width: 29.84375vw;
+    height: auto;
+	}
+}

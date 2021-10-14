@@ -1,0 +1,59 @@
+
+
+
+.overlap {
+	margin-top: 40px;
+	&__title {
+		background: #428bca;
+    padding: 33px 22px 52.8px;
+    width: 35%;
+		h3 {
+			text-align: right;
+			color: #fff;
+			font-weight: 300;
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+	&__item {
+		margin-bottom: 160px;
+	}
+	&__content {
+		background: #eee;
+		padding: 22px;
+		width: 80%;
+		line-height: 22px;
+		position: relative;
+		float: right;
+		margin-top: -50px;
+		img {
+			width: 240px;
+			border-radius: 50%;
+			border: 6px solid #428bca;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
+			bottom: 44px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-top: 0;
+		&__title {
+			width: 100%;
+			padding: 15px;
+			h3 {
+				font-size: 22px;
+				text-align: center;
+			}
+		}
+		&__content {
+			width: 100%;
+			margin-top: 0;
+			img {
+				display: none;
+			}
+		}
+	}
+}

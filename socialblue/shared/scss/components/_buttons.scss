@@ -1,0 +1,32 @@
+
+
+.custom-btn {
+	font-size: 4.6875vw;
+	text-align: center;
+	font-weight: 700;
+	height: 12.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: auto;
+	margin-bottom: 3.125vw;
+	width: 100%;
+	color: #fff;
+	background: #fe9c52;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 3.125vw;
+	box-shadow: 0vw 0.625vw 0vw 0vw #c25a02;
+	transition: background .5s ease, box-shadow .5s ease, -webkit-transform .5s ease;
+
+	&:hover {
+		color: #fff;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 2.6875vw;
+		height: 6.5vw;
+	}
+}

@@ -1,0 +1,137 @@
+.question {
+	margin-top: 13.28125vw;
+	border-radius: 1.5625vw;
+	background: #fff;
+	padding: 8.125vw 0vw 0vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	min-height: 280px;
+
+	&__intro {
+		text-align: center;
+		font-weight: 500;
+		line-height: 5vw;
+		margin: 0vw 7.8125vw;
+		padding-bottom: 4.6875vw;
+		border-bottom: 0.3125vw solid $light-green;
+	}
+
+	&__title {
+		margin-top: 6.25vw;
+		margin-bottom: 6.25vw;
+		text-align: center;
+    color: #333333;
+	}
+	
+	&__answers {
+		padding: 0vw 7.8125vw;
+		&--btn-wrapper {
+			margin-bottom: 3.28125vw;
+		}
+	}
+
+	&__items {
+		display: flex;
+    position: relative;
+    height: 99.21875vw;
+    opacity: 0;
+    animation: slideInRightFadeIn 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+		.question {
+			transition: left 1s ease, transform 1s ease;
+			width: 100%;
+			flex-shrink: 0;
+			position: absolute;
+			margin-right: 3.75vw;
+		}
+	}
+
+	&__meta {
+		margin-bottom: 4.6875vw;
+		font-size: 3.125vw;
+		color: #959595;
+		text-align: center;
+		a {
+			text-decoration: underline;
+			cursor: pointer;
+			color: #009ee0;
+			font: inherit;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: 0;
+		border-radius: 1.5625vw;
+		background: #fff;
+		padding: 3.825vw 0vw 0vw;
+
+		&__intro {
+			line-height: 1.6;
+			margin: 0vw 7.8125vw;
+			padding-bottom: 2.5vw;
+			border-width: 3px;
+		}
+
+		&__title {
+			margin-top: 2.5vw;
+			margin-bottom: 2.5vw;
+		}
+		
+		&__answers {
+			padding: 0vw 7.8125vw;
+			&--btn-wrapper {
+				margin-bottom: 2.625vw;
+			}
+		}
+
+		&__items {
+			height: 32vw;
+		}
+	}
+
+
+}
+
+
+
+.question__progress {
+	height: 29.6875vw;
+	position: relative;
+	&--wrapper {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 18.75vw;
+		height: 18.75vw;
+	}
+
+	&--circle {
+		transition: 1.2s stroke-dashoffset;
+		transform: rotate(-90deg);
+		transform-origin: 50% 50%;
+	}
+
+	&--label {
+		margin-top: .46875vw;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 5.625vw;
+		line-height: 1;
+		font-weight: 900;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 12.6875vw;
+		&--wrapper {
+			width: 6.75vw;
+			height: 100%;
+		}
+		&--label {
+			margin-top: 0;
+			font-size: 1.875vw;
+		}
+	}
+}

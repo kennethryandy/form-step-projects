@@ -1,0 +1,126 @@
+
+
+
+.question
+{
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0px 2px 1px -1px RGB(0 0 0 / 20%), 0px 1px 1px 0px RGB(0 0 0 / 14%), 0px 1px 3px 0px RGB(0 0 0 / 12%);
+	overflow: hidden;
+	margin-bottom: 32px;
+
+	&__head {
+		height: 120px;
+		background-color: #ee024c;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		font-size: 25px;
+    line-height: 33px;
+		text-align: center;
+    color: #fff;
+	}
+
+	&__q {
+		padding-bottom: 28px;
+    font-size: 25px;
+    line-height: 33px;
+		text-transform: uppercase;
+    text-align: center;
+    color: #2d2d2d;
+		font-family: "Montserrat",sans-serif;
+		font-weight: 700;
+	}
+	
+	&__item {
+		padding: 44px 50px 0;
+	}
+
+	&__meta {
+		&>p {
+			font-size: 12px;
+			color: gray;
+			font-style: italic;
+			margin-top: 12px;
+			margin-bottom: 0;
+			text-align: center
+		}
+	}
+
+	&__progress {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 32px 50px 32px;
+		&--inner {
+			width: 57px;
+    	height: 57px;
+			position: relative;
+			display: grid;
+			place-content: center;
+		}
+		&--circle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transform: rotate(-90deg);
+			.circle-background {
+				stroke: #ecf0f5;
+			}
+			.circle-progress {
+				stroke-dasharray: calc(157 + (157 / 4 * 1));
+				stroke: #1f5ea6;
+				stroke-dashoffset: 157;
+				transition: all .5s ease;
+				&#step2 {
+					stroke-dasharray: calc(157 + (157 / 4 * 2));
+				}
+				&#step3 {
+					stroke-dasharray: calc(157 + (157 / 4 * 3));
+				}
+				&#step4 {
+					stroke-dasharray: calc(157 + (157));
+				}
+			}
+		}
+		&--number {
+			font-size: 25px;
+			line-height: 25px;
+			font-family: "Montserrat",sans-serif;
+			font-weight: 700;
+			color: #205ea6;
+			margin: 0;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 4.21875vw;
+    	line-height: 5.3125vw;
+		}
+		&__q {
+			padding-bottom: 4.0625vw;
+			font-size: 4.375vw;
+			line-height: 5.46875vw;
+		}
+		&__item {
+			padding: 9.375vw 10.15625vw 0vw;
+		}
+		&__progress {
+			margin: 7.5vw 10.15625vw 5.9375vw;
+
+			&--inner {
+				width: 8.90625vw;
+				height: 8.90625vw;
+			}
+			&--number {
+				font-size: 3.90625vw;
+				line-height: 3.90625vw;
+			}
+		}
+	}
+}

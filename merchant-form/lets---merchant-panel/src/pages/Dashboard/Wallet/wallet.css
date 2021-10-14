@@ -1,0 +1,94 @@
+.icon-box {
+  width: 77px;
+  height: 77px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icon-box.red {
+  background-color: #ed3c601f;
+}
+.icon-box.blue {
+  background-color: #4ba4ff1f;
+}
+
+.wallet-icon {
+  width: 40%;
+  color: #ed3c60;
+}
+
+.text-red {
+  color: #ed3c60;
+}
+
+/* Circular Bar */
+.circle-progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.circle-progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.circle-progress .progress-left {
+  left: 0;
+}
+
+.circle-progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.circle-progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.circle-progress .progress-right {
+  right: 0;
+}
+
+.circle-progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.circle-progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

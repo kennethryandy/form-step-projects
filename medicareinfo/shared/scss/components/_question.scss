@@ -1,0 +1,135 @@
+
+
+.form-container {
+	.banner {
+		color: #fff;
+    position: relative;
+    background-color: #4470a6;
+    box-shadow: 0 3px 3px 0 hsl(0deg 0% 7% / 25%);
+    padding: 11px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #263f5e;
+    margin: 0;
+		text-align: center;
+	}
+}
+
+.progbar {
+	margin: 0;
+	width: 100%;
+	padding: 11px 22px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	&__container {
+		width: 500px;
+		max-width: 100%;
+		font-size: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+	}
+	&__label {
+		width: fit-content;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 700;
+		margin-right: 24px;
+	}
+	&__line {
+		width: 75%;
+		font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+	}
+	&__inner {
+		position: relative;
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    height: 10px;
+    width: 100%;
+	}
+	&__percent {
+		transition: width .3s ease-out;
+    background-color: #bacce3;
+    background-image: linear-gradient(45deg,hsla(0,0%,100%,.25) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.25) 0,hsla(0,0%,100%,.25) 75%,transparent 0,transparent);
+    background-size: 1rem 1rem;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+	}
+}
+
+
+
+.question {
+	width: 650px;
+	max-width: 100%;
+	margin: auto;
+	padding: 22px;
+	position: relative;
+
+	&__title {
+		color: #4470a6;
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding: 0 10px;
+		text-align: center;
+	}
+	
+	&__answers {
+		margin-bottom: 32px;
+	}
+
+	&__btn-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		&>.btn-next {
+			max-width: 200px;
+			width: 100%;
+			margin: 0 auto;
+			&.full-width {
+				max-width: 100%;
+				width: fit-content;
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+			@include media-breakpoint-down(md) {
+				&.full-width {
+					padding-left: 16px;
+					padding-right: 16px;
+				}
+			}
+		}
+	}
+
+	&__meta {
+		.circle-progress {
+			width: 100%;
+			margin: 16px auto;
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 70px;
+				height: 70px;
+			}
+		}
+	}
+	
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 22px;
+		}
+	}
+}

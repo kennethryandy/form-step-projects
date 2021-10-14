@@ -1,0 +1,98 @@
+
+
+
+
+
+.text-field {
+	height: 90px;
+	width: -webkit-fill-available;
+	text-align: left;
+	label {
+		display: block;
+		position: relative;
+		color: #999;
+		z-index: 1;
+		padding-right: 1px;
+		padding-left: 4px;
+		transition: all .3s ease;
+		top: -38px;
+		left: 8px;
+		font-size: 1.2rem;
+	}
+
+	input {
+		width: inherit;
+		display: block;
+		position: relative;
+		background: none;
+		z-index: 2;
+		border: 1px solid #4e76a9;
+		color: #113451;
+		border-radius: 4px;
+		margin-top: 1rem;
+		font-size: 1.2rem;
+		padding: 10px;
+
+		&:focus, &.active{
+			outline: none;
+			border-color: #3BC785;
+
+			+label {
+				top: -60px;
+				font-size: 1rem;
+				background: #fff;
+				width: fit-content;
+				color: #3BC785;
+				z-index: 3;
+			}
+		}
+
+		&.parsley-success {
+			border-color: $success;
+			+label {
+				background: #fff;
+				width: fit-content;
+				color: $success;
+				z-index: 3;
+				top: -60px;
+				font-size: .875rem;
+			}
+		}
+
+		&.parsley-error {
+			border-color: $error-red;
+			
+			+label {
+				transition: none;
+				background: #fff;
+				width: fit-content;
+				color: $error-red;
+				z-index: 3;
+				top: -60px;
+				font-size: .875rem;
+			}
+		}
+	}
+
+
+	@include media-breakpoint-down(md) {
+		margin: auto;
+		margin-bottom: 16px;
+
+		input {
+			padding-right: 14px;
+			margin-top: 0;
+
+			&.parsley-success {
+				border-color: $success;
+			}
+	
+			&.parsley-error {
+				border-color: $error-red;
+			}
+		}
+
+		
+	}
+	
+}

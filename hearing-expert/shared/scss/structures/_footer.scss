@@ -1,0 +1,34 @@
+
+.page-footer {
+	max-width: 840px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+
+	.page-disclaimer {
+		width: 100%;
+		padding: 0vw 6.25vw;
+		font-size: 2.34375vw;
+		line-height: 3.125vw;
+		font-weight: 400;
+		color: #333333;
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;
+			font-size: 10px;
+			line-height: 16px;
+		}
+	}
+	&__logo {
+		padding: 40px 0;
+		display: flex;
+    	justify-content: center;
+
+		&>img {
+			width: 190px;
+		}
+	}
+}

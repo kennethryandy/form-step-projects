@@ -1,0 +1,67 @@
+
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+
+
+@include media-breakpoint-down(md) {
+	.hidden-mobile {
+		display: none;
+	}
+	.hidden-desktop {
+		display: block;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.hidden-desktop {
+		display: none;
+	}
+	.hidden-mobile {
+		display: block;
+	}
+	
+}
+
+
+/* =Parsley validation ================================================================================*/
+.error-container {
+	width: 100%;
+	max-width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	ul {
+		margin: 0 auto;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			color: #8a6d3b;
+			background-color: #fcf8e3;
+			padding: 15px;
+			margin-bottom: 20px;
+			border: 1px solid #faebcc;
+			border-radius: 4px;
+			margin-bottom: 0.5rem;
+			padding: 0.25rem 0.875rem;
+			border-radius: 4px;
+			// color: #c92a2a;
+			// background: #ffc9c9;
+			// box-shadow: 0 0 0 1px #ff8787;
+			font-size: 1rem;
+			line-height: 30px;
+		
+			@include media-breakpoint-down(md) {
+				font-size: 11px;
+			}
+		}
+	}
+}

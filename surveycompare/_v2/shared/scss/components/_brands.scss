@@ -1,0 +1,26 @@
+
+
+.brands {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 1em .4em 1em 0;
+
+	&__item {
+		width: 25%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	@include media-breakpoint-down(md) {
+		&__item {
+			width: 50%;
+			margin-bottom: 8px;
+			img {
+				height: 35px;
+			}
+		}
+	}
+}

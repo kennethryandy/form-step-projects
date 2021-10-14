@@ -1,0 +1,168 @@
+
+
+.usp {
+	padding: 25px;
+	background-color: $main-purple;
+	margin: 0;
+	height: 230px;
+
+	&__list {
+		padding: 25px 0 25px 25px;
+		border: 2px solid #fff;
+		margin: 0;
+		height: 180px;
+	}
+
+	&__list-item {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__list-item-icon {
+		width: 20px;
+    	height: 20px;
+	}
+
+	&__list-item-text {
+		padding-left: 25px;
+		h4 { 
+			margin: 0;
+			font-size: 17px;
+			line-height: 18px;
+			color: #fff;
+			font-weight: 400;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__list {
+			padding: 25px;
+		}
+	}
+}
+
+
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	
+	&__title {
+		text-align: center;
+		margin-top: 0;
+	}
+
+	&__item {
+		padding: 32px 40px 16px 40px;
+		background: #eee;
+		&--head {
+			display: flex;
+			align-items: center;
+		}
+
+		&--author-img {
+			margin-right: 18px;
+			width: 44px !important;
+			height: 44px;
+		}
+
+		&--qoute {
+			font-size: 4.375vw;
+    		line-height: 5vw;
+		}
+
+		&--meta {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&>p {
+				margin-top: 1.5625vw;
+				font-size: 3.75vw;
+				color: #999;
+				font-style: italic;
+
+				&.name {
+					color: $main-purple;
+				}
+			}
+
+			&>img {
+				width: 92px !important;
+				height: 18px;
+			}
+		}
+	}
+
+	.owl-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+		position: relative;
+
+		&>.owl-prev, &>.owl-next {
+			height: 20px;
+			width: 20px;
+			border: 1px solid $main-purple !important;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			z-index: 2;
+			background: #fff !important;
+
+			&>span {
+				color: $main-purple;
+				font-size: 24px;
+				margin-bottom: 3px;
+			}
+		}
+
+		.owl-steps {
+			margin: 0;
+			font-size: 15px;
+			font-style: italic;
+			line-height: 1;
+			color: #999;
+			padding: 0 8px;
+			background: #fff;
+			z-index: 2;
+		}
+
+		&>hr {
+			height: 4px;
+			background: #ebebeb;
+			width: 100%;
+			position: absolute;
+			z-index: 1;
+			border: none;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&__title {
+			margin-bottom: 20px;
+			font-size: 20px;
+			line-height: 20px;
+		}
+
+		&__item {
+			&--qoute {
+				font-size: 17px;
+				line-height: 21px;
+			}
+
+			&--meta {
+				&>p {
+					margin-top: 10px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}

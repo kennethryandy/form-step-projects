@@ -1,0 +1,50 @@
+
+
+.page-footer {
+	border: none;
+	min-height: 350px;
+	background-size: cover;
+	background-color: #f0f0f0;
+	background-image: url(https://coreg-landers.s3.amazonaws.com/3c15dc7658a249c09946ddd8756bcdc4.png);
+	background-position: center;
+
+	&__container {
+		max-width: 950px;
+		margin: 0 auto;
+	}
+
+	&__cpr {
+		color: #fff;
+    display: flex;
+    grid-row: 1 / 2;
+    font-size: 11px;
+    justify-content: center;
+		align-items: flex-end;
+    margin-bottom: 20px;
+		height: 108px;
+	}
+
+	&__desclaimer {
+		display: flex;
+    align-items: center;
+		color: #fff;
+    font-size: 11px;
+    text-align: center;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style-type: none;
+		padding-left: 0;
+		margin-top: 40px;
+	}
+
+	&__nav-item {
+		&>a {
+			color: #03a38c;
+			font-size: 11px;
+		}
+	}
+}

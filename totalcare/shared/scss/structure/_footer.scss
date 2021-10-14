@@ -1,0 +1,39 @@
+
+
+
+.footer {
+	font-family: "Arial", sans-serif;
+	box-sizing: border-box;
+	background: #e3e3e4;
+	line-height: 3.75vw;
+	text-align: center;
+	position: relative;
+	font-size: 2.8125vw;
+	font-weight: 400;
+	padding: 3.75vw;
+	color: #5e5d5d;
+	float: left;
+	width: 100%;
+
+	&__dialog {
+		margin-bottom: 1.5625vw;
+    color: inherit;
+    font: inherit;
+	}
+
+	&__text {
+		color: #5e5d5d;
+    font: inherit;
+	}
+
+	@include media-breakpoint-up(lg) {
+		line-height: 1.6;
+		font-size: 1.825vw;
+		font-weight: 400;
+		padding: 3.75vw;
+
+		&__dialog {
+			margin-bottom: 1vw;
+		}
+	}
+}

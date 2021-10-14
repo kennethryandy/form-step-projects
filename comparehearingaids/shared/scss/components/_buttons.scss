@@ -1,0 +1,73 @@
+
+
+
+.btn-check {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.custom-btn {
+	color: #000;
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 10px 15px;
+	// margin: 0 0 9px 0;
+	text-align: left;
+	
+	&>i {
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		transition: box-shadow 200ms ease-in-out;
+		box-shadow: inset 0 0 0 8px #fff;
+		border: 2px solid #000;
+		background: gray;
+	}
+
+	&:hover {
+		&>i {
+			box-shadow: inset 0 0 0 3px #fff;
+		}
+	}
+}
+
+.btn-next {
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	background: #DB354E;
+	color: #fff;
+	width: 70%;
+	min-width: 30%;
+	padding: 10px 20px;
+	font-size: 1.3em;
+	white-space: normal;
+	outline: none;
+	box-shadow: none;
+	
+	&:hover {
+		color: #333;
+    text-decoration: none;
+		opacity: 0.75;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+	}
+
+}

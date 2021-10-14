@@ -1,0 +1,40 @@
+
+
+.zip-code {
+	margin-top: 24px;
+	color: $dark;
+
+	&__title {
+		font-size: 28px;
+		margin-bottom: 30px;
+		line-height: 1.6;
+	}
+
+	&__input {
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		flex-direction: column;
+
+		&>input {
+			width: 70%;
+			margin-bottom: 16px;
+		}
+
+		&>a {
+			width: 70%;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 19px;
+		}
+
+		&__input {
+			&>input, &>a {
+				width: 100%;
+			}
+		}
+	}
+}

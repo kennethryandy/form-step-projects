@@ -1,0 +1,16 @@
+
+
+
+.paper {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 24px rgb(0 0 0 / 30%);
+	max-width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	&>.progress {
+		height: 40px;
+		margin: 0 0 1.25rem;
+	}
+}

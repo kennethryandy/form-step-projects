@@ -1,0 +1,112 @@
+
+
+
+.btn-blue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(35, 171, 249);
+	background-image: none;
+	box-shadow: rgb(14 152 212 / 30%) 0px 20px 33px 1px;
+	margin: 40px auto;
+	min-height: 62px;
+	min-width: 300px;
+	max-width: 450px;
+	border: 0px;
+	border-radius: 10px;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn-green {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 50px;
+	width: 100%;
+	border: none;
+	border-radius: 0px;
+	color: white;
+	white-space: nowrap;
+	background-image: linear-gradient(260deg, rgb(65, 230, 74), rgb(60, 209, 66));
+	box-shadow: rgb(72 212 14 / 25%) 0px 15px 33px 1px;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn-light {
+	background: linear-gradient(90deg, rgb(0, 199, 177) 0px, rgb(17, 237, 213) 100%);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 700;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	min-height: 60px;
+	cursor: pointer;
+	&:hover {
+		color: #fff;
+	}
+}
+
+input[type='radio'] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.btn-radio {
+	position: relative;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 12px 15px;
+	text-align: left;
+	cursor: pointer;
+	text-align: center;
+	background-color: #2989f5;
+	margin: 0 auto 15px auto!important;
+	width: 100%;
+
+	&:hover, &.active {
+		background-color: #0e56a6;
+		color: #ffffff;
+	}
+}
+
+.option-radio + .btn-radio:hover::before, .btn-radio.active::before {
+	content: url(https://coreg-landers.s3.amazonaws.com/f4f3f6acd45e45fd8ead50b091a666da.png);
+	width: 18px;
+	height: 14px;
+	position: absolute;
+	left: 30px;
+	top: 15px;
+}
+
+
+// BUTTON ORANGE
+
+.btn-orange {
+	font-size: 20px;
+	background-color: #ff7227;
+	color: #ffffff;
+	padding: 15px 100px;
+	border-bottom: 3px solid #ce1127;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: #e05a12!important;
+    color: #ffffff;
+    text-decoration: none;
+	}
+}

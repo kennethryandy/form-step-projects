@@ -1,0 +1,42 @@
+
+
+
+.custom-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	height: 90px;
+	border: none;
+	color: #fff;
+	background: #ee024c;
+	outline: none;
+	cursor: pointer;
+	transition: all .3s ease;
+	border-radius: 20px;
+	box-shadow: 0 10px 0 0 #c10046;
+	font-family: "Montserrat",sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 35px;
+	line-height: 30px;
+
+	&:hover,&:active, :focus {
+		transform: translateY(10px);
+		background: #e40249;
+    box-shadow: 0 0 0 0 #c10046;
+		color: #fff;
+	}
+	
+	@include media-breakpoint-down(md) {
+		font-size: 5.46875vw;
+		line-height: 5.46875vw;
+		height: 15.625vw;
+		width: 100%;
+		border-radius: 3.125vw;
+		box-shadow: 0vw 1.5625vw 0vw 0vw #c10046;
+	}
+}

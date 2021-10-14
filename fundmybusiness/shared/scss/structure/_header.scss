@@ -1,0 +1,43 @@
+
+
+
+
+.nav-bar {
+	padding: 1rem;
+	border-bottom: 1px solid #ccc;
+	height: 90px;
+
+	.nav-wrapper {
+		max-width: 998px;
+		margin-right: auto;
+		margin-left: auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&>.logo {
+			max-width: 160px;
+			height: auto;
+		}
+
+		h2 {
+			font-size: 1.2em;
+			margin: 0;
+			font-weight: 600;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		height: 100%;
+		.nav-wrapper {
+			justify-content: center;
+
+			h2 {
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

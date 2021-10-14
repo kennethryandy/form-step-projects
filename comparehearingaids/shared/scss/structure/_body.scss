@@ -1,0 +1,46 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	background: url(https://coreg-landers.s3.amazonaws.com/7b7264ffef9e4f00bd95517c08e3112d.jpg) repeat;
+	background-size: cover;
+	background-position: left;
+	position: relative;
+	height: 90vh;
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+
+	@include media-breakpoint-down(md) {
+		height: 100vh;
+	}
+}
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+	font-size: 1rem;
+	line-height: 30px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 11px;
+	}
+}

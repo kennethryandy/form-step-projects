@@ -1,0 +1,74 @@
+
+
+
+.content {
+	padding: 6.25rem 0;
+
+	@include media-breakpoint-down(lg) {
+		padding: 5rem 0;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 2.5rem 0;
+	}
+}
+
+.feature {
+	padding: 6.25rem 0;
+	background: #15325F;
+	color: #AEC7EF;
+
+	&__title {
+    text-align: center;
+    color: #fff;
+		font-size: 2.25rem;
+		margin: 0 0 3.4375rem;
+	}
+
+	&__subtitle {
+		font-size: 1.25rem;
+    color: #fff;
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 0.875rem;
+    margin: 0 auto;
+    max-width: 40ch;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 5rem 0;
+
+		&__title {
+			margin: 0 0 2.1875rem;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding: 2.5rem 0;
+
+		&__title {
+			margin: 0 0 2.5rem;
+		}
+	}
+}
+
+
+.cta {
+	padding: 7.5rem 0;
+	background-size: cover;
+	&__title {
+		font-size: 2.25rem;
+		margin: 0 auto 2.5rem;
+    max-width: 34ch;
+		color: #fff;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 6.25rem 0;
+
+		&__title {
+			font-size: 2rem;
+		}
+	}
+}

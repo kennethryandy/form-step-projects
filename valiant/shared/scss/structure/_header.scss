@@ -1,0 +1,21 @@
+
+
+
+.logo-container {
+	max-width: 12rem;
+	margin: 0 auto;
+	
+	&>img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.header {
+	
+	&>img {
+		min-width: 0;
+		height: 2.6rem;
+		max-height: 2.6rem;
+	}
+}

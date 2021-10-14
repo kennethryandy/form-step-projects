@@ -1,0 +1,55 @@
+
+
+
+.step-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 0px;
+
+	&__title {
+		margin: 0;
+		font-size: 45px;
+		line-height: 45px;
+		font-weight: 700;
+		color: $primary;
+		font-family: "Roboto Slab",sans-serif !important;
+	}
+
+	&__subtitle {
+		padding-top: 0;
+		font-size: 26px;
+		font-weight: 300;
+		line-height: 32px;
+		color: #333;
+		margin-top: 5px;
+		font-family: "Roboto Slab",sans-serif !important;
+	}
+
+	&>img {
+		width: 314px;
+	}
+
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+
+		&__title {
+			font-size: 6.25vw;
+			line-height: 8.75vw;
+		}
+
+		&__subtitle {
+			font-size: 5.3125vw;
+			line-height: 6.5625vw;
+		}
+
+		&>img {
+			position: absolute;
+			right: 5.46875vw;
+			bottom: 2.34375vw;
+			width: 40.625vw;
+		}
+	}
+}

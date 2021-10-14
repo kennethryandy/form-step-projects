@@ -1,0 +1,13 @@
+
+
+
+.logo {
+	padding-top: 40px;
+	margin-bottom: 18px;
+	&>img {
+		width: 200px;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+}

@@ -1,0 +1,17 @@
+
+
+
+header.page-navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 64px;
+	background: linear-gradient(to right, $main-pink, $main-purple);
+
+	&>img {
+		width: 160px;
+		height: auto;
+	}
+}
+
+

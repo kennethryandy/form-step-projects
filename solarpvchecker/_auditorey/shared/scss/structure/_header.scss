@@ -1,0 +1,25 @@
+
+
+.nav-bar {
+	padding: 0.9375rem 0;
+	background: #f6f6f6;
+	.nav-top {
+		text-align: center;
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&>img {
+			max-width: 100%;
+			height: auto;
+			width: 220px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 0.625rem 0;
+	}
+}

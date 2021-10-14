@@ -1,0 +1,159 @@
+
+
+
+
+
+.text-field {
+	height: 112px;
+	label {
+		display: block;
+		position: relative;
+		color: #999;
+		z-index: 1;
+		padding-right: 1px;
+		padding-left: 0;
+		transition: all .3s ease;
+		top: -36px;
+		left: 8px;
+		font-size: 1.4rem;
+
+		&.lg {
+			top: -55px;
+			left: 16px;
+			font-size: 2rem;
+			padding-right: 4px;
+		}
+	}
+
+	input {
+		display: block;
+		position: relative;
+		background: none;
+		z-index: 2;
+		border: 1px solid #4e76a9;
+		color: #113451;
+		border-radius: .4rem;
+		width: 100%;
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		padding: 3px 8px;
+
+		&.lg {
+			padding: 6px 16px;
+			font-size: 2rem;
+		}
+
+		&:focus{
+			outline: none;
+			border-color: $primary;
+
+			+label {
+				top: -50px;
+				font-size: .875rem;
+				background: #fff;
+				width: fit-content;
+				color: $primary;
+				z-index: 3;
+				&.lg {
+					top: -75px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+
+		&.parsley-success {
+			border-color: $success;
+			+label {
+				background: #fff;
+				width: fit-content;
+				color: $success;
+				z-index: 3;
+				top: -50px;
+				font-size: .875rem;
+				&.lg {
+					top: -75px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+
+		&.parsley-error {
+			border-color: $error-red;
+			
+			+label {
+				transition: none;
+				background: #fff;
+				width: fit-content;
+				color: $error-red;
+				z-index: 3;
+				top: -50px;
+				font-size: .875rem;
+				&.lg {
+					top: -75px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+
+
+	@include media-breakpoint-down(md) {
+		height: 86px;
+		label {
+			&.lg {
+				top: -33px;
+				left: 8px;
+				font-size: 1rem;
+				padding-right: 1px;
+			}
+		}
+
+		input {
+			&.lg {
+				font-size: 1rem;
+				padding: 8px 8px;
+			}
+
+			&.parsley-success {
+				border-color: $success;
+				+label {
+					&.lg {
+						top: -50px;
+						font-size: .675rem;
+						left: 4px;
+					}
+				}
+			}
+	
+			&.parsley-error {
+				border-color: $error-red;
+				
+				+label {
+					&.lg {
+						top: -50px;
+						font-size: .675rem;
+						left: 4px;
+					}
+				}
+			}
+
+			&:focus{
+				+label {
+					&.lg {
+						top: -50px;
+						font-size: .675rem;
+						left: 4px;
+					}
+				}
+			}
+	
+	
+		}
+
+		
+	}
+	
+}

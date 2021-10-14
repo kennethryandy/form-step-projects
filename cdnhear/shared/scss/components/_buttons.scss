@@ -1,0 +1,53 @@
+
+
+.btn-yellow {
+	background-color: #ffae0d;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color .1s ease;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.83;
+	padding: 4px 17px;
+	text-shadow: 2px 2px 2px rgb(0 0 0 / 15%);
+
+	@include media-breakpoint-down(md) {
+		font-size: 15px;
+	}
+}
+
+
+.btn-small {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 10px;
+	width: 32px;
+	padding: 4px;
+	border-radius: 5px;
+	color: #000;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+.btn-muted {
+	background-color: #ebebeb;
+	position: relative;
+	color: #bdbdbd;
+	border-radius: 0 4px 4px 0;
+	border: 1px solid #bdbdbd;
+	white-space: nowrap;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	transition: background-color .1s ease-in,color .1s ease-in;
+	margin-left: 0;
+}

@@ -1,0 +1,30 @@
+.option-radio {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.btn-radio {
+	padding-left: 15px;
+	cursor: pointer;
+	color: #39378A;
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+	clear: both;
+	font-size: 18px;
+	font-weight: normal;
+	border: 1px solid #39378A;
+	background: #FFF;
+	border-radius: 5px;
+	height: 60px;
+	width: 100%;
+	line-height: 60px;
+	position: relative;
+	margin-bottom: 10px;
+	text-align: left;
+	
+	&:hover {
+		background: url(https://coreg-landers.s3.amazonaws.com/18f38269115749528ddd8109e32f0b77.png) 96% 50%/20px no-repeat #fefbf4;
+	}
+}

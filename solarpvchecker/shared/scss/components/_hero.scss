@@ -1,0 +1,48 @@
+
+
+
+.hero {
+	padding: 5rem 0 7.5rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #255298;
+
+	&__title {
+		font-size: 3rem;
+    color: #232735;
+		margin: 0 auto 3.75rem;
+    max-width: none;
+		text-align: center;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		font-size: 1.5rem;
+    margin: 0 auto 3.75rem;
+    color: #232735;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 3.75rem 0 5rem;
+		background-image: none !important;
+		&__title {
+			font-size: 1.5rem;
+			margin: 0 auto 0.625rem;
+			color: #fff;
+		}
+
+		&__subtitle {
+			margin: 0 auto 2.5rem;
+			font-size: 1.25rem;
+			color: #fff;
+			max-width: none;
+		}
+	}
+}

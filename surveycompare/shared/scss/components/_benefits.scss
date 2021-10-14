@@ -1,0 +1,57 @@
+
+
+
+.benefits {
+	
+	&__list {
+		ul {
+			padding: 0 0 5px 0;
+			list-style: none;
+			li {
+				width: 100%;
+				font-size: 1em;
+				font-weight: 700;
+				line-height: 1.3;
+				position: relative;
+				display: block;
+				padding: 0 .5em 1.5em 70px;
+				margin: .7em auto 2.5em auto;
+				display: flex;
+				align-items: center;
+
+				&::before {
+					position: absolute;
+					left: 0;
+					width: 60px;
+					height: 60px;
+					content: '';
+					background: url(//images.webforms.mvfglobal.com/surveycompare-themes/sc_ppc_x_v13/img/icon-tick.svg) no-repeat 0 0;
+					background-size: 100%;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__list {
+			ul {
+				li {
+					padding-left: 90px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		&__list {
+			ul {
+				li {
+					font-size: .9em;
+					&::before {
+						background-size: 75%;
+						top: -13px;
+					}
+				}
+			}
+		}
+	}
+}

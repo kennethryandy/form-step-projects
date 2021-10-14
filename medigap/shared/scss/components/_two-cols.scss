@@ -1,0 +1,79 @@
+
+
+
+.two-cols {
+	background: linear-gradient(180deg, #122d51 40%, #2f496b 80%);
+
+
+	&__img-container {
+		&>img {
+			width: 360px;
+			display: block;
+			margin: auto;
+		}
+	}
+
+	&__right {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+		text-align: center;
+
+		&>a {
+			text-decoration: none;
+			color: $light-red;
+			font-weight: 500;
+			font-size: 35px;
+			margin-bottom: 24px;
+
+			&>img {
+				max-width: 32px;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+    font-size: 40px;
+	}
+
+	&__subtitle {
+		font-size: 1.2rem;
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	&__tty {
+		font-size: 1.2rem;
+
+		&>span {
+			font-size: 34px;
+			color: $light-red;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__right {
+			margin-top: 16px;
+		}
+		&__title {
+			font-size: 28px;
+		}
+		&__subtitle {
+			font-size: 1rem;
+			margin-top: 16px;
+			margin-bottom: 16px;
+		}
+		&__tty {
+			font-size: 1rem;
+
+			&>span {
+				font-size: 28px;
+			}
+		}
+	}
+}

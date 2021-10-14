@@ -1,0 +1,103 @@
+
+
+
+.testimonial {
+
+	margin-top: 260px;
+	background-color: $main-green;
+	padding-bottom: 120px;
+
+	&__wrapper {
+		display: grid;
+		row-gap: 1rem;
+		column-gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(333px, 333px));
+		justify-content: center;
+	}
+
+	&__item {
+		margin-top: -100px;
+		margin-bottom: 205px;
+	}
+
+	&__inner {
+		padding: 30px;
+		background-color: rgb(21, 36, 86);
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 15px;
+    border-color: rgb(255, 255, 255);
+		height: 100%;
+		position: relative;
+		&.center {
+			background-color: rgb(255, 255, 255);
+    	border-color: rgb(21, 36, 86);
+			height: fit-content;
+		}
+	}
+
+	&__profile {
+		&>img {
+			border-radius: 50%;
+			max-width: 200px;
+			max-height: 200px;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			left: 50%;
+			top: -109px;
+			transform: translateX(-50%);
+		}
+		.name {
+			margin-top: 65px;
+			color: #fff;
+			font-weight: 700;
+			text-align: center;
+    	font-size: 26px;
+			&>span {
+				color: $main-blue;
+			}
+		}
+	}
+
+	&__content {
+		text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: rgba(21, 36, 86, 0);
+		&.center {
+			color: $main-blue;
+		}
+	}
+
+	.dotted {
+		display: block;
+		width: 100%;
+    min-height: 1px;
+    margin: 0px;
+		padding: 10px 0;
+		.dots {
+			border-top-width: 5px;
+			border-top-style: dotted;
+			border-color: rgb(53, 188, 144);
+			margin-right: 37.5%;
+			margin-left: 37.5%;
+			width: 25%;
+		}
+	}
+
+	.warnings {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: -140px;
+		padding: 0 32px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+		}
+	}
+}

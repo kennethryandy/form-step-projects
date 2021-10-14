@@ -1,0 +1,31 @@
+
+
+
+.check-items {
+	border: 2px solid #fff;
+
+	&__lists {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 30px;
+	}
+
+	&__list {
+		color: #fff;
+		list-style-type: none;
+		width: 50%;
+		margin-bottom: 24px;
+
+		&>img {
+			width: 23px;
+    		margin: 0 10px 0 0;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__list {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+
+
+
+.form-wrapper {
+	.progress-bar {
+		display: block;
+    background-color: #cccccc;
+    height: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+		&-counter {
+			transition: width 250ms ease;
+			background-color: #008037;
+			height: 15px;
+			border-radius: 5px;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125rem;
+	color: #505565;
+}
+
+.step-container {
+	max-width: 1140px;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	
+	@media (min-width: 576px) {
+    max-width: 540px;
+	}
+	
+	@media (min-width: 768px) {
+    max-width: 720px;
+	}
+	
+	@media (min-width: 992px) {
+    max-width: 960px;
+	}
+	
+	@media (min-width: 1200px) {
+    max-width: 1140px;
+	}
+}
+
+.page-container {
+	max-width: 760px;
+	margin: 0 auto;
+
+	@include media-breakpoint-down(md) {
+		max-width: 470px;
+	}
+}
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+
+	@include media-breakpoint-down(md) {
+		font-size: 11px;
+	}
+}

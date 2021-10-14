@@ -1,0 +1,41 @@
+
+
+
+.step-form {
+	background: url("https://coreg-landers.s3.amazonaws.com/c81085c03444487ab1a79f613545bc42.png") no-repeat;
+	background-size: cover;
+    background-position: center top;
+	padding-bottom: 160px;
+	&>.page-container {
+		padding: 40px 15px;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: 27px;
+		line-height: 32px;
+		text-align: center;
+	}
+
+	&__wrapper {
+		padding: 40px 0 50px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 0;
+
+		&>.page-container {
+			padding: 24px 15px 8px 15px;
+		}
+
+		&__title {
+			font-size: 4.375vw;
+			line-height: 5.625vw;
+			font-weight: 600;
+		}
+
+		&__wrapper {
+			padding: 8px 0px 0px 0px;
+		}
+	}
+}

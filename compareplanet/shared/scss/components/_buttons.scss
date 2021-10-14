@@ -1,0 +1,28 @@
+
+
+.custom-btn {
+	display: block;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: 0.6rem 3rem;
+	font-weight: 700;
+	text-decoration: none;
+	font-family: Lato,-apple-system, sans-serif;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #ed8936;
+	color: #fff;
+	box-shadow: 0 5px 0 0 #c05621;
+	margin-bottom: 5px;
+	transition: background-color .15s ease-in-out;
+	outline: none;
+
+	&:hover {
+		background-color: #dd6b20;
+    color: #fff;
+	}
+	@include media-breakpoint-down(md) {
+		padding: .2rem .8rem;
+    font-size: 1rem;
+	}
+}

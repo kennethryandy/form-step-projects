@@ -1,0 +1,220 @@
+
+
+.nav-bar {
+	width: 100%;
+	position: fixed;
+	top:0;
+	background: #fff;
+	box-shadow: 0 0 10px #333;
+	z-index: 1;
+
+	&.step {
+		position: initial;
+	}
+	
+	.header-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			padding-bottom: 16px;
+			padding-top: 16px;
+			max-width: 220px;
+			width: 100%;
+		}
+		.phone-num {
+			display: flex;
+			align-items: center;
+			img {
+				height: 44px;
+				margin-right: 8px;
+			}
+			.text {
+				p {
+					margin-bottom: 0;
+					font-size: 23px;
+					font-weight: bold;
+					color: #333;
+					letter-spacing: -1px;
+					
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+				}
+				span {
+					font-size: 13px;
+					color: #333;
+					font-weight: 400;
+					letter-spacing: .6px;
+					line-height: normal;
+					display: block;
+					padding-left: 2px;
+					margin: 4px auto -2px;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		.header-container{
+			.logo {
+				width: 90px;
+			}
+
+			.phone-num {
+				img { display: none; }
+				.text {
+					span {
+						font-size: 9px;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.hero {
+	position: relative;
+	margin-top: 76px;
+	min-height: 540px;
+	max-width: inherit;    
+	background: #2971d3 url(https://coreg-landers.s3.amazonaws.com/9b58cb268a404e9aa6c88c0bdb7e1489.jpg) 50% no-repeat;
+	margin-bottom: 36px;
+	
+	.section-container {
+		display: flex;
+		justify-content: space-between;
+		min-height: 540px;
+		height: 100%;
+	}
+
+	&__right {
+		width: 100%;
+    max-width: 450px;
+		margin: 44px 0 0;
+	}
+
+	&__left {
+		padding-bottom: 75px;
+		align-self: flex-end;
+	}
+
+	&__title {
+		h1 {
+			font-weight: bold;
+			color: #fff;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: normal;
+			text-shadow: 0 0 10px #333;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-top: 50px;
+		margin-bottom: 24px;
+		&__title {
+			h1 {
+				font-size: 20px;
+				text-align: right;
+				width: 80vw;
+			}
+		}
+		.section-container {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__left {
+			width: 100%;
+			padding-bottom: 0;
+		}
+	}
+
+
+}
+
+.hero__paper {
+	background: #fff;
+	padding: 35.2px;
+	border-radius: 2%;
+	position: relative;
+	
+	&--logos {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		&>img {
+			width: 95px;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: -230px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(https://coreg-landers.s3.amazonaws.com/dcdb59a1545649d3bc98720bc1a19a9e.png) no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 140px;
+		height: 120px;
+	}
+
+	@include media-breakpoint-down(md) {
+		&::after {
+			background: none;
+		}
+	}
+}
+
+.hero__ad {
+	margin-top: 30px;
+	&--title {
+		padding: 0;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0 auto 5px;
+    background: #2a71d2;
+		width: fit-content;
+		color: #fff;
+		padding: 0 10px;
+	}
+	&::before {
+		content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    top: 86px;
+    display: block;
+    margin-bottom: -15px;
+	}
+
+	&--items {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+	&--item {
+		img {
+			display: block;
+			max-height: 25.5px;
+			height: auto;
+		}
+	}
+
+
+}

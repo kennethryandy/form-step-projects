@@ -1,0 +1,49 @@
+.option-radio {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.btn-radio {
+	width: 100%;
+	max-width: 320px;
+	font-weight: 700;
+	display: block;
+	margin: 0 auto 20px;
+	background: $main-green;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	border: 1px solid #b9c2cb;
+	border-radius: 32px;
+
+	&:hover {
+		background: $dark-green;
+		color: #fff;
+	}
+}
+
+
+.prev-button {
+	position: absolute;
+	left: -45px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&__btn {
+		width: 102px;
+    min-width: 102px;
+    height: 102px;
+    border: none;
+    color: transparent;
+    position: relative;
+    background-size: contain;
+		max-width: 320px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto 20px;
+		background: url(https://coreg-landers.s3.amazonaws.com/ed84542518b94dac85818fb38c448500.png) no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+}

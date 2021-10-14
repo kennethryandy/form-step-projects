@@ -1,0 +1,28 @@
+
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+
+	img {
+		width: 180px;
+		height: auto;
+		padding: 15px;
+	}
+}
+
+.headline {
+	padding-top: 30px;
+	text-align: center;
+	&__title {
+		font-size: 20px;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+    display: block;
+    margin: 20px auto;
+	}
+}

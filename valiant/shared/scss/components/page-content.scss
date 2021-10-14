@@ -1,0 +1,30 @@
+
+
+
+.page-content {
+	text-align: center;
+	margin-top: 16px;
+
+	&__title {
+		display: inline-block;
+		font-family: Acta Deck,Times New Roman,serif;
+		font-weight: 600;
+		margin-bottom: 16px;
+
+		&::after {
+			content: "";
+			display: block;
+			bottom: .2em;
+			width: 100%;
+			height: .2em;
+			background: #ffed8c;
+		}
+	}
+
+
+	&__text {
+		margin: 0 0 .85714rem;
+	}
+
+	
+}

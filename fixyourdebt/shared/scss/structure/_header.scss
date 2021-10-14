@@ -1,0 +1,38 @@
+
+
+
+.main-nav {
+	background-color: rgb(21, 36, 86);
+	&>.full-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&>img {
+		height: auto;
+	}
+	.secure-logo {
+		width: 107px;
+	}
+	.logo {
+		width: 240px;
+		padding: 8px 0;
+		filter: brightness(100);
+	}
+	.trust-logo {
+		width: 90px;
+	}
+
+	@include media-breakpoint-down(md) {
+		.secure-logo {
+			width: 60px;
+		}
+		.logo {
+			width: 120px;
+		}
+		.trust-logo {
+			width: 60px;
+		}
+	}
+}

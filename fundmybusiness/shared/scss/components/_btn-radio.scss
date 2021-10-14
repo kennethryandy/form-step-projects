@@ -1,0 +1,53 @@
+input[type='radio'] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.btn-radio {
+	position: relative;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 12px 15px;
+	text-align: left;
+	cursor: pointer;
+	text-align: center;
+	background-color: #2989f5;
+	margin: 0 auto 15px auto!important;
+	width: 100%;
+
+	&:hover, &.active {
+		background-color: #0e56a6;
+		color: #ffffff;
+	}
+}
+
+.option-radio + .btn-radio:hover::before, .btn-radio.active::before {
+	content: url(https://coreg-landers.s3.amazonaws.com/f4f3f6acd45e45fd8ead50b091a666da.png);
+	width: 18px;
+	height: 14px;
+	position: absolute;
+	left: 30px;
+	top: 15px;
+}
+
+
+// BUTTON ORANGE
+
+.btn-orange {
+	font-size: 20px;
+	background-color: #ff7227;
+	color: #ffffff;
+	padding: 15px 100px;
+	border-bottom: 3px solid #ce1127;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: #e05a12!important;
+    color: #ffffff;
+    text-decoration: none;
+	}
+}

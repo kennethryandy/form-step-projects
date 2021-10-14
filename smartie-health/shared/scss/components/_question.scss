@@ -1,0 +1,144 @@
+
+
+
+.question {
+	&__head {
+		margin-bottom: 2rem;
+    border-bottom: 1px solid #dee2e6;
+	}
+
+	&__title {
+		font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 300;
+    line-height: 1.2;
+	}
+	&__btn-container {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+		&>.btn {
+			min-width: 30%;
+			width: 100%;
+			max-width: 420px;
+			padding-top: 1.2rem;
+			padding-bottom: 1.25rem;
+			font-size: 1.8rem;
+			line-height: 1.2;
+			text-transform: uppercase;
+			font-weight: 600;
+			display: block;
+			margin: auto;
+			&>span {
+				font-size: 0.5em;
+			}
+		}
+	}
+
+	&__meta {
+		text-align: center;
+		margin: 1.5rem auto;
+	}
+	
+	@include media-breakpoint-down(md) {
+		&__btn-container {
+			&>.btn {
+				font-size: 1.5rem;
+				min-width: 100%;
+			}
+		}
+	}
+}
+
+
+.question__progress {
+	max-width: 420px;
+	position: relative;
+	margin: auto;
+	z-index: 5;
+	transition: all 200ms ease-in-out;
+	margin-bottom: 1rem;
+	
+	&--bar {
+		margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+	}
+
+	&--item {
+		counter-increment: step;
+    position: relative;
+    display: table-cell;
+    color: #343a40;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    transform: scale(1);
+		&::before {
+			content: counter(step);
+			font-family: inherit;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 4px;
+			width: 2.28em;
+			height: 2.28em;
+			color: white;
+			border-width: 2px;
+			border-style: solid;
+			border-radius: 50%;
+			background: #dee2e6;
+			border-color: #dee2e6;
+		}
+		&:not(:last-of-type) {
+			&::after {
+				content: "";
+				height: 2px;
+				width: 100%;
+				background-color: #dee2e6;
+				position: absolute;
+				left: 50%;
+				top: 1.1em;
+				z-index: -1;
+			}
+		}
+		&.active {
+			transform: scale(1.2);
+			color: #38b84d;
+			&::before {
+				background: white;
+				color: #38b84d;
+				border-color: #38b84d;
+			}
+			&:last-of-type() {
+				color: rebeccapurple;
+			}
+
+			&:not(:last-of-type) {
+				&::after {
+					background-color: #38b84d;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&--item {
+			&::before {
+				width: 1.8em;
+				height: 1.8em;
+			}
+			&::after {
+				top: .9em;
+			}
+		}
+	}
+}

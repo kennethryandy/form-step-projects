@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart Home Solar Qualify Quiz - Electric Bill</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+	<div class="page-container">
+		<div class="logo">
+			<img src="https://coreg-landers.s3.amazonaws.com/b05ea51adaa2431a89b947798a2300a7.png" class="img-fluid" alt="">
+		</div>
+		<div class="paper-container">
+			<div class="progress">
+				<div class="progress-bar" style="width:43.75%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+			<div class="paper">
+				<div class="paper__head">
+					<form action="/smarthomesolar1example/6" class="question" novalidate data-parsley-validate>
+						<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14">
+						<h1 class="question__title mb-5">
+							Congrats, You May Qualify For The Promotion! What's the best number to share your results to?</h1>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="question__input">
+										<label for="phone_number" class="text-center w-100">Don't worry, we won't bug you... We HATE bugs! 🕷</label>
+										<input type="tel" name="phone_number" class="form-control question_field" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Phone" required>
+										<div class="error-container mt-2" id="phone_number_error_container"></div>
+										<button class="btn-next btn" disabled type="submit">Next →</button>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="question__meta">
+										TCPA Disclosure, By clicking "Next", you agree to the Terms & Conditions & Privacy Policy and further authorize Bright Solar Marketing, its subsidiaries and/or affiliates to contact me with offers about solar products or services via telephone calls, artificial voice, and pre-recorded / text messages (SMS), using automated telephone calls, for marketing/advertising purposes. No purchase required. Message and data rates may apply.
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="form-footer">1. Available with third-party approved financing. Must be 18+/homeowner. Contact us for add'l terms. 2. New customers only. Solar Purchase or PPA agreement req’d to qualify. Add’l terms apply. *Offer not available in Illinois*</div>
+		</div>
+	</div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="shared/js/1.js"></script>
+
+</html>

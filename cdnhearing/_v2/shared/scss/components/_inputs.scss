@@ -1,0 +1,59 @@
+
+
+
+.step-input {
+	position: relative;
+	margin-bottom: 10%;
+
+	input {
+		height: 10vh;
+		border-radius: 10px;
+		background: #ebe9e9;
+		font-weight: 400;
+		font-size: 20px;
+		letter-spacing: -0.02em;
+		line-height: 1;
+		text-align: left;
+		color: #3a3a3a;
+		border: 1px solid #ccc;
+		outline: none;
+		appearance: none;
+		resize: none;
+		display: block;
+		width: 100%;
+		padding: 6px 12px;
+		box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+
+		&.parsley-success {
+			border-color: #95b512;
+			background: rgba(149,181,18,0.3);
+			&+i {
+				display: block;
+				color: #95b512;
+			}
+		}
+
+		&.parsley-error {
+			border-color: $red;
+			background: #ffc9c9;
+			&+i {
+				display: block;
+				color: lighten($red, 25%);
+				&::before {
+					content: "\f057";
+				}
+			}
+		}
+	}
+
+	i {
+		display: none;
+		color: #95b512;
+		font-size: 4vh;
+    position: absolute;
+    top: 3vh;
+    right: 2vh;
+	}
+
+	
+}

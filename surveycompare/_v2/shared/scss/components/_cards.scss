@@ -1,0 +1,45 @@
+
+
+.cards {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e6eaf1;
+	padding-bottom: 2em;
+	flex-wrap: wrap;
+	
+	&__item {
+		width: 30%;
+		height: 200px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 1.4em;
+		padding: 16px;
+	}
+
+	&__icon {
+		color: $main-blue;
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__item {
+			height: 300px;
+			width: 100%;
+			&:not(:first-child) {
+				width: 50%;
+				margin-top: 0;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__item {
+			width: 100%;
+			&:not(:first-child) {
+				margin-top: 0;
+			}
+		}
+	}
+}

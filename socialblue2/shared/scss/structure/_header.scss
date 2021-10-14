@@ -1,0 +1,23 @@
+
+
+
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&>img {
+		width: 324px;
+		height: auto;
+	}
+
+	@include media-breakpoint-down(md) {
+		height: 10.9375vw;
+		&>img {
+			width: 50.625vw;
+		}
+	}
+}

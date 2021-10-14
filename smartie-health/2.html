@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+	<header class="main-nav">
+		<div class="logo">
+			<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+		</div>
+	</header>
+
+	<div class="page-hero">
+		<div class="container">
+			<h1 class="page-hero__title">WANTED: 500 people to TRY a revolutionary, sleek and rechargeable hearing aid RISK-FREE!</h1>
+			<p class="page-hero__subtitle">
+				<span class="page-hero__check-item">Complete Our Quick Questionnaire and Speak to an Expert.</span>
+				<span class="page-hero__check-item">Take a Hearing Test and Try New Hearing Aids</span>
+				<span class="page-hero__check-item">Enjoy Better Hearing</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<form action="[[FORM_URL]]" class="question" method="post" novalidate data-parsley-validate>
+				<!-- [[UUID_TAG]] -->
+				<div class="question__progress">
+					<ol class="question__progress--bar">
+						<li class="question__progress--item active"></li>
+						<li class="question__progress--item active"></li>
+						<li class="question__progress--item"></li>
+						<li class="question__progress--item"></li>
+						<li class="question__progress--item"></li>
+					</ol>
+				</div>
+				<div class="question__head">
+					<h2 class="question__title">Do you already have hearing aids?</h2>
+				</div>
+				<div class="question__answers">
+					<div class="row justify-content-center">
+						<div class="col-md-4 mb-1">
+							<label class="custom-radio-button button-inline">
+								<input type="radio" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" onchange="this.form.submit()" id="yes" value="Yes" data-parsley-errors-container="#haveHearingAids-error-container">
+								<div class="label">
+									<div class="marker"></div>
+									<div class="label-text">
+										<div class="h5">Yes</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="col-md-4 mb-1">
+							<label class="custom-radio-button button-inline">
+								<input type="radio" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" onchange="this.form.submit()" id="no" value="No" data-parsley-errors-container="#haveHearingAids-error-container">
+								<div class="label">
+									<div class="marker"></div>
+									<div class="label-text">
+										<div class="h5">No</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="error-container mt-4" id="haveHearingAids-error-container"></div>
+					<div class="question__btn-container">
+						<button type="submit" class="btn btn-danger cta-button">
+							Continue
+						</button>
+					</div>
+					<div class="question__meta">
+						<p style="font-size: 12px;color:gray;"> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+					</div>
+				</div>
+		</div>
+		</form>
+	</div>
+	</div>
+
+	<div class="brand-footer">
+		<img src="https://coreg-landers.s3.amazonaws.com/b5f5b6daa07740b9b654d7e4b4402772.png" alt="" class="img-fluid">
+	</div>
+
+	<footer class="pages-footer">
+		<div class="container pages-container">
+			<div class="pages-footer__content">
+				<p>
+					Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+					Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+				</p>
+				<p>Copyright 2018 Auditorey.com</p>
+				<div class="footer-links">
+					<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+					<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+					<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+					<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+					<a href="#">Cookies</a>
+				</div>
+				<p>Telephone 1800 512 783 (Toll Free)</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="shared/js/1.js"></script>
+</body>
+
+</html>

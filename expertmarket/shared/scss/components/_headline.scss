@@ -1,0 +1,32 @@
+
+
+
+.headline {
+	
+	&__main {
+		color: #5d5d60;
+    font-size: 1.9rem;
+    font-weight: 900;
+		line-height: 1.2;
+	}
+
+	&__sub {
+		color: #5d5d60;
+    margin-bottom: 1.4rem;
+		font-size: 18px;
+	}
+
+	&__hero-caption {
+		color: #aaa;
+    font-size: .9rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		&__main {
+			font-size: 2.4rem;
+		}
+		&__sub {
+			font-size: 1.6rem;
+		}
+	}
+}

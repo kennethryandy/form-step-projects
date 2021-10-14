@@ -1,0 +1,31 @@
+
+
+
+.main-input {
+	margin-bottom: .2em;
+	padding: .5em;
+	border: 1px solid $main-blue;
+	border-radius: 0;
+	font-weight: 700;
+	color: #000;
+	height: 3em;
+	line-height: 1;
+	width: 100%;
+
+	&:focus {
+		box-shadow: 0 0 5px 1px $main-blue;
+	}
+
+	&.is-invalid {
+		border-color: #f00;
+	}
+
+	&.is-valid {
+		border-color: #28a745;
+	}
+
+	&:focus-visible {
+		appearance: none;
+		outline: none;
+	}
+}

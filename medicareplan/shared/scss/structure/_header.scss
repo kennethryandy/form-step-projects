@@ -1,0 +1,312 @@
+.pages-header {
+	height: 120px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		& > img {
+			height: auto;
+			width: 300px;
+			margin: 8px 0;
+
+			@include media_breakpoint_down(md) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__agent {
+		display: flex;
+		align-items: center;
+
+		@include media_breakpoint_down(md) {
+			display: none;
+		}
+
+		.phone-tab {
+			.text-agent {
+				font-size: 18px;
+				line-height: 15px;
+				color: #595959;
+			}
+			.phone-number {
+				line-height: 30px;
+				color: #3582c5;
+				white-space: nowrap;
+				display: inline-block;
+				font-size: 36px;
+				font-weight: 700;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		& > img {
+			height: 100px;
+			display: inline-flex;
+			float: right;
+			margin-top: 20px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		height: 100%;
+	}
+}
+
+.pages-hero {
+	min-height: 328px;
+	&__inner {
+		margin-bottom: 35px;
+		padding-top: 20px;
+		background-color: #666;
+		height: 250px;
+		color: #fff;
+		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://coreg-landers.s3.amazonaws.com/1ec2bf327b144874a5e16268ca2c7833.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__title {
+		text-align: center;
+		color: #fff;
+		font-size: 36px;
+		margin-top: 48px;
+	}
+	
+	&__subtitle {
+		text-align: center;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+	&__progress-circle {
+		overflow: visible;
+		position: relative;
+		width: 100%;
+		height: 0;
+		margin-bottom: 60px;
+		top: 24px;
+
+		.circle-progress {
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			background: none;
+			margin: 0 auto;
+			box-shadow: none;
+			position: relative;
+
+			& > span {
+				width: 50%;
+				height: 100%;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				z-index: 1;
+			}
+
+			.progress-bar {
+				width: 100%;
+				height: 100%;
+				background: none;
+				border-width: 7px;
+				border-style: solid;
+				position: absolute;
+				top: 0;
+				border-color: #2f9ee9;
+			}
+
+			.progress-left {
+				left: 0;
+
+				.progress-bar {
+					left: 100%;
+					border-top-right-radius: 60px;
+					border-bottom-right-radius: 60px;
+					border-left: 0;
+					-webkit-transform-origin: center left;
+					transform-origin: center left;
+				}
+			}
+
+			.progress-right {
+				right: 0;
+
+				.progress-bar {
+					left: -100%;
+					border-top-left-radius: 60px;
+					border-bottom-left-radius: 60px;
+					border-right: 0;
+					-webkit-transform-origin: center right;
+					transform-origin: center right;
+				}
+			}
+
+			.progress-value {
+				display: flex;
+				border-radius: 50%;
+				font-size: 32px;
+				text-align: center;
+				line-height: 20px;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				font-weight: 300;
+				background: #fff;
+
+				.progress-content {
+					margin-top: 10px;
+
+					.complete {
+						font-size: 12px;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				border: 7px solid #eee;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			@include media_breakpoint_down(md) {
+				width: 65px;
+				height: 65px;
+				.progress-bar {
+					width: 100%;
+					height: 100%;
+					background: none;
+					border-width: 4px;
+					border-style: solid;
+					position: absolute;
+					top: 0;
+					border-color: #2f9ee9;
+				}
+				.progress-value {
+					font-size: 16px;
+					line-height: 14px;
+
+					.progress-content {
+						.complete {
+							font-size: 6px;
+						}
+					}
+				}
+				&::after {
+					border: 4px solid #eee;
+				}
+			}
+		}
+
+		@keyframes loading-24 {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			100% {
+				-webkit-transform: rotate(86.4deg);
+				transform: rotate(86.4deg);
+			}
+		}
+		@keyframes loading-50 {
+			0% {
+				-webkit-transform: rotate(0);
+				transform: rotate(0);
+			}
+			50% {
+				-webkit-transform: rotate(86.4deg);
+				transform: rotate(86.4deg);
+			}
+			100% {
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+		}
+		@keyframes loading-89 {
+			0% {
+				-webkit-transform: rotate(0);
+				transform: rotate(0);
+			}
+			100% {
+				-webkit-transform: rotate(118deg);
+				transform: rotate(118deg);
+			}
+		}
+
+		@keyframes loading-100 {
+			0% {
+				-webkit-transform: rotate(100deg);
+				transform: rotate(100deg);
+			}
+			100% {
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+		}
+
+		.circle-progress[data-progress="24"] .progress-left .progress-bar {
+			animation: 0;
+		}
+		.circle-progress[data-progress="24"] .progress-right .progress-bar {
+			animation: loading-24 300ms linear forwards;
+		}
+
+		.circle-progress[data-progress="50"] .progress-left .progress-bar {
+			animation: 0;
+		}
+		.circle-progress[data-progress="50"] .progress-right .progress-bar {
+			animation: loading-50 300ms linear forwards;
+		}
+
+		.circle-progress[data-progress="89"] .progress-left .progress-bar {
+			animation: loading-89 300ms linear forwards;
+		}
+		.circle-progress[data-progress="89"] .progress-right .progress-bar {
+			animation: none;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		.circle-progress[data-progress="100"] .progress-left .progress-bar {
+			animation: loading-100 300ms linear forwards;
+		}
+		.circle-progress[data-progress="100"] .progress-right .progress-bar {
+			animation: none;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+	}
+
+	@include media_breakpoint_down(md) {
+		min-height: 230px;
+		&__inner {
+			background-position: center center;
+			height: 155px;
+		}
+		&__title {
+			margin-top: 5px;
+			font-size: 20px;
+		}
+
+		&__subtitle {
+			font-size: 12px;
+		}
+
+	}
+}

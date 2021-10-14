@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Totalcare</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+	[[CSS]]
+</head>
+
+<body>
+	<div class="step-header">
+		<img src="https://coreg-landers.s3.amazonaws.com/89013b0a5d7a4316b4cc73eeac7bad65.png" alt="" class="logo" />
+	</div>
+
+	<form action="[[FORM_URL]]" method="post">
+		[[UUID_TAG]]
+		<div class="step__one step">
+			<div class="step__container">
+				<div class="page-header">
+					<h2 class="page-header__title">
+						WANTED: 300 people<br class="hidden-desktop">
+						to test a <br class="hidden-mobile"> revolutionary<br class="hidden-desktop">
+						hearing aid!
+					</h2>
+					<h4 class="page-header__subtitle">
+						Benefit from a FREE 30-day trial!
+					</h4>
+				</div>
+				<div class="question">
+					<h4 class="question__intro">
+						Answer 5 questions <br class="hidden-desktop">
+						to see if you or a loved one<br>
+						qualify to test this device.
+					</h4>
+					<h3 class="question__title">
+						Curious to test a<br class="hidden-desktop">
+						revolutionary hearing aid <br class="hidden-mobile"> for<br class="hidden-desktop">
+						yourself or for a loved one?
+					</h3>
+					<div class="question__answers">
+						<div class="row">
+							<div class="col-lg-6 question__answers--btn-wrapper">
+								<label for="q1" class="btn-radio">Myself</label>
+								<input type="radio" class="btn-check" name="step1" id="q1">
+							</div>
+							<div class="col-lg-6 question__answers--btn-wrapper">
+								<label for="q2" class="btn-radio">Loved one</label>
+								<input type="radio" class="btn-check" name="step1" id="q2">
+							</div>
+						</div>
+					</div>
+					<div class="question__progress">
+						<svg class="question__progress--wrapper" viewBox="0 0 106 106">
+							<circle stroke="#dddddd" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53"></circle>
+							<circle class="question__progress--circle" stroke="#80c342" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53" style="stroke-dasharray: 229.336, 229.336; stroke-dashoffset: 183.469;"></circle>
+						</svg>
+
+						<div class="question__progress--label">
+							1
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<ul class="list__container">
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Reduces background noise</h4>
+						</li>
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Makes conversations easy to follow <br>even in loud environments</h4>
+						</li>
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Clear, natural sound par excellence</h4>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="step__two step">
+			<div class="step__container">
+				<div class="question__progress">
+					<svg class="question__progress--wrapper" viewBox="0 0 106 106">
+						<circle stroke="#dddddd" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53"></circle>
+						<circle class="question__progress--circle" stroke="#80c342" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53" style="stroke-dasharray: 229.336, 229.336; stroke-dashoffset: 137.602;"></circle>
+					</svg>
+
+					<div class="question__progress--label">
+						2
+					</div>
+				</div>
+				<div class="question__items">
+					<div class="question step-2">
+						<h3 class="question__title">Are you 50 years or older?</h3>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-7" class="btn-radio">Yes</label>
+									<input type="radio" class="btn-check step-2" name="step2-1" id="step2-7">
+								</div>
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-8" class="btn-radio">No</label>
+									<input type="radio" class="btn-check step-2" name="step2-1" id="step2-8">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question step-2">
+						<h3 class="question__title">Do you sometimes find<br> people mumble when<br> they speak? </h3>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-1" class="btn-radio">Yes</label>
+									<input type="radio" class="btn-check step-2" name="step2-2" id="step2-1">
+								</div>
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-2" class="btn-radio">No</label>
+									<input type="radio" class="btn-check step-2" name="step2-2" id="step2-2">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question step-2">
+						<h3 class="question__title">Do you sometimes have <br>
+							difficulty following <br>
+							conversations in noisy <br>
+							environments? </h3>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-3" class="btn-radio">Yes</label>
+									<input type="radio" class="btn-check step-2" name="step2-3" id="step2-3">
+								</div>
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-4" class="btn-radio">No</label>
+									<input type="radio" class="btn-check step-2" name="step2-3" id="step2-4">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question step-2">
+						<h3 class="question__title">Do you want to test this <br>revolutionary hearing aid?</h3>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-5" class="btn-radio">Yes</label>
+									<input type="radio" class="btn-check step-2" name="step2-3" id="step2-5">
+								</div>
+								<div class="col-md-6 question__answers--btn-wrapper">
+									<label for="step2-6" class="btn-radio">No</label>
+									<input type="radio" class="btn-check step-2" name="step2-3" id="step2-6">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step__footer mt-5">
+				<img src="https://coreg-landers.s3.amazonaws.com/1fefc23c6e3a46dcb74bf064411a9924.png" alt="" class="img-fluid d-block mx-auto">
+			</div>
+		</div>
+
+		<div class="step__three step">
+			<div class="step__container">
+				<div class="step__three--header">
+					<h1 class="step__three--title">
+						Congratulations
+					</h1>
+					<h4 class="step__three--subtitle">
+						<span class="own-route">You have qualified to test this <br>revolutionary hearing aid!</span>
+					</h4>
+				</div>
+			</div>
+			<div class="step__flag">
+				<h4>
+					Please leave your details below and <br>
+					we’ll contact you as soon as possible by <br>
+					phone or email with more information.
+				</h4>
+			</div>
+			<div class="step__container">
+				<div class="step__three--question">
+					<div class="row">
+						<div class="col-lg-6 step__three--input-wrapper">
+							<input type="text" class="main-input" placeholder="FIRST NAME">
+						</div>
+						<div class="col-lg-6 step__three--input-wrapper">
+							<input type="text" class="main-input" placeholder="LAST NAME">
+						</div>
+						<div class="col-md-12 step__three--input-wrapper">
+							<input type="text" class="main-input" placeholder="EMAIL ADDRESS">
+						</div>
+						<div class="col-md-12 step__three--input-wrapper">
+							<input type="text" class="main-input" placeholder="PHONE NUMBER">
+						</div>
+					</div>
+					<div class="step__three--meta">
+						Your information is secure. <span data-dialog="privacy">Privacy policy.</span>
+					</div>
+					<button type="submit" class="btn-submit btn w-100">DONE</button>
+				</div>
+				<div class="list">
+					<h3 class="list__title"><span class="own-route">Your</span> answers match the profile we’re looking for!</h3>
+					<ul class="list__container">
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Reduces background noise</h4>
+						</li>
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Makes conversations easy to follow <br>even in loud environments</h4>
+						</li>
+						<li class="list__list-item">
+							<i class="fas fa-check list__check"></i>
+							<h4 class="list__text">Clear, natural sound par excellence</h4>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</form>
+
+	<footer class="footer">
+		<div class="footer__dialog">
+			<span data-dialog="cookie-modal">Cookies</span>
+		</div>
+		<span class="footer__text">This is a promotion by Totalcare Hearing in Australia <br>in cooperation with Social Blue.</span>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	[[JAVASCRIPT]]
+
+</body>
+
+</html>

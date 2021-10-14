@@ -1,0 +1,59 @@
+
+.btn-check {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.btn-primary {
+	background-color: rgba(255,255,255,1);
+	color: #000000;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: none;
+	text-decoration: none;
+	font-style: normal;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	border-width: 15px;
+	border-style: solid;
+	border-color: #ffffff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 3px 3px 15px 2px rgb(0 0 0 / 56%);
+	cursor: pointer;
+	padding: 15px;
+	transition: all 200ms cubic-bezier(.39, .575, .565, 1.000);
+
+	&.w-100 {
+		width: 100%;
+	}
+
+	&.bg-yellow {
+		background-color: $yellow !important;
+	}
+
+	&.bg-red {
+		background-color: $dark-red !important;
+	}
+
+	&:hover, &:active, &:focus {
+		transform: translateY(-6px);
+		border: 15px solid rgb(55,204,53);
+		background-color: inherit;
+		color: #000;
+	}
+}
+
+button.btn-primary {
+	padding: 8px;
+
+	@include media-breakpoint-down(md) {
+		padding: 0;
+	}
+}

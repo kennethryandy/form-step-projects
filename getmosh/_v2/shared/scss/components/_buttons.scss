@@ -1,0 +1,124 @@
+
+
+.btn-invert {
+	text-decoration: none;
+	border: 0;
+	padding: 15px 40px;
+	display: inline-block;
+	white-space: normal;
+	background-color: #ff6340;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 14px;
+	box-shadow: 8px 8px #ebebd4;
+	&:hover {
+		box-shadow: 0px 0px #003d3b;
+		color: #fff;
+	}
+}
+
+.btn-next {
+	position: relative;
+	padding: 15px 40px;
+	font-size: 1.1em;
+	border-radius: 0;
+	white-space: normal;
+	text-decoration: none;
+	background-color: $main-orange;
+	border: 1px solid transparent;
+	color: white;
+	cursor: pointer;
+	width: 100%;
+	line-height: 1.5;
+	max-height: 68px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: uppercase;
+
+	&:disabled {
+		background-color: #DEDEDE;
+		cursor: not-allowed;
+	}
+
+	&>i {
+		font-size: 14px;
+		position: absolute;
+		right: 15px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+
+.btn-load {
+	box-shadow: 8px 8px #003d3b;
+	border: 0;
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	padding: 15px 40px;
+	display: inline-block;
+	border-radius: 0;
+	white-space: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 14px;
+	background-color: $main-orange;
+
+	&::before {
+		content: '';
+    display: block;
+    width: 0%;
+    background-color: #003d3b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+	}
+
+	&::after {
+		content: 'Continue';
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    color: white;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+	}
+
+	&.animate {
+		&::before {
+			animation: grow-width 4s linear;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 0px #003d3b;
+	}
+}
+
+@keyframes grow-width {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}

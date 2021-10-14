@@ -1,0 +1,63 @@
+.option-radio {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+
+.btn-radio {
+	background-color: $main-blue;
+	color: #ffffff;
+	border-width: 4px;
+	border-style: solid;
+	border-color: $main-green;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	box-shadow: 0px 0px 6px 2px rgb(79 79 79 / 56%);
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	transition: all .2s cubic-bezier(.39,.575,.565,1);
+
+	&:hover {
+		background-color: $main-green;
+		box-shadow: 0px 0px 2px 5px rgb(0 0 0 / 17%);
+		color: #fff;
+	}
+}
+
+.main-btn {
+	font-size: 36px;
+	box-shadow: 0 1px 5px rgb(0 0 0 / 70%);
+	padding: 10px 25px;
+	font-weight: bold;
+	display: inline-block;
+	text-align: center;
+	border-radius: 60px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+
+	@include media-breakpoint-down(md) {
+		font-size: 26px;
+	}
+}
+
+.btn-green {
+	color: $main-blue;
+	background: $main-green;
+	&:hover {
+		color: $main-blue;
+	}
+}
+
+.btn-blue {
+	color: #fff;
+	background: $main-blue;
+	&:hover {
+		color: #fff;
+	}
+}

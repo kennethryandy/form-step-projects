@@ -1,0 +1,96 @@
+* {
+	font-family: "Lato",sans-serif !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+.page-container {
+	max-width: 880px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.btn.btn-orange {
+	background: linear-gradient(130deg, #f96 0%, #fd7931 100%);
+    transition: all .2s ease-in-out;
+	height: 80px;
+    border-radius: 15px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+	border: 0;
+	color: #fff;
+	outline: none;
+    cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 30px;
+    line-height: 30px;
+	font-family: "Roboto Slab",sans-serif !important;
+	box-shadow: none !important;
+	text-transform: uppercase;
+
+	&:hover {
+		transform: scale(1.025);
+	}
+
+	&:focus,&:active {
+		outline: none;
+		box-shadow: none;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 6.25vw;
+		line-height: 6.25vw;
+		height: 15.625vw;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.mobile {
+		display: none;
+	}
+}
+
+
+@include media-breakpoint-down(md) {
+	.desktop {
+		display: none;
+	}
+}
+
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	padding: 1px;
+}
+.error-container li {
+	color: $error-red;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+
+	@include media-breakpoint-down(md) {
+		font-size: .8rem;
+	}
+}
+
+[data-aos^=hide-left][data-aos^=hide-left] {
+    opacity: 1;
+    transition-property: opacity, transform
+}
+
+[data-aos^=hide-left][data-aos^=hide-left].aos-animate {
+    opacity: 0;
+    transform: translateX(-50%)
+}

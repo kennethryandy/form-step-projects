@@ -1,0 +1,156 @@
+
+
+
+.logo-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	height: 50px;
+
+	&.step-page-header {
+		height: 70px;
+	}
+
+	&__cooperation {
+		font-size: 20px;
+    line-height: 20px;
+		color: #dadde1;
+		margin: 0;
+	}
+
+	&>.nav {
+		max-width: 770px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&>img {
+			height: 50px;
+		}
+
+		&>.text {
+			font-size: 16px;
+			font-style: italic;
+			color: #6e6e6e;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 0 12.5vw;
+		height: 7.8125vw;
+		&__cooperation {
+			font-size: 3.75vw;
+			line-height: 4.53125vw;
+		}
+		.nav {
+			&>img {
+				height: 6.0625vw;
+			}
+			&>.text {
+				font-size: 2.5vw;
+			}
+		}
+	}
+}
+
+.page-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 54px;
+
+	&__title {
+		font-size: 37px;
+    line-height: 43px;
+    margin-bottom: 0;
+		font-weight: 700;
+    color: #4680b5;
+		width: 100%;
+	}
+
+	&__info {
+		width: 220px;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		margin-bottom: auto;
+
+		&>.icon {
+			display: flex;
+			align-items: center;
+			margin-bottom: 8px;
+			&>span {
+				font-style: italic;
+				color: #838383;
+				font-size: 11px;
+			}
+			&>i {
+				color: #838383;
+				font-size: 22px;
+				margin: 0 0 0 12px;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		flex-wrap: wrap;
+		padding: 3.125vw 0;
+
+		&__title {
+			font-size: 6.5625vw;
+			line-height: 7.34375vw;
+			margin-bottom: 4.0625vw;
+		}
+
+		&__info {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			&>.icon {
+				&>span {
+					font-size: 2.1875vw;
+					line-height: 2.5vw;
+					order: 2;
+				}
+				&>i {
+					order: 1;
+					font-size: 4.375vw;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}
+
+.step-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 44px 0 28px;
+	&>h1 {
+		font-size: 28px;
+    line-height: 37px;
+		text-transform: uppercase;
+    color: #205ea6;
+		font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+	}
+	&>img{
+		width: 126px;
+    height: 68px;
+	}
+
+	@include media-breakpoint-down(md){
+		align-items: center;
+		&>h1 {
+			font-size: 4.3125vw;
+			line-height: 5.40625vw;
+		}
+		&>img {
+			width: 24.15625vw;
+			height: 13.375vw;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+
+
+.page-btn {
+	width: 100%;
+	font-size: 1.125rem;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1;
+	text-decoration: none;
+	color: $dark;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-color: #ccc;
+	border-style: solid;
+	outline: 1px #ccc;
+	padding: 15px;
+	background-color: #fff;
+	background-image: linear-gradient(#fff,#d2d2d2);
+	border-radius: 5px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	box-shadow: 0 10px 7px -9px rgb(0 0 0 / 80%);
+	cursor: pointer;
+	&:hover {
+		box-shadow: 0 0 7px -4px transparent;
+    border-color: #95b314;
+    background-color: #cee17e;
+    background-image: linear-gradient(#cee17e,#b5ca5a);
+		color: $dark;
+	}
+}
+
+.question__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Open Sans";
+	text-align: center;
+	font-size: 22px;
+	font-weight: normal;
+	letter-spacing: -0.02em;
+	line-height: 1.5625rem;
+	text-shadow: none;
+	height: 10vh;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #3a3a3a;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	background-image: linear-gradient(#fff, #d2d2d2);
+	padding: 0 5px;
+	box-shadow: 0px 10px 7px -9px rgb(0 0 0 / 80%);
+	cursor: pointer;
+
+	&:hover {
+		background-color: $light-green;
+		background-image: linear-gradient(#c7de5f, #95b314);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border: 1px solid #7a9310;
+		text-decoration: underline;
+	}
+}
+
+
+.btn-next {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(#c7de5f, #95b314);
+	font-size: 22px;
+	color: #fff;
+	border: 1px solid #95b314;
+	border-radius: 100px;
+	box-shadow: 0 3px 12px rgb(0 0 0 / 90%);
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:hover {
+		background-color: #95b314;
+		background-image: linear-gradient(#c7de5f, #95b314);
+		box-shadow: 0 0px 10px rgb(149 179 20 / 70%);
+		transition: .2s ease-in;
+		outline: none;
+		color: #fff;
+	}
+}

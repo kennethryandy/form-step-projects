@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Northern Mindanao Mortgage Rates at 1.75% FIXED (1.81% APR)</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+	<div class="page">
+		<header class="main-nav">
+			<div class="page-container">
+				<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="" class="logo auditorey">
+				<div class="secure-form">
+					<img src="https://coreg-landers.s3.amazonaws.com/de3dec25004041d5a46e7b2200ab4c9b.png" alt="">
+					<p>Secure Form</p>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="main-content">
+
+			<section class="sec">
+				<div class="page-container">
+					<h1 class="question__title">
+						You’re almost there!
+						<span class="question__subtitle">In order to make an appointment we need a few more details.</span>
+					</h1>
+					<form method="post" action="[[FORM_URL]]" class="question" novalidate data-parsley-validate>
+						<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14">
+						<div class="question__answers">
+							<div class="question__inputBox">
+								<div>
+									<div class="text-field">
+										<input type="text" id="first_name" autocomplete="off" name="first_name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+										<label for="first_name">First name</label>
+									</div>
+									<div class="error-container mb-3" id="first_name_error_container"></div>
+								</div>
+
+								<div>
+									<div class="text-field">
+										<input type="text" autocomplete="off" name="last_name" id="last_name" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+										<label for="last_name">Last name</label>
+									</div>
+									<div class="error-container mb-3" id="last_name_error_container"></div>
+								</div>
+
+								<div>
+									<div class="text-field">
+										<input type="tel" autocomplete="off" name="phone_number" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+										<label for="phone_number">Phone number</label>
+									</div>
+									<div class="error-container mb-3" id="phone_number_error_container"></div>
+								</div>
+
+								<div class="btn-container my-3">
+									<button class="btn btn-next" type="submit">SUBMIT</button>
+								</div>
+							</div>
+						</div>
+						<div class="question__meta">
+							<p> <i class="fa fa-lock fa-1x"></i> Your information is secure! <br class="hidden-desktop"> By submitting this form you agree to the <br> Auditorey.com <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+
+		<footer>
+			<div class="houses auditorey"></div>
+			<div class="bottom">
+				<div class="page-container">
+					<span>© Auditorey</span>
+					<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+					<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+					<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+					<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+					<a href="#">Cookies</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$('.text-field').css({
+			height: $("#first_name").height() + 36
+		});
+		console.log($("#first_name").height());
+		$('#first_name').change(function () {
+			if ($(this).val()) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
+	</script>
+</body>
+
+</html>

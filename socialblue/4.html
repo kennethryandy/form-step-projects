@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auditorey</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+	<main class="page">
+		<img src="https://coreg-landers.s3.amazonaws.com/d4968284e37a438b8401d8645d8956bf.png" alt="" class="background">
+		<header class="logo">
+			<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="">
+		</header>
+
+
+		<section class="step">
+			<div class="step__header">
+				<h1 class="step__title">WANTED: 350 PEOPLE
+					to TRY this revolutionary, invisible
+					hearing device risk-free!</h1>
+				<h2 class="step__subtitle">There’s a revolutionary, invisible device on the market that pushes the boundaries
+					of what you thought was possible with hearing aids.</h2>
+			</div>
+			<div class="form-wrapper">
+				<h3 class="form-wrapper__header">Answer 4 short questions to find out more about this 7-day FREE trial!</h3>
+				<form action="/socialblue1example/4" class="question" novalidate data-parsley-validate>
+					<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />
+					<div class="question__item">
+						<h1 class="question__title">Please Enter Your Email Address.</h1>
+						<div class="row">
+							<div class="col-12">
+								<label for="email" class="mb-2 fw-bold fs-3">Email address</label>
+								<input type="text" data-parsley-type="email" class="question__three" id="email" name="email" autocomplete="off" data-parsley-required-message="Please add your email address" data-parsley-errors-container="#email_error_container" data-parsley-group="email" data-parsley-trigger="change" placeholder="Your email address" required>
+							</div>
+							<div class="error-container mt-3" id="email_error_container"></div>
+							<div class="question__btn mt-5">
+								<button class="btn custom-btn" type="submit" id="post_code">Next</button>
+							</div>
+						</div>
+
+						<div class="question__meta">
+							<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+						</div>
+
+						<div class="question__progress">
+							<span class="question__progress--label">
+								Question
+							</span>
+
+							<div class="question__progress--steps">
+								<span class="question__progress--step active">
+									1 </span>
+								<span class="question__progress--step active">
+									2 </span>
+								<span class="question__progress--step active">
+									3 </span>
+								<span class="question__progress--step active">
+									4 </span>
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<img src="https://coreg-landers.s3.amazonaws.com/a196a40aa412427b9d87c0c6264164a1.jpg" alt="" class="step__bg">
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		const form = $('.question').parsley({
+			errorClass: function () {
+				$(this).removeClass('is-valid').addClass('is-invalid');
+			},
+			successClass: function () {
+				$(this).removeClass('is-invalid').addClass('is-valid');
+			}
+		});
+	</script>
+</body>
+
+</html>

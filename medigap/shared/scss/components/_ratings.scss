@@ -1,0 +1,27 @@
+
+
+.ratings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	position: relative;
+
+	&__logo {
+		max-width: 34px;
+		width: 100%;
+		height: auto;
+		margin-right: 12px;
+	}
+
+	&__arrow {
+		position: absolute;
+		right: 0;
+	}
+
+	@include media-breakpoint-down(md) {
+		&>p {
+			font-size: 11px;
+		}
+	}
+}

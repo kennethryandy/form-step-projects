@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hair Assessment | Mosh</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+	<div class="get-started">
+		<header class="get-started__navbar">
+			<img src="https://coreg-landers.s3.amazonaws.com/d93c908e6e7b4934af4cc9b4bb5b4598.png" alt="">
+		</header>
+		<div class="get-started__container">
+			<h5 class="get-started__title">Starting hair loss consult</h5>
+			<h4 class="get-started__content mb-4">
+				We'll be asking a few questions about your <img src="https://coreg-landers.s3.amazonaws.com/13d73067a9b24c5fa80e49a68ef08f8c.png" alt=""> so our doctors can find the best treatment for you. This quiz is short and sweet and your answers are secure and confidential between you and your <img src="https://coreg-landers.s3.amazonaws.com/ea58998615d64ba1a3cfe21c5d928025.png" alt="">
+			</h4>
+			<p class="get-started__est mt-4">Est. time to complete: 2 minutes</p>
+			<button type="button" id="getStarted" class="btn btn-invert">Continue</button>
+			<div class="get-started__footer">
+				By clicking 'Continue' you agree to our <a href="#">terms & conditions</a> and <a href="#">privacy policy</a> and consent to telehealth.
+			</div>
+		</div>
+	</div>
+
+	<div class="question">
+		<div class="question__progress">
+			<div class="question__progress--bar"></div>
+			<div class="question__progress--text">
+				<h5>
+					Maintenance
+				</h5>
+			</div>
+		</div>
+
+		<div class="question__header">
+			<img class="question__header--navigation disabled" src="https://coreg-landers.s3.amazonaws.com/5f4fc5aa2ef84b32b867aa8d09176f46.png" alt="">
+			<img class="question__header--logo" src="https://coreg-landers.s3.amazonaws.com/506c867b960b4e37868e004c23b44c3a.png" alt="">
+		</div>
+
+		<div class="question__container" id="firstStep">
+			<h1 class="question__title">Which image best illustrates your pattern of hair loss?</h1>
+			<div class="question__answers">
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/720e5de1921e4b5ba512bd2d75890c54.png" alt="">
+					<span>No hair loss</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/09aabc88a17c4aec888b125bc52fd046.png" alt="">
+					<span>Mild receding</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/1fc4babfee594fdd810533a6164aae5c.png" alt="">
+					<span>Medium receding</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/b0642d42080f4c0ea62c6055ba0a6a0d.png" alt="">
+					<span>Thinning on crown</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/04a25e48f48e47ad81a832a27868b88b.png" alt="">
+					<span>Thinning + receding</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/f48a114a8bd94f61923ee812f4309db8.png" alt="">
+					<span>No hair on top</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">What results are you looking for?</h1>
+			<div class="question__answers">
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/c3426066512c4fa4b61f369c6e5282a0.png" alt="">
+					<span>Regrow my hair</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/063b19dfa7ce4369a06944db36fc7bc9.png" alt="">
+					<span>Prevent further hair loss</span>
+				</button>
+				<button class="btn question__btn-sqr">
+					<img src="https://coreg-landers.s3.amazonaws.com/014676b2cbc948cfb0b649521e09430c.png" alt="">
+					<span>Regrow and prevention</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Is there hair loss in the family?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">When did you first notice hair loss?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">I haven't, I'm in prevention mode</buton>
+				<buton class="btn question__btn">Only recently</buton>
+				<buton class="btn question__btn">It's been gradually happening for years</buton>
+				<buton class="btn question__btn">It's been falling out in patches</buton>
+				<buton class="btn question__btn">I've lost 50%+ in the last three months</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">How much body hair do you have?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+				</buton>
+				<buton class="btn question__btn">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+				</buton>
+				<buton class="btn question__btn">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+				</buton>
+				<buton class="btn question__btn">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+				</buton>
+				<buton class="btn question__btn">
+					<img src="https://coreg-landers.s3.amazonaws.com/c43ae8d0d2fe44638e3c3cf13c155b89.png" alt="">
+				</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Where should we send your personalised treatment plan?</h1>
+			<div class="question__answers">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" class="question__input" placeholder="First name">
+					</div>
+					<div class="col-md-6">
+						<input type="text" class="question__input" placeholder="Last name">
+					</div>
+					<div class="col-md-12">
+						<input type="emai" class="question__input" placeholder="Email">
+					</div>
+					<div class="col-md-12">
+						<div class="question__divider"></div>
+						<button class="btn btn-next">
+							NEXT <i class="fa fa-lock fa-1x"></i>
+						</button>
+						<div class="question__meta">
+							<p class="fs-6 text-center">Already a customer? <a href="#">Click here to sign in.</a></p>
+							<p class="text-center">Next, you’ll share information about your health, medical history and lifestyle with your doctor who will determine whether you are a candidate for personalised hair loss treatment.</p>
+							<svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="24" height="24" fill="#82C780"></rect>
+								<rect x="56" width="24" height="24" fill="#82C780"></rect>
+								<rect x="28" width="24" height="24" fill="#82C780"></rect>
+								<rect x="84" width="24" height="24" fill="#82C780"></rect>
+								<rect x="112" width="24" height="24" fill="#82C780" fill-opacity="0.5"></rect>
+								<rect x="112" width="12" height="24" fill="#82C780"></rect>
+								<path d="M12 2L14.2451 8.90983H21.5106L15.6327 13.1803L17.8779 20.0902L12 15.8197L6.12215 20.0902L8.36729 13.1803L2.48944 8.90983H9.75486L12 2Z" fill="#003D3B"></path>
+								<path d="M40 2L42.2451 8.90983H49.5106L43.6327 13.1803L45.8779 20.0902L40 15.8197L34.1221 20.0902L36.3673 13.1803L30.4894 8.90983H37.7549L40 2Z" fill="#003D3B"></path>
+								<path d="M68 2L70.2451 8.90983H77.5106L71.6327 13.1803L73.8779 20.0902L68 15.8197L62.1221 20.0902L64.3673 13.1803L58.4894 8.90983H65.7549L68 2Z" fill="#003D3B"></path>
+								<path d="M96 2L98.2451 8.90983H105.511L99.6327 13.1803L101.878 20.0902L96 15.8197L90.1221 20.0902L92.3673 13.1803L86.4894 8.90983H93.7549L96 2Z" fill="#003D3B"></path>
+								<path d="M124 2L126.245 8.90983H133.511L127.633 13.1803L129.878 20.0902L124 15.8197L118.122 20.0902L120.367 13.1803L114.489 8.90983H121.755L124 2Z" fill="#003D3B"></path>
+							</svg>
+							<span>
+								See our <strong>1000+</strong> reviews on <strong>Trustpilot</strong>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Have you ever treated hair loss before?</h1>
+			<h2 class="question__subtitle">Including any medications or supplements</h2>
+			<div class="question__answers">
+				<buton class="btn question__btn">Yes</buton>
+				<buton class="btn question__btn">Kind of, I've dabbled</buton>
+				<buton class="btn question__btn">No</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">What treatments have you tried in the past?</h1>
+			<h2 class="question__subtitle">Please note the name of treatment, dosages and the effectiveness</h2>
+			<div class="question__answers">
+				<textarea placeholder="Please enter..." class="question__input textarea"></textarea>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Did you see results?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">Yes</buton>
+				<buton class="btn question__btn">Kind of</buton>
+				<buton class="btn question__btn">No</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Did you experience any side effects from the treatment?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Have you ever seen a doctor or specialist for hair loss?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Please provide the doctor with more information.</h1>
+			<h2 class="question__subtitle">Were there any pathology tests, referrals to a specialist, correspondence from another health professional or any other investigations made into your condition?</h2>
+			<div class="question__answers">
+				<textarea placeholder="Please enter..." class="question__input textarea"></textarea>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Do you have any allergies to medication or anything else?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Are you currently taking any medications, supplements or hormone therapy (including anything for hair loss)?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Do any of these apply to you?</h1>
+			<h2 class="question__subtitle">These answers are important for the medical team to tailor the best option for you.</h2>
+			<div class="question__answers">
+				<buton class="btn question__btn">None</buton>
+				<buton class="btn question__btn">Planning on having a baby in the next 12 months</buton>
+				<buton class="btn question__btn">Personal or a family history of prostate enlargement / cancer</buton>
+				<buton class="btn question__btn">Suffer from any kidney or liver problems</buton>
+			</div>
+		</div>
+
+		<div class="question__container large">
+			<h1 class="question__title">Do any of these apply to you?</h1>
+			<h2 class="question__subtitle">These answers are important for the medical team to tailor the best option for you.</h2>
+			<div class="question__answers">
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op1">
+				<label for="op1">
+					<i class="far fa-square"></i> <span>None</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op2">
+				<label for="op2">
+					<i class="far fa-square"></i> <span>Planning on having a baby in the next 12 months</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op3">
+				<label for="op3">
+					<i class="far fa-square"></i> <span>Personal or a family history of prostate enlargement / cancer</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op3">
+				<label for="op3">
+					<i class="far fa-square"></i> <span>Suffer from any kidney or liver problems</span>
+				</label>
+				<button class="btn btn-next btn-hidden">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Have you now or in the past ever suffered or been treated for any other medical conditions?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Please describe what medical conditions you have suffered from now or in the past.</h1>
+			<div class="question__answers">
+				<textarea placeholder="Please enter..." class="question__input textarea"></textarea>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Is there a history of any other medical illness or disorder that has run within your family?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Please explain the medical illness that has run within your family.</h1>
+			<div class="question__answers">
+				<textarea placeholder="Please enter..." class="question__input textarea"></textarea>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Have you ever had any major surgery?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Have you had any cardiovascular (heart) problems or have you ever had a stroke?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">To help guide your doctor, what matters more to you in a hair loss treatment routine?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">
+					<span>
+						<strong>Convenience</strong>
+						<br>
+						I want something that is effective and easy to stick to.
+					</span>
+				</buton>
+				<buton class="btn question__btn">
+					<span>
+						<strong>Effectiveness</strong>
+						<br>
+						I want what studies say works best, even if it's more time consuming.
+					</span>
+				</buton>
+				<buton class="btn question__btn">I don't know</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Send your doctor a photo (or do it later).</h1>
+			<h2 class="question__subtitle">This will help find the right treatment for your hair.</h2>
+			<div class="question__answers">
+				<buton class="btn question__btn">Yes, I'm ready now</buton>
+				<buton class="btn question__btn">Not a good time</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">
+				<img src="https://coreg-landers.s3.amazonaws.com/09aabc88a17c4aec888b125bc52fd046.png" style="width: 80px;height: 80px;" alt=""> <br>
+				Let's upload a photo of the front.
+			</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">
+					<span>
+						<i class="fas fa-camera fs-3"></i><br>
+						Upload image
+					</span>
+				</buton>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Next, let's see the crown of your head</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">
+					<span>
+						<i class="fas fa-camera fs-3"></i><br>
+						Upload image
+					</span>
+				</buton>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Just to be overly cautious, do any of the following apply to you?</h1>
+			<h2 class="question__subtitle">Select any that apply.</h2>
+			<div class="question__answers">
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op4">
+				<label for="op4">
+					<i class="far fa-square"></i> <span>None</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op5">
+				<label for="op5">
+					<i class="far fa-square"></i> <span>Low blood pressure</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op6">
+				<label for="op6">
+					<i class="far fa-square"></i> <span>Frequent dizzy spells</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op7">
+				<label for="op7">
+					<i class="far fa-square"></i> <span>Palpitations</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op8">
+				<label for="op8">
+					<i class="far fa-square"></i> <span>Congestive cardiac failure</span>
+				</label>
+				<button class="btn btn-next btn-hidden">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Just to be overly cautious, do any of the following apply to you?</h1>
+			<h2 class="question__subtitle">Select any that apply.</h2>
+			<div class="question__answers">
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op14">
+				<label for="op14">
+					<i class="far fa-square"></i> <span>None</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op15">
+				<label for="op15">
+					<i class="far fa-square"></i> <span>Depression</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op16">
+				<label for="op16">
+					<i class="far fa-square"></i> <span>Anxiety</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op17">
+				<label for="op17">
+					<i class="far fa-square"></i> <span>Bipolar</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op18">
+				<label for="op18">
+					<i class="far fa-square"></i> <span>Psychotic disorder</span>
+				</label>
+
+				<input class="btn-checkbox" type="checkbox" value="" id="op19">
+				<label for="op19">
+					<i class="far fa-square"></i> <span>Other</span>
+				</label>
+				<button class="btn btn-next btn-hidden">NEXT</button>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">Are you experiencing any other symptoms relating to your hair loss?</h1>
+			<h2 class="question__subtitle">e.g dandruff, fungal infection, psoriasis, severe stress, rapid weight loss, hair-pulling, autoimmune conditions</h2>
+			<div class="question__answers">
+				<buton class="btn question__btn">No</buton>
+				<buton class="btn question__btn">Yes</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">What was your sex assigned at birth?</h1>
+			<div class="question__answers">
+				<buton class="btn question__btn">Male</buton>
+				<buton class="btn question__btn">Female</buton>
+			</div>
+		</div>
+
+		<div class="question__container">
+			<h1 class="question__title">What was your sex assigned at birth?</h1>
+			<div class="question__answers">
+				<div class="d-flex align-items-center">
+					<input type="number" placeholder="DD" class="question__input"> <span class="mx-3">/</span>
+					<input type="number" placeholder="MM" class="question__input"> <span class="mx-3">/</span>
+					<input type="number" placeholder="YYYY" class="question__input">
+				</div>
+				<button class="btn btn-next">NEXT</button>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="shared/js/121.js"></script>
+</body>
+
+</html>

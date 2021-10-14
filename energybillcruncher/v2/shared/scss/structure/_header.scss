@@ -1,0 +1,160 @@
+
+
+
+
+.page-navbar
+{
+	padding: 20px 15px;
+	margin-bottom: 20px;
+	background-color: rgb(77, 142, 204);
+	box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px 6px;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&>img {
+		width: 260px;
+	}
+
+	.ads
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		&__text 
+		{
+			font-family: "Times New Roman", Times, serif;
+			font-size: 20px;
+			color: rgb(221, 238, 255);
+			display: block;
+			width: 100%;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+		&__link 
+		{
+			a {
+				color: rgb(238, 192, 19);
+    		text-decoration: underline;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&>img {
+			width: 180px;
+		}
+	}
+
+}
+
+.page-header {
+	&__chips {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		max-width: 850px;
+    margin: 0px auto 10px;
+    font-size: 48px;
+    line-height: 54px;    
+		font-weight: 500;
+    color: rgb(33, 37, 41);
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	&__subtitle {
+		font-size: 24px;
+    line-height: 32px;
+		font-weight: 400;
+    color: rgb(33, 37, 41);
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	&__hero {
+		max-width: 860px;
+		margin: 0 auto;
+		.author {
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			max-width: 860px;
+			margin: 0px auto;
+			margin-bottom: 12px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 32px;
+			line-height: 34px;
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+		&__subtitle {
+			font-size: 16px;
+    	line-height: 20px;
+		}
+	}
+}
+
+
+
+
+
+.nav-bar {
+	padding: 1rem;
+	border-bottom: 1px solid #ccc;
+	height: 90px;
+
+	.nav-wrapper {
+		max-width: 998px;
+		margin-right: auto;
+		margin-left: auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&>.logo {
+			max-width: 160px;
+			height: auto;
+		}
+
+		h2 {
+			font-size: 1.2em;
+			margin: 0;
+			font-weight: 600;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		height: 100%;
+		.nav-wrapper {
+			justify-content: center;
+			&>.logo {
+				max-width: 80px;
+				height: auto;
+			}
+			&>.logo-2 {
+				width: 50px;
+			}
+			h2 {
+				font-size: 13px;
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

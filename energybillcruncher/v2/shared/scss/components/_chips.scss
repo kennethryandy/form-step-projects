@@ -1,0 +1,17 @@
+
+
+
+.chip {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(181, 181, 181, 0.5);
+	border-radius: 6px;
+	font-size: 10px;
+	line-height: 1.1em;
+	text-align: center;
+	color: rgb(121, 121, 121);
+	padding: 10px;
+	flex-grow: 0;
+	margin-left: 10px;
+}

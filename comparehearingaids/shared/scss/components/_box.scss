@@ -1,0 +1,25 @@
+
+
+.box {
+	padding: 24px 32px;
+	width: 100%;
+	max-width: 520px;
+	width: 100%;
+	background: #fff;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 3px solid #000;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+
+	&__title {
+		font-size: 18px;
+    margin-bottom: 15px;
+		font-weight: 600;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin: 1rem auto;
+		padding: 16px;
+	}
+}

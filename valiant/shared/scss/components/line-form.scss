@@ -1,0 +1,33 @@
+
+
+
+.line-form {
+	padding: 1.5rem 2rem;
+	border: 1px solid $gray;
+	border-radius: 6px;
+	position: relative;
+	margin: 40px auto;
+	// box-shadow: 0px 2px 1px -1px RGB(0 0 0 / 20%), 0px 1px 1px 0px RGB(0 0 0 / 14%), 0px 1px 3px 0px RGB(0 0 0 / 12%);
+
+	&__title {
+		position: absolute;
+		top: -13px;
+		font-size: 1.285rem;
+		font-weight: 700;
+		background-color: #F5F7F9;
+		width: fit-content;
+		padding: 0 6px;
+	}
+	
+	@include media-breakpoint-down(md) {
+		padding: 1rem;
+		&__title {
+			font-size: 1rem;
+		}
+	}
+
+	input:focus {
+		opacity: 1;
+	}
+
+}

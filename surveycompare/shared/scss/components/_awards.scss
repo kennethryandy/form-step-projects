@@ -1,0 +1,13 @@
+
+
+
+.awards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__item {
+		height: 160px;
+		display: grid;
+    place-items: center;
+	}
+}

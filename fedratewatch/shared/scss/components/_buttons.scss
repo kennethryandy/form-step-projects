@@ -1,0 +1,44 @@
+
+
+
+.btn-check {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+
+.custom-btn {
+	color: #2168A2;
+	background: #FFF;
+	border: 2px solid #E3E4E7;
+	border-radius: 4px!important;
+	line-height: 55px;
+	padding: 0 2em;
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+
+	&>i {
+		margin-right: .825rem;
+		margin-bottom: 2px;
+	}
+	&:hover {
+		color: #2168A2;
+		border-color: #adadad;
+		&>i::before {
+			content: '\f14a'
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		line-height: 1.6;
+		padding: 0 1em;
+	}
+}
+
+.btn.btn-primary:hover {
+	background: #1d5a8d;
+}
