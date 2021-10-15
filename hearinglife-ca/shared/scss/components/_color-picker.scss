@@ -2,6 +2,12 @@
 
 
 .color-picker {
+	min-height: 220px;
+
+	.row {
+		min-height: 220px;
+    height: 100%;
+	}
 
 	&__container {
 		margin-top: auto;
@@ -22,12 +28,23 @@
 	}
 
 	&__preview {
+		max-height: 220px;
+		height: 100%;
+		position: relative;
 		img {
+			&.selected {
+				opacity: 1;
+				animation: fadeIn 300ms ease-in-out;
+			}
+			position: absolute;
+			top: 50%;
+			left: 40%;
+			transform: translate(-50%, -50%);
 			height: 220px;
     	width: 270px;
 			object-fit: cover;
-			top: 0;
-			position: relative;
+			opacity: 0;
+			animation: fadeOut 300ms ease-in-out;
 		}
 	}
 
@@ -45,10 +62,10 @@
 		}
 	
 		&__preview {
+			max-height: 128px;
 			img {
 				height: 40vw;
 				width: 71.25vw;
-				top: -6.875vw;
 			}
 		}
 	}

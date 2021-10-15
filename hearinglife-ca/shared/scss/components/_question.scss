@@ -12,29 +12,67 @@
 		margin-bottom: 0;
 		text-align: center;
 		color: #fff;
+		margin-bottom: 8px;
 	}
 
 	&__wrapper {
+		display: flex;
+		width: 400%;
+		transition: height .3s ease, margin-left .3s ease .15s;
+	}
+
+	&__inner {
 		padding: 36px 36px 0;
+		width: 25%;
+		flex: none;
+		opacity: 0;
+		transition: opacity .3s ease;
+		height: 100%;
 	}
 
 
 	&__answers {
+		.row {
+			min-height: 230px;
+		}
 		.btn-radio {
 			margin-top: 24px;
+		}
+	}
+
+	&__meta {
+		padding-top: 16px;
+		font-size: 12px;
+		color:#fff; 
+		font-style: italic;
+		margin-bottom:0;
+		text-align: center;
+		a {
+			color: $red;
 		}
 	}
 
 
 	@include media-breakpoint-down(md) {
 		margin: 6.25vw 3.8125vw 0vw;
-		&__wrapper {
+		&__title {
+			margin-bottom: 4.6875vw;
+			font-size: 4.6875vw;
+			line-height: 5.15625vw;
+			font-weight: 400;
+		}
+		&__inner {
 			padding: 7.8125vw 7.8125vw 0vw;
 		}
 		&__answers {
 			.btn-radio {
 				margin-top: 4.6875vw;
 			}
+		}
+
+		&__meta {
+			padding-top: 8px;
+			font-size: 10px;
 		}
 	}
 
@@ -57,6 +95,11 @@
     margin: 0 5px;
     border-radius: 100%;
     transition: all .3s ease;
+		opacity: .3;
+
+		&.current {
+			opacity: 1;
+		}
 
 		&.active::after {
 			content: "";
@@ -64,9 +107,10 @@
 			background: url('https://coreg-landers.s3.amazonaws.com/d4698e97c58f4b2d8a16de942298eaad.png') center center no-repeat;
 			width: 16px;
 			height: 16px;
-			background-size: 1.5625vw 1.5625vw;
+			background-size: auto;
 			left: 0;
 			top: 0;
+			opacity: 1;
 		}
 	}
 

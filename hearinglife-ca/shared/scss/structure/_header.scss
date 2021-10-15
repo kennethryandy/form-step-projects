@@ -2,11 +2,11 @@
 
 
 .main-nav {
+	background: #fff;
 	.logo {
 		display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #fff;
 		height: 64px;
 		margin-bottom: 24px;
 
@@ -64,6 +64,9 @@
 		}
 	
 		&__subtitle {
+			font-size: 4.6875vw;
+			line-height: 5.15625vw;
+			font-weight: 400;
 			margin-bottom: 3.125vw;
 		}
 	}

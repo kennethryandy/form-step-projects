@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+	[[CSS]]
+</head>
+
+<body>
+
+	<header class="main-nav">
+		<div class="logo container">
+			<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+		</div>
+	</header>
+
+	<div class="page-header">
+		<h1 class="page-header__title">
+			<span>
+				Congratulations!
+			</span>
+			<p class="mt-2">You fit our profile <img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt=""></p>
+		</h1>
+		<p class="page-header__subtitle">Try this revolutionary, rechargeable hearing aid for FREE!</p>
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<p class="main__title hidden-mobile fw-bold">Please leave your details below and we’ll contact you shortly via phone with more information.</p>
+				<div class="col-md-6 col-lg-7 order-sm-3">
+					<p class="main__title hidden-desktop fw-bold mt-3">Please leave your details below and we’ll contact you shortly via phone with more information.</p>
+					<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+						[[UUID_TAG]]
+						<div class="question__wrapper">
+
+							<div class="question__inner">
+								<p class="question__title">Please Select Your Age:</p>
+								<div class="question__answers">
+									<div class="row justify-content-center mx-auto">
+										<div class="col-md-6">
+											<div class="input-group input-group-lg custom-input-group mb-3" id="first_name_group" style="flex-wrap: nowrap;">
+												<div class="input-group-prepend">
+													<div class="input-group-text h-100"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+												</div>
+												<input type="text" class="form-control" name="first_name" placeholder="First Name" data-parsley-class-handler="#first_name_group" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" required>
+											</div>
+											<div class="error-container mr-4" id="first_name_error_container"></div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-group input-group-lg custom-input-group mb-3" id="last_name_group" style="flex-wrap: nowrap;">
+												<div class="input-group-prepend">
+													<div class="input-group-text h-100"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+												</div>
+												<input type="text" class="form-control" name="last_name" placeholder="Last Name" data-parsley-class-handler="#last_name_group" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" required>
+											</div>
+											<div class="error-container mr-4" id="last_name_error_container"></div>
+										</div>
+										<div class="col-md-12">
+											<div class="input-group input-group-lg custom-input-group mb-3" id="phone_number_group" style="flex-wrap: nowrap;">
+												<div class="input-group-prepend">
+													<div class="input-group-text h-100"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></div>
+												</div>
+												<input type="tel" class="form-control" name="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" placeholder="Phone Number" data-parsley-class-handler="#phone_number_group" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" required />
+											</div>
+											<div class="error-container mr-4" id="phone_number_error_container"></div>
+										</div>
+										<div class="question__navigation">
+											<button class="btn-radio red" type="submit" id="email">NEXT</button>
+										</div>
+										<div class="question__meta">
+											<p style="padding-bottom: 32px"> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
+				<div class="col-md-6 col-lg-5 order-lg-2">
+					<div class="color-picker">
+						<div class="row">
+							<div class="col-6 color-picker__container">
+								<p class="color-picker__title">Color options:</p>
+								<div class="color-picker__btns">
+									<button class="btn-color-picker selected" id="color-1" style="background:#c5977f;"></button>
+									<button class="btn-color-picker" id="color-2" style="background:#c1916a;"></button>
+									<button class="btn-color-picker" id="color-3" style="background:#93745e;"></button>
+									<button class="btn-color-picker" id="color-4" style="background:#69524a;"></button>
+									<button class="btn-color-picker" id="color-5" style="background:#1d1d1d;"></button>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="color-picker__preview">
+									<img src="https://coreg-landers.s3.amazonaws.com/ec4217d052994e718d295fc7507f8fba.png" alt="" class="img-fluid selected" id="color-1">
+									<img src="https://coreg-landers.s3.amazonaws.com/4e4244617b0d4298b66dc1940c483149.png" alt="" class="img-fluid" id="color-2">
+									<img src="https://coreg-landers.s3.amazonaws.com/fe28da7457c548a4b7be4a53ed0c1be7.png" alt="" class="img-fluid" id="color-3">
+									<img src="https://coreg-landers.s3.amazonaws.com/a3a74b94b3fb41bcb394a44b8906ef3b.png" alt="" class="img-fluid" id="color-4">
+									<img src="https://coreg-landers.s3.amazonaws.com/13bcee0096e848d0925d496eabe8b72a.png" alt="" class="img-fluid" id="color-5">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h2 class="check-list__title">Your answers match the profile</h2>
+					<ul class="check-list no-padding">
+						<li class="check-list__item muted">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>No batteries needed</p>
+						</li>
+						<li class="check-list__item muted">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>No obligation to buy</p>
+						</li>
+						<li class="check-list__item muted">
+							<img src="https://coreg-landers.s3.amazonaws.com/881eddbeee32484e99a6c7cce8b3d88e.png" alt="">
+							<p>Small, discreet and virtually invisible!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-text">
+		<p>
+			Hearing devices may vary depending <br class="hidden-desktop">
+			on the degree of hearing difficulty.
+		</p>
+	</div>
+
+	<footer class="pages-footer">
+		<div class="container pages-container">
+			<div class="pages-footer__content">
+				<p>
+					Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+					Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+				</p>
+				<p>Copyright 2018 Auditorey.com</p>
+				<div class="footer-links">
+					<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+					<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+					<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+					<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+					<a href="#">Cookies</a>
+				</div>
+				<p>Telephone 1800 512 783 (Toll Free)</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="shared/js/main.js"></script> -->
+	[[JAVASCRIPT]]
+</body>
+
+</html>

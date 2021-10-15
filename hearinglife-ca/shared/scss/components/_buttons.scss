@@ -68,3 +68,35 @@
 		width: 7.34375vw;
 	}
 }
+
+.input-group {
+	margin-top: .875rem;
+}
+
+.form-control {
+	border-top-right-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+	
+	+i {
+		display: none;
+		color: #61B04F;
+		line-height: 24px;
+    font-size: 24px;
+		position: absolute;
+		right: -28px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&.parsley-success+i {
+		display: block;
+	}
+
+	@include media-breakpoint-down(md) {
+		+i {
+			line-height: 4.6875vw;
+			font-size: 4.6875vw;
+			right: -6vw;
+		}
+	}
+}

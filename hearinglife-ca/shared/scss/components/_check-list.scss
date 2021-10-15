@@ -8,10 +8,28 @@
 	padding-bottom: 36px;
 	padding-top: 36px;
 
+	&.no-padding {
+		padding-top: 16px;
+	}
+
+	&__title {
+		margin-top: 3rem;
+		color: $blue;
+		font-weight: 700;
+		font-size: 24px;
+    line-height: 32px;
+	}
+
 	&__item {
 		display: flex;
 		align-items: center;
 		margin-bottom: 24px;
+
+		&.muted {
+			p {
+				color: #666;
+			}
+		}
 
 		img {
 			width: 26px;
@@ -29,6 +47,13 @@
 	@include media-breakpoint-down(md) {
 		padding-bottom: 12.5vw;
 		padding-top: 0;
+
+		&__title {
+			margin-top: 0;
+			font-size: 5.9375vw;
+    	line-height: 6.5625vw;
+		}
+
 		&__item {
 			display: flex;
 			align-items: center;
