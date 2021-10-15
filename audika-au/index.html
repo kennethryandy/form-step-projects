@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+
+
+	<header class="main-nav">
+		<div class="container">
+			<div class="logo">
+				<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+			</div>
+		</div>
+	</header>
+
+
+
+	<div class="container">
+		<div class="page-header">
+			<div>
+				<h1 class="page-header__title">WE’RE LOOKING <br class="hidden-desktop"> FOR PEOPLE</h1>
+				<h2 class="page-header__subtitle">to try a revolutionary, <br class="hidden-desktop"> invisible hearing aid!</h2>
+			</div>
+			<div>
+				<img src="https://coreg-landers.s3.amazonaws.com/bf6fd1d3c1af4c4889d90a44daf557b0.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content-section">
+		<div class="container">
+
+			<div class="form-wrapper">
+				<h2 class="form-wrapper__title">Answer 4 short questions <br class="hidden-desktop"> to find out more <br class="hidden-mobile"> about <br class="hidden-desktop"> our 7-day FREE trial!</h2>
+
+				<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+
+					<div class="question__wrapper" id="firstStep" data-anim>
+						<div class="question__progress">
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">01</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">02</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">03</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">04</div>
+							</div>
+						</div>
+						<h2 class="question__title">Please Select Your Age.</h2>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" data-parsley-group="age" required id="age1" value="49 or under">
+									<label class="btn-radio" for="age1">49 or under</label>
+								</div>
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" data-parsley-group="age" required id="age2" value="50 to 59">
+									<label class="btn-radio" for="age2">50 to 59</label>
+								</div>
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" data-parsley-group="age" required id="age3" value="60 to 64">
+									<label class="btn-radio" for="age3">60 to 64</label>
+								</div>
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" data-parsley-group="age" required id="age4" value="65 or over">
+									<label class="btn-radio" for="age4">65 or over</label>
+								</div>
+								<div class="error-container mt-2" id="ageBracket-error-container"></div>
+								<div class="question__meta">
+									<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question__wrapper">
+						<div class="question__progress">
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">01</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">02</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">03</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">04</div>
+							</div>
+						</div>
+						<h2 class="question__title">Do you already have hearing aids?</h2>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" data-parsley-group="hearing_aids" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" id="yes" value="Yes" data-parsley-errors-container="#haveHearingAids-error-container">
+									<label class="btn-radio" for="yes">Yes</label>
+								</div>
+								<div class="col-md-6">
+									<input type="radio" class="btn-check" data-parsley-group="hearing_aids" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" id="no" value="No" data-parsley-errors-container="#haveHearingAids-error-container">
+									<label class="btn-radio" for="no">No</label>
+								</div>
+								<div class="error-container mt-2" id="haveHearingAids-error-container"></div>
+								<div class="question__meta">
+									<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question__wrapper">
+						<div class="question__progress">
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">01</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">02</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">03</div>
+							</div>
+							<div class="question__progress--icon">
+								<div class="question__progress--inner">04</div>
+							</div>
+						</div>
+						<h2 class="question__title">Enter Your Postcode.</h2>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="input-group input-group-lg custom-input-group mb-3" id="postcode-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text h-100"><i class="fa fa-map-marked-alt fa-lg" aria-hidden="true"></i></div>
+										</div>
+										<input type="tel" class="form-control" id="post_code" name="post_code" data-parsley-group="post_code" placeholder="Postcode" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-errors-container="#post_code-error-container" data-parsley-trigger="change" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" required>
+									</div>
+								</div>
+								<div class="error-container" id="post_code-error-container"></div>
+								<div class="question__navigation">
+									<button class="btn-radio question__next h-100" type="button" id="post_code">NEXT</button>
+								</div>
+								<div class="question__meta">
+									<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question__wrapper">
+						<div class="question__progress">
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">01</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">02</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">03</div>
+							</div>
+							<div class="question__progress--icon active">
+								<div class="question__progress--inner">04</div>
+							</div>
+						</div>
+						<h2 class="question__title">Enter Your Email Address.</h2>
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="input-group input-group-lg custom-input-group mb-3" id="email_group">
+										<div class="input-group-prepend">
+											<div class="input-group-text h-100"><i class="far fa-envelope-open fa-lg" aria-hidden="true"></i></div>
+										</div>
+										<input type="email" class="form-control" name="email" data-parsley-group="email" placeholder="Email Address" data-parsley-trigger="change" data-parsley-type="email" data-parsley-required-message="Please add your email address" data-parsley-errors-container="#email_error_container" required />
+									</div>
+								</div>
+								<div class="error-container" id="email_error_container"></div>
+								<div class="question__navigation">
+									<button class="btn-radio h-100 question__next" type="button" id="email">NEXT</button>
+								</div>
+								<div class="question__meta">
+									<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question__wrapper">
+						<div class="question__answers">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="input-group input-group-lg custom-input-group mb-3" id="first_name_group" style="flex-wrap: nowrap;">
+										<div class="input-group-prepend">
+											<div class="input-group-text h-100"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+										</div>
+										<input type="text" class="form-control" name="first_name" placeholder="First Name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" required>
+									</div>
+									<div class="error-container mr-4" id="first_name_error_container"></div>
+								</div>
+								<div class="col-md-6">
+									<div class="input-group input-group-lg custom-input-group mb-3" id="last_name_group" style="flex-wrap: nowrap;">
+										<div class="input-group-prepend">
+											<div class="input-group-text h-100"><i class="far fa-user-circle fa-lg" aria-hidden="true"></i></div>
+										</div>
+										<input type="text" class="form-control" name="last_name" placeholder="Last Name" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" required>
+									</div>
+									<div class="error-container mr-4" id="last_name_error_container"></div>
+								</div>
+								<div class="col-md-12">
+									<div class="input-group input-group-lg custom-input-group mb-3" id="phone_number_group" style="flex-wrap: nowrap;">
+										<div class="input-group-prepend">
+											<div class="input-group-text h-100"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></div>
+										</div>
+										<input type="tel" class="form-control" name="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" placeholder="Phone Number" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" required />
+									</div>
+									<div class="error-container mr-4" id="phone_number_error_container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-radio flex-column h-100" type="submit" id="email">
+										<span class="d-block text-uppercase">Finnish your booking</span>
+										<span class="d-block fs-5">WE'LL BE IN TOUCH SOON</span>
+									</button>
+								</div>
+								<div class="question__meta">
+									<p style="padding-bottom: 32px"> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="check-list">
+				<ul class="check-list__list">
+					<li class="check-list__item">
+						<i class="fas fa-check check-list__check"></i>
+						<span class="check-list__text">Invisible-in-the-canal</span>
+					</li>
+					<li class="check-list__item">
+						<i class="fas fa-check check-list__check"></i>
+						<span class="check-list__text">Helps the wearer focus on speech</span>
+					</li>
+					<li class="check-list__item">
+						<i class="fas fa-check check-list__check"></i>
+						<span class="check-list__text">Provides rapid noise reduction</span>
+					</li>
+					<li class="check-list__item">
+						<i class="fas fa-check check-list__check"></i>
+						<span class="check-list__text">A custom-made hearing aid that’s moulded to fit your ears perfectly</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="info-wrapper">
+		<div class="container">
+			<p class="info-wrapper__text">
+				The device featured may not be suitable for all clients. In such a case, the clinician can recommend a device that is right for you. For more information visit <a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms Conditions</a>.
+			</p>
+		</div>
+	</div>
+
+	<footer class="pages-footer">
+		<div class="container pages-container">
+			<div class="pages-footer__content">
+				<p>
+					Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+					Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+				</p>
+				<p>Copyright 2018 Auditorey.com</p>
+				<div class="footer-links">
+					<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+					<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+					<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+					<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+					<a href="#">Cookies</a>
+				</div>
+				<p>Telephone 1800 512 783 (Toll Free)</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="shared/js/main.js"></script>
+
+
+</body>
+
+</html>
