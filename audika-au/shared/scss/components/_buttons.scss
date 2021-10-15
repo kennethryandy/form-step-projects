@@ -8,15 +8,15 @@
 	position: relative;
 	width: 100%;
 	height: 70px;
-	box-shadow: 0 6px 0 0 $btn-color;
+	box-shadow: 0 6px 0 0 $btn-shadow;
 	border: none;
 	text-align: center;
 	color: #fff;
-	background: $bg-btn;
+	background: $btn-bg;
 	outline: none;
 	cursor: pointer;
 	transition: all .3s ease;
-	color: #fff;
+	color: $btn-color;
 	font-weight: 700;
 	width: 100%;
 	font-size: 30px;
@@ -25,12 +25,24 @@
 		transform: translateY(6px);
     box-shadow: none;
 	}
+
+	&>span {
+		display: block;
+		&.small {
+			font-size: 1.2rem;
+		}
+	}
 	
 	@include media-breakpoint-down(md) {
 		font-size: 6.25vw;
 		height: 15.625vw;
-		box-shadow: 0vw 1.5625vw 0vw $btn-color;
-
+		box-shadow: 0vw 1.5625vw 0vw $btn-shadow;
+		&>span {
+			display: block;
+			&.small {
+				font-size: 4.25vw;
+			}
+		}
 		&:hover {
 			transform: translateY(1.5625vw);
 			box-shadow: none;
@@ -51,6 +63,6 @@
 // 		color: #c92a2a;
 // 	}
 // 	.parsley-success {
-// 		color: $bg-btn;
+// 		color: $btn-bg;
 // 	}
 // }

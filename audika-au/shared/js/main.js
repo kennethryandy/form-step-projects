@@ -24,6 +24,10 @@ $(document).ready(function () {
 			stepForm++;
 			$('.question').height($(questionWrapper[stepForm]).outerHeight() + 40);
 			$(questionWrapper[stepForm]).attr('data-anim', 'swipe-down');
+			if (stepForm === 4) {
+				$('.form-wrapper__title').fadeOut();
+			}
+			console.log(stepForm);
 		}
 	}
 

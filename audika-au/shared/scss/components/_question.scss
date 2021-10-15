@@ -38,7 +38,6 @@
 			visibility: hidden;
 			opacity: 0;
 			background: #fff;
-			transition: all .6s ease .4s;
 		}
 	}
 
@@ -47,7 +46,7 @@
     line-height: 32px;
     margin: 40px 0px;
     text-align: center;
-    color: $blue;
+    color: $primary;
     font-weight: 600;
 	}
 
@@ -70,7 +69,7 @@
 			margin-bottom: 0;
 		}
 		a {
-			color: $blue;
+			color: $primary;
 		}
 	}
 
@@ -108,21 +107,21 @@
 		width: 39px;
 		height: 39px;
 		border-radius: 50%;
-		border: 2px solid $blue;
+		border: 2px solid $primary;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-right: 11px;
 
 		&.active {
-			background: $blue;
+			background: $primary;
 			&>div {
 				color: #fff
 			}
 		}
 	}
 	&--inner {
-		color: $blue;
+		color: $primary;
 		font-size: 17px;
     padding-top: 2px;
 		font-weight: 700;
