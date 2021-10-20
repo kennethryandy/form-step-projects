@@ -1,12 +1,24 @@
 
 // Colours
-$primary: #8ab91d;
-$main-orange: #f08720;
-$dark-orange:#d3771d;
+// $primary: #8ab91d;
+// $main-orange: #f08720;
+// $dark-orange:#d3771d;
 $gray: #b3b3b3;
 $muted: #e7e7e7;
 $error-red: #c92a2a;
 $success: #198754;
+
+// $primary: #155263;
+// $main-orange: #FF9A3C;
+// $dark-orange:#b26b2a;
+
+// $primary: #15616d;
+// $main-orange: #ff7d00;
+// $dark-orange:#b25700;
+
+$primary: #0084ff;
+$main-orange: #02b388;
+$dark-orange:#017d5f;
 
 // For reflex grid so that we can ensure that the namespace doesn't class
 // with the GeneratePress grid. So classes now become rf-col-md-8 and rf-grid

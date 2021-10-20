@@ -5,7 +5,7 @@
 		padding: 0vw 7.8125vw;
 	}
 	&__one {
-		background: linear-gradient(to bottom, #4d4d4f 75.15625vw, #dadada 0);
+		background: linear-gradient(to bottom, $secondary 75.15625vw, #dadada 0);
 	}
 
 	&__two {
@@ -24,7 +24,7 @@
 		&--subtitle {
 			text-align: center;
 			line-height: 5.3125vw;
-			color: #4d4d4f;
+			color: $secondary;
 			font-weight: 400;
 		}
 		&--question {

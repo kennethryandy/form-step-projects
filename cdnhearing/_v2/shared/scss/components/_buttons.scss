@@ -57,10 +57,11 @@
 	cursor: pointer;
 
 	&:hover {
+		color: $btn-color;
 		background-color: $light-green;
-		background-image: linear-gradient(#c7de5f, #95b314);
+		background-image: linear-gradient($light-green2, $light-green);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    border: 1px solid #7a9310;
+    border: 1px solid $light-green;
 		text-decoration: underline;
 	}
 }
@@ -74,18 +75,18 @@
 	height: 10vh;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: linear-gradient(#c7de5f, #95b314);
+	background-image: linear-gradient($light-green2, $light-green);
 	font-size: 22px;
 	color: #fff;
-	border: 1px solid #95b314;
+	border: 1px solid $light-green;
 	border-radius: 100px;
 	box-shadow: 0 3px 12px rgb(0 0 0 / 90%);
 	cursor: pointer;
 	text-decoration: underline;
 
 	&:hover {
-		background-color: #95b314;
-		background-image: linear-gradient(#c7de5f, #95b314);
+		background-color: $light-green;
+		background-image: linear-gradient($light-green2 $light-green);
 		box-shadow: 0 0px 10px rgb(149 179 20 / 70%);
 		transition: .2s ease-in;
 		outline: none;

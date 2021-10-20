@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Auditorey</title>
+	<title> Book A Free Hearing Health Check | Auditorey </title>
 
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+	[[CSS]]
 </head>
 
 <body>
@@ -43,7 +44,8 @@
 		<section class="section-1">
 			<div class="rf-container">
 				<div class="question">
-					<form action="/esperto1example/4" method="post" novalidate data-parsley-validate>
+					<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate>
+						[[UUID_TAG]]
 						<div class="question__item">
 							<h3 class="question__item--title">Your Email Address?</h3>
 							<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />

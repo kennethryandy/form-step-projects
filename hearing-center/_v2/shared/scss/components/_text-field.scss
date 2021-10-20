@@ -1,0 +1,143 @@
+.text-field {
+	height: 90px;
+	width: -webkit-fill-available;
+	label {
+		display: block;
+		position: relative;
+		color: #999;
+		z-index: 1;
+		padding-right: 1px;
+		padding-left: 4px;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		top: -36px;
+		left: 8px;
+		font-size: 1.4rem;
+		&.lg {
+			top: -61px;
+			left: 16px;
+			font-size: 2rem;
+			padding-right: 4px;
+		}
+	}
+
+	input {
+		width: inherit;
+		display: block;
+		position: relative;
+		background: none;
+		z-index: 2;
+		border: 1px solid #4e76a9;
+		color: #113451;
+		border-radius: 0.4rem;
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		padding: 3px 8px;
+		&.lg {
+			padding: 12px 16px;
+			font-size: 2rem;
+		}
+		&:focus {
+			outline: none;
+			border-color: $primary;
+			& + label {
+				top: -50px;
+				font-size: 0.875rem;
+				background: #fff;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+				color: $primary;
+				z-index: 3;
+				&.lg {
+					top: -86px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+		&.parsley-success {
+			border-color: #37cc35;
+			& + label {
+				background: #fff;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+				color: #37cc35;
+				z-index: 3;
+				top: -50px;
+				font-size: 0.875rem;
+				&.lg {
+					top: -86px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+
+		&.parsley-error {
+			border-color: #c92a2a;
+
+			& + label {
+				-webkit-transition: none;
+				transition: none;
+				background: #fff;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+				color: #c92a2a;
+				z-index: 3;
+				top: -50px;
+				font-size: 0.875rem;
+
+				&.lg {
+					top: -86px;
+					left: 8px;
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.text-field {
+		height: 50px;
+		margin: auto;
+	}
+	.text-field label.lg {
+		top: -36px;
+		left: 8px;
+		font-size: 1.4rem;
+		padding-right: 1px;
+	}
+	.text-field input {
+		padding-right: 14px;
+		margin-top: 0;
+	}
+	.text-field input.lg {
+		font-size: 1.4rem;
+		padding: 3px 8px;
+	}
+	.text-field input.parsley-success {
+		border-color: #37cc35;
+	}
+	.text-field input.parsley-success + label.lg {
+		top: -50px;
+		font-size: 0.875rem;
+		left: 4px;
+	}
+	.text-field input.parsley-error {
+		border-color: #c92a2a;
+	}
+	.text-field input.parsley-error + label.lg {
+		top: -50px;
+		font-size: 0.875rem;
+		left: 4px;
+	}
+	.text-field input:focus + label.lg {
+		top: -50px;
+		font-size: 0.875rem;
+		left: 4px;
+	}
+}

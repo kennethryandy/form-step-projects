@@ -1,25 +1,24 @@
-
 .btn-check {
 	position: absolute;
-    clip: rect(0,0,0,0);
-    pointer-events: none;
+	clip: rect(0, 0, 0, 0);
+	pointer-events: none;
 }
 
 .btn-primary {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    padding: 3.59375vw 0vw 2.65625vw 0vw;
-    background-color: #f08720;
-    border: none;
-    border-radius: 6.25vw;
-    box-shadow: 0 1.09375vw 0 0 #d3771d;
-    outline: none;
-    transition: all .3s ease;
+	padding: 3.59375vw 0vw 2.65625vw 0vw;
+	background-color: $main-orange;
+	border: none;
+	border-radius: 6.25vw;
+	box-shadow: 0 1.09375vw 0 0 $dark-orange;
+	outline: none;
+	transition: all 0.3s ease;
 	font-weight: 500;
-    font-size: 5.3125vw;
-    text-transform: uppercase;
-    color: #ffffff;
+	font-size: 5.3125vw;
+	text-transform: uppercase;
+	color: #ffffff;
 	cursor: pointer;
 
 	&.w-100 {
@@ -28,15 +27,14 @@
 
 	&:hover {
 		transform: translateY(2px);
-		background: #d3771d;
-		box-shadow: 0 0 0 0 #d3771d;
+		background: $dark-orange;
+		box-shadow: 0 0 0 0 $dark-orange;
 	}
-
 
 	@include media-breakpoint-up(md) {
 		padding: 12px;
 		border-radius: 40px;
-		box-shadow: 0 7px 0 0 #d3771d;
+		box-shadow: 0 7px 0 0 $dark-orange;
 		font-size: 34px;
 	}
 }

@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Auditorey</title>
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+	[[CSS]]
 </head>
 
 <body>
@@ -24,26 +25,26 @@
 			<span class="headline__title">You’re almost there! In order to make an appointment we need a few more details.</span>
 		</div>
 
-		<form action="[[FORM_URL]]" class="question" novalidate data-parsley-validate>
-			<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14">
+		<form action="[[FORM_URL]]" method="post" class="question" novalidate data-parsley-validate>
+			[[UUID_TAG]]
 
 			<div class="question__item">
 				<div class="question__answers">
 					<div class="row">
 
 
-						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control form-custom" id="first_name" autocomplete="off" name="first_name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your first name" required>
+						<div class="col-md-6 mb-2">
+							<input type="text" class="form-control form-control-lg form-custom" id="first_name" autocomplete="off" name="first_name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your first name" required>
 							<div class="error-container mt-2" id="first_name_error_container"></div>
 						</div>
 
-						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control form-custom" autocomplete="off" name="last_name" id="last_name" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your last name" required>
+						<div class="col-md-6 mb-2">
+							<input type="text" class="form-control form-control-lg form-custom" autocomplete="off" name="last_name" id="last_name" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your last name" required>
 							<div class="error-container mt-2" id="last_name_error_container"></div>
 						</div>
 
-						<div class="col-md-12 mb-3">
-							<input type="text" class="form-control form-custom" autocomplete="off" name="phone_number" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your phone number" required>
+						<div class="col-md-12 mb-2">
+							<input type="text" class="form-control form-control-lg form-custom" autocomplete="off" name="phone_number" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="last_question" data-parsley-trigger="change" placeholder="Your phone number" required>
 							<div class="error-container mt-2" id="phone_number_error_container"></div>
 						</div>
 

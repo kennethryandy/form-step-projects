@@ -7,14 +7,14 @@
 .btn-radio {
 	padding-left: 15px;
 	cursor: pointer;
-	color: #39378A;
+	color: $primary;
 	font-size: 11px;
 	display: flex;
 	align-items: center;
 	clear: both;
 	font-size: 18px;
 	font-weight: normal;
-	border: 1px solid #39378A;
+	border: 1px solid $primary;
 	background: #FFF;
 	border-radius: 5px;
 	height: 60px;
@@ -23,8 +23,33 @@
 	position: relative;
 	margin-bottom: 10px;
 	text-align: left;
+
+	&>i {
+		visibility: hidden;
+		opacity: 0;
+		color: $primary-800;
+		position: absolute;
+		right: 24px;
+    font-size: 1.285rem;
+		transition: opacity 300ms ease-in-out;
+	}
 	
 	&:hover {
-		background: url(https://coreg-landers.s3.amazonaws.com/18f38269115749528ddd8109e32f0b77.png) 96% 50%/20px no-repeat #fefbf4;
+		color: $primary-800;
+		border-color: $primary-800;
+		&>i {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+
+.form-custom {
+	border-color: $primary;
+
+	&:focus {
+		border-color: none;
+		box-shadow: 0 0 0 0.25rem lighten($primary-100, 25%);
 	}
 }

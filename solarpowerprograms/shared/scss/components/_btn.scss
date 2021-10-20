@@ -44,7 +44,7 @@
 
 	&:hover, &:active, &:focus {
 		transform: translateY(-6px);
-		border: 15px solid rgb(55,204,53);
+		border: 15px solid $primary;
 		background-color: inherit;
 		color: #000;
 	}

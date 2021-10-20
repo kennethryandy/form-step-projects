@@ -5,13 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Totalcare</title>
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-	<link rel="stylesheet" href="shared/css/style.css" />
+	<!-- <link rel="stylesheet" href="shared/css/style.css" /> -->
+	[[CSS]]
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 	</div>
 
 	<form action="[[FORM_URL]]" method="post" id="questionForm" novalidate data-parsley-validate>
-		<!-- [[UUID_TAG]] -->
+		[[UUID_TAG]]
 		<div class="step__one step">
 			<div class="step__container">
 				<div class="page-header">
@@ -65,7 +66,7 @@
 					<div class="question__progress">
 						<svg class="question__progress--wrapper" viewBox="0 0 106 106">
 							<circle stroke="#dddddd" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53"></circle>
-							<circle class="question__progress--circle" stroke="#80c342" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53" style="stroke-dasharray: 229.336, 229.336; stroke-dashoffset: 183.469;"></circle>
+							<circle class="question__progress--circle" stroke-width="12" fill="transparent" r="36.5" cx="53" cy="53" style="stroke-dasharray: 229.336, 229.336; stroke-dashoffset: 183.469;"></circle>
 						</svg>
 
 						<div class="question__progress--label">

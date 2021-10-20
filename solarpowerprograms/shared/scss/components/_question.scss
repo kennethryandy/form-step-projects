@@ -6,7 +6,7 @@
 		&--title {
 			font-size: 36px;
 			text-align: center;
-			color: #e74c3c;
+			color: $red;
 		}
 	}
 
@@ -21,6 +21,7 @@
 
 			&>a {
 				font-size: 12px;
+				color: $red;
 			}
 		}
 	}

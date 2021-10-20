@@ -110,6 +110,7 @@
 		transition: 1.2s stroke-dashoffset;
 		transform: rotate(-90deg);
 		transform-origin: 50% 50%;
+		stroke: $light-green;
 	}
 
 	&--label {

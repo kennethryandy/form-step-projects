@@ -10,8 +10,8 @@
 	padding: 16px;
 	width: 100%;
 	position: relative;
-	background: #2f9ee9;
-	border-bottom: 3px solid #257eba;
+	background: $primary;
+	border-bottom: 3px solid $dark-prim; 
 	margin-bottom: 16px;
 	text-transform: none;
 	transition: background-color 0.5s ease-out;
@@ -19,6 +19,12 @@
 	font-size: 1em;
 	font-weight: 400;
 	cursor: pointer;
+
+	&:hover {
+		background-color: $light-prim;
+		color: #fff;
+		top: 2px;
+	}
 
 	& > span:not(.text) {
 		color: #fff;

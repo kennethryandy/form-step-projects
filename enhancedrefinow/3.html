@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Auditorey</title>
+	<title>Book A Free Hearing Health Check - Auditorey.com</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+	[[CSS]]
 </head>
 
 <body>
@@ -24,8 +25,8 @@
 			<span class="headline__subtitle">Question 3 of 4</span>
 		</div>
 
-		<form action="/enhancedrefinow1example/3" method="post" class="question" novalidate data-parsley-validate>
-			<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14">
+		<form action="[[FORM_URL]]" method="post" class="question" novalidate data-parsley-validate>
+			[[UUID_TAG]]
 
 			<div class="question__item">
 				<h2 class="question__title">Please enter your postcode</h2>
@@ -86,6 +87,14 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(document).ready(function () {
+			$('.question').parsley({
+				successClass: "is-valid",
+				errorClass: "is-invalid",
+			});
+		});
+	</script>
 
 </body>
 

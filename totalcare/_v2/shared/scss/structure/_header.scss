@@ -4,8 +4,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #4d4d4f;
+	background: $secondary;
 	img {
+		filter: $filter;
 		width: 26.5625vw;
 	}
 

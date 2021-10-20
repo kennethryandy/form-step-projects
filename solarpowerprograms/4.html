@@ -11,7 +11,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 
-	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+	[[CSS]]
 </head>
 
 <body>
@@ -32,8 +33,8 @@
 			</div>
 			<h5 class="small-text">Advertisement</h5>
 			<h3 class="steps-num">Step 4 of 5</h3>
-			<form action="/esperto1example/1" method="post" novalidate data-parsley-validate class="question">
-				<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />
+			<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+				[[UUID_TAG]]
 				<div class="question__item">
 					<h3 class="question__item--title">Your Email Address?</h3>
 					<div class="rf-grid">
@@ -56,13 +57,35 @@
 
 	<div class="rf-container">
 		<div class="show-footer text-center">
-			<h1 class="show-footer__title">Complete The Above Steps To See If You May Qualify For:</h1>
+			<h1 class="show-footer__title">Why should you choose Auditorey.com?</h1>
+			<p>Hearing loss affects 1 in 6 people and that ratio is set to grow in the years to come, at Auditorey we know the joy the sounds of waves crashing, birds signing, kids laughing just to mention a few can bring. The solutions and options available to treat hearing loss are wide and varied, anyone who’s ever attended a hearing test and looked into the options available could have been forgiven for being confused, we came together to help simplify the process and to make a difference in peoples lives. Below are a few key benefits of choosing Auditorey.com</p>
 			<div class="row">
-				<div class="col-md-6">
-					<img class="p-3 w-100" src="https://coreg-landers.s3.amazonaws.com/95e33b56674349ce82c6a78f0c23d576.png" alt="">
+				<div class="col-md-4">
+					<div class="show-footer__img-container">
+						<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/48a06d7e18d0436493bc6e60cfce14c5.jpg" alt="">
+						<div class="show-footer__info">
+							<h3 class="show-footer__info--title">Complimentary Hearing Test</h3>
+							<p class="show-footer__info--content">Trained Audiologists will give you a complimentary hearing test to determine your needs</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<img class="p-3 w-100" src="https://coreg-landers.s3.amazonaws.com/498f0331034c4d82ba99e735c96dbadb.png" alt="">
+				<div class="col-md-4">
+					<div class="show-footer__img-container">
+						<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/d177c10b20aa42749f98002cb0db37a2.jpg" alt="">
+						<div class="show-footer__info">
+							<h3 class="show-footer__info--title">Complimentary One-to-One Fitting Service</h3>
+							<p class="show-footer__info--content">You'll be invited to a clinic where you'll be given one to one fitting service to get the best solution for your needs (if you need anything at all)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="show-footer__img-container">
+						<img class="img-fluid" src="https://coreg-landers.s3.amazonaws.com/5c4e136e3701471c8c7221ccfeb25c75.jpg" alt="">
+						<div class="show-footer__info">
+							<h3 class="show-footer__info--title">Try New Hearing Aids with No Obligation</h3>
+							<p class="show-footer__info--content">We don't believe in high pressure sales, the best hearing solution is a big decision, take your time, try great hearing solutions if you need them and find what's best for you with our team by your side.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

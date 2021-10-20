@@ -1,14 +1,12 @@
-
-
 .pages-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 80px;
 	padding-left: 16px;
-    padding-right: 16px;
+	padding-right: 16px;
 
-	&>form {
+	& > form {
 		width: 400px;
 
 		@include media_breakpoint_down(md) {
@@ -33,7 +31,7 @@
 		color: #595959;
 		font-weight: 100;
 		outline: none;
-		
+
 		@include media_breakpoint_down(md) {
 			text-align: center;
 		}
@@ -46,15 +44,9 @@
 
 		.pages-btn {
 			font-weight: 600;
-    		font-size: 18px;
+			font-size: 18px;
 			line-height: 1.3333333;
 			width: 100%;
-
-			&:hover {
-				background-color: #58B1ED;
-				color: #fff;
-				top: 2px;
-			}
 
 			@include media_breakpoint_down(md) {
 				font-size: 14px;
@@ -64,11 +56,18 @@
 	}
 
 	&__phone {
-		color: #10406A;
+		color: $secondary;
 		font-size: 18px;
-		&>span {
-			color: #10406A;
+		& > span {
+			color: $secondary;
 			font-weight: 700;
+		}
+
+		&:hover {
+			color: $primary;
+			&>span {
+				color: $primary;
+			}
 		}
 
 		@include media_breakpoint_down(md) {
