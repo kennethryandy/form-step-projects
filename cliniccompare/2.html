@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Hearing Aids Today | Eargo</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- [[CSS]] -->
+</head>
+
+<body>
+	<header class="step-header">
+		<div class="container">
+			<img src="https://coreg-landers.s3.amazonaws.com/0ff33a7595fd408e8870800c9e90ad47.png" alt="">
+		</div>
+	</header>
+	<div class="step-header__banner">
+		<h1>Find the Best Hearing Aids For You</h1>
+	</div>
+	<div class="step-header__subbanner">
+		<h3>Virtually-invisible? Try it for yourself - Receive a free sample today!</h3>
+	</div>
+	<div class="main-step">
+		<div class="main-step__form-container">
+			<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+				[[UUID_TAG]]
+				<div class="progressbar primary-border-color" data-progress-bar="true" data-show-progress-string="true" data-progress-text="Progress">
+					<div class="progressbar-visual" aria-valuenow="0" data-progress-bar-visual="true" style="width: 0%; transition: width 1s ease-out 0s;"></div>
+					<div class="progressbar-text" data-progress-bar-text="true"><span>Progress</span> <span>0%</span></div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Your age:</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age1" value="45 or under" class="btn-check">
+										<label for="age1" class="btn-radio" id="select-option">45 or under</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age2" value="46 to 55" class="btn-check">
+										<label for="age2" class="btn-radio" id="select-option">46 to 55</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age3" value="56 to 65" class="btn-check">
+										<label for="age3" class="btn-radio" id="select-option">56 to 65</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age4" value="Over 65" class="btn-check">
+										<label for="age4" class="btn-radio" id="select-option">Over 65</label>
+									</div>
+								</div>
+								<div class="error-container" id="ageBracket-error-container"></div>
+								<div class="question__navigation">
+									<button class="btn-next" id="age" type="button">
+										<span>Change Your Life</span>
+										<span class="small">It only takes a minute!</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Are you:</h2>
+								<div class="question__answers d-flex">
+									<div class="question__answers--gender">
+										<input type="radio" id="male" class="btn-check gender" data-parsley-required-message="Please select a gender." required name="gender" data-parsley-group="gender" value="Male" data-parsley-errors-container="#genderErrorContainer">
+										<label class="btn-gender" for="male">
+											<img src="https://coreg-landers.s3.amazonaws.com/1adbc301126a4a3f8ba65c24b9c2d874.png" alt="Male">
+											<span>Male</span>
+										</label>
+									</div>
+									<div class="question__answers--gender">
+										<input type="radio" id="female" class="btn-check gender" data-parsley-required-message="Please select a gender." required name="gender" data-parsley-group="gender" value="Female" data-parsley-errors-container="#genderErrorContainer">
+										<label class="btn-gender" for="female">
+											<img src="https://coreg-landers.s3.amazonaws.com/a74d6850269c49b89090b5b253b73115.png" alt="Female">
+											<span>Female</span>
+										</label>
+									</div>
+								</div>
+								<div class="error-container mt-2" id="genderErrorContainer"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="gender">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Have you already had a hearing test?</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" name="hearingTest" data-parsley-required-message="Please select either yes or no" data-parsley-errors-container="#hearingTest" required data-parsley-group="hearingTest" id="hearingTest1" value="Yes" class="btn-check">
+										<label for="hearingTest1" class="btn-radio" id="select-option">Yes</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="hearingTest" data-parsley-required-message="Please select either yes or no" data-parsley-errors-container="#hearingTest" required data-parsley-group="hearingTest" id="hearingTest2" value="No" class="btn-check">
+										<label for="hearingTest2" class="btn-radio" id="select-option">No</label>
+									</div>
+								</div>
+								<div class="error-container" id="hearingTest"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="hearingTest">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">When was the last time you had your hearing tested?</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" name="lasthearingTest" data-parsley-required-message="Please select an answer" data-parsley-errors-container="#lasthearingTest" required data-parsley-group="lasthearingTest" id="lasthearingTest1" value="Within the last 12 months" class="btn-check">
+										<label for="lasthearingTest1" class="btn-radio" id="select-option">Within the last 12 months</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="lasthearingTest" data-parsley-required-message="Please select an answer" data-parsley-errors-container="#lasthearingTest" required data-parsley-group="lasthearingTest" id="lasthearingTest2" value="More than a year ago" class="btn-check">
+										<label for="lasthearingTest2" class="btn-radio" id="select-option">More than a year ago</label>
+									</div>
+								</div>
+								<div class="error-container" id="lasthearingTest"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="lasthearingTest">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">What state do you live in?</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="text" autocomplete="off" class="custom-input" id="state" data-parsley-group="state" name="state" data-parsley-error-message="Don't forget me!" data-parsley-errors-container="#state-error-container" data-parsley-trigger="change" placeholder="e.g. California or Texas" required>
+									</div>
+									<div class="error-container input" id="state-error-container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="state">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h3 class="question__title my-2 text-center">Hold on - we're finding clinics in your area...</h3>
+								<div class="loading-message my-3">
+									<img class="img-fluid d-block mx-auto" style="max-width: 180px;" src="https://coreg-landers.s3.amazonaws.com/40e8c285ddf04612baf999967eeec136.gif" alt="loading...">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Are you a federal employee?</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" name="fedEmployee" data-parsley-required-message="Please select either yes or no" data-parsley-errors-container="#fedEmployee" required data-parsley-group="fedEmployee" id="fedEmployee1" value="Yes" class="btn-check">
+										<label for="fedEmployee1" class="btn-radio" id="select-option">Yes</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="fedEmployee" data-parsley-required-message="Please select either yes or no" data-parsley-errors-container="#fedEmployee" required data-parsley-group="fedEmployee" id="fedEmployee2" value="No" class="btn-check">
+										<label for="fedEmployee2" class="btn-radio" id="select-option">No</label>
+									</div>
+									<div class="alert-msg">
+										<p>Your federal health insurance benefits could get you Eargo's state-of-the-art hearing aids with zero cost to you.</p>
+									</div>
+								</div>
+								<div class="error-container" id="fedEmployee"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="fedEmployee">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">What's your ZIP code?</h2>
+								<h5 class="question__subtitle">Find local clinics in your area</h5>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="tel" autocomplete="off" class="custom-input lg" id="zipcode" data-parsley-group="zipcode" name="zipcode" data-parsley-error-message="Please enter your 3 or 4 digit zip code" data-parsley-required-message="Don't forget me!" data-parsley-errors-container="#zipcode-error-container" data-parsley-trigger="change" placeholder="e.g. 90210" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" required>
+									</div>
+									<div class="error-container input" id="zipcode-error-container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="zipcode">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Almost there!</h2>
+								<h5 class="question__subtitle">Fill in your last few details to take the first step towards improving your hearing!</h5>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="email" autocomplete="off" class="custom-input" id="email" name="email" parsley-trigger="change" data-parsley-class-handler="#email_group" data-parsley-error-message="Invalid email address" data-parsley-required-message="Don't forget me!" data-parsley-errors-container="#email_error_container" data-parsley-trigger="change" data-parsley-group="email" placeholder="Your email address" required>
+									</div>
+									<div class="error-container input" id="email_error_container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="email">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Only two step left</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input ttype="text" autocomplete="off" class="custom-input" name="first_name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" data-parsley-group="first_name" data-parsley-trigger="change" placeholder="Full name" required>
+									</div>
+									<div class="error-container input" id="first_name_error_container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="first_name">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">This is the last page of questions</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="tel" autocomplete="off" class="custom-input" name="phone_number" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="phone_number" data-parsley-trigger="change" placeholder="Phone number" required>
+									</div>
+									<div class="error-container input" id="phone_number_error_container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="submit" id="phone_number">
+										<span>Change Your Life</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+								<div class="question__meta text-start" style="opacity:.8;">
+									<p>Your privacy is important to us. You direct and authorize Marketing VF Ltd (“MVF”) to disclose your contact information to up to 1 supplier(s) of Hearing Aids. By providing a wireless or residential phone number above, you agree that MVF and these 1 suppliers may make telemarketing and other calls and text messages about your request and other products/services to you at the number you supplied. These calls may be made using autodialer or prerecorded voice technology. You also agree that all calls to you may be recorded. Your consent is not a condition of any purchase. Standard message and data rates from your mobile network provider may apply.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="question__meta">
+					<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="step-content">
+		<div class="container">
+			<h2 class="step-content__title">Supercharge Your Hearing Today & Find Your EARGO</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Enjoy the benefits of the world's best virtually invisible hearing aid - live your life, uninterrupted. </p>
+				</div>
+				<div class="col-md-6">
+					<p>Our on-the-go rechargeable case makes sure you’re powered up for whatever life throws at you next.</p>
+				</div>
+				<div class="col-md-6">
+					<p>Eargo offers safe remote hearing checks and phone consultations, plus online ordering - all done remotely and from the comfort of your home.</p>
+				</div>
+				<div class="col-md-6">
+					<p>With unlimited support throughout your entire hearing journey - find your Eargo today!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="step-footer">
+		<div class="container">
+			<div class="mb-3">
+				<span>Copyright ©2019 Marketing VF Limited trading as Hear Clear. In association with Eargo.</span>
+			</div>
+			<div class="mb-3">
+				<span>Contact Address: MVF US LLC, 220 South Congress Avenue, Suite 010, Austin, TX 78704</span>
+			</div>
+			<div class="footer-links mb-3">
+				<a href="#">Become a Partner</a>
+				<a href="#">Privacy & Cookies Policies</a>
+				<a href="#">Terms of Use</a>
+			</div>
+			<div class="mb-3">
+				<a href="#">Privacy Notice for California Consumers</a>
+			</div>
+			<div class="mb-3">
+				<a href="#">Become a partner</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js" integrity="sha256-XqEmjxbIPXDk11mQpk9cpZxYT+8mRyVIkko8mQzX3y8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="shared/js/main.js"></script>
+	[[JAVASCRIPT]]
+
+</body>
+
+</html>

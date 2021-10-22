@@ -1,0 +1,156 @@
+
+
+.page-header {
+	border-bottom: 1px solid #bbb;
+	margin-bottom: .8rem;
+	&__top {
+		margin: .2rem 0;
+		font-size: 1.2rem;
+		text-align: center;
+		p {
+			margin: 0;
+		}
+	}
+
+	&__cols {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: .5rem 0;
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		.logo {
+			max-width: 180px;
+		}
+		.hearingaid {
+			max-width: 80px;
+		}
+		span {
+			text-align: center;
+			display: inline-block;
+			font-size: .8rem;
+			margin: 0 .8rem;
+			max-width: 100px;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		max-width: 500px;
+	}
+
+	@include media-breakpoint-down(md) {
+		&__cols {
+			justify-content: center;
+		}
+	
+		&__cta {
+			display: none;
+		}
+		&__logos {
+			img {
+				max-width: 106px;
+			}
+			span {
+				font-size: .6rem;
+			}
+		}
+	}
+
+}
+
+.step-header {
+	img {
+		max-width: 135px;
+	}
+	&__banner {
+		background-color: $orange;
+		text-align: center;
+		color: #fff;
+		padding: 1em 0;
+		h1 {
+			font-size: 1.8em;
+			margin: 0;
+			font-weight: bold;
+		}
+	}
+	&__subbanner {
+		padding: 1em 0;
+		background-color: #e0f9ff;
+		position: relative;
+		h3 {
+			color: #085877;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			text-shadow: 1px 0 rgb(255 255 255 / 50%), -1px 0 rgb(255 255 255 / 50%), 0 1px rgb(255 255 255 / 50%), 0 -1px rgb(255 255 255 / 50%);
+			font-size: 1.2em;
+			font-weight: 600;
+			width: 90%;
+			margin-left: 5%;
+
+		}
+		&::before {
+			content: '';
+			display: block;
+			border: solid 12px transparent;
+			border-top-width: 6px;
+			border-top-color: #3d7ca8;
+			border-bottom-width: 0;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 0;
+			left: 50%;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__banner {
+			h1 {
+				font-size: 1.2em;
+			}
+		}
+		&__subbanner {
+			display: none;
+		}
+	}
+}
+
+.social-media {
+	padding-top: .5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1.2rem;
+	&>a>i {
+		&:hover {
+			color: #41294a;
+			transition: color 300ms ease-in-out;
+		}
+		color: #A0A0A0;
+		margin-right: 14px;
+	}
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+
+	&__profile {
+		margin-right: 14px;
+	}
+	&__details {
+		font-size: .9rem;
+		h5 {
+			 color: $primary;
+			 margin-bottom: 0;
+		}
+	}
+}

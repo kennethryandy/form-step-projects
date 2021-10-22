@@ -1,0 +1,81 @@
+body {
+	font-family: Montserrat,sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+.custom-container {
+	max-width: 1020px;
+	margin: 0 auto;
+	width: 90%;
+
+	@include media-breakpoint-down(lg) {
+		max-width: 980px;
+	}
+}
+
+.alert-msg {
+	background-color: #8c8c8c;
+	padding: .6em;
+	border-radius: 6px;
+	margin: .4em 0 .2em 0;
+	clear: both;
+	p {
+		text-align: center;
+		font-size: .825em;
+		font-weight: 600;
+		margin: 0;
+		color: #fff;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.hidden-mobile {
+		display: none;
+	}
+	.hidden-desktop {
+		display: block;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.hidden-desktop {
+		display: none;
+	}
+	.hidden-mobile {
+		display: block;
+	}
+	
+}
+
+
+/* =Parsley validation ================================================================================*/
+.error-container ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+.error-container li {
+	color: #c92a2a;
+	background: #ffc9c9;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.875rem;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #ff8787;
+	font-size: 1rem;
+	line-height: 30px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 11px;
+	}
+}
+
+.error-container.input {
+	ul>li {
+		color: red;
+    font-size: 10.5px;
+    line-height: 15px;
+		background: none;
+		box-shadow: none;
+	}
+}

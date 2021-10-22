@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Hearing Aids Today | Auditorey</title>
+
+	<link rel="icon" href="https://coreg-landers.s3.amazonaws.com/1a287a95a3674e33a2505bfe412189b7.png" sizes="192x192" />
+	<link rel="icon" href="https://coreg-landers.s3.amazonaws.com/1a287a95a3674e33a2505bfe412189b7.png" sizes="32x32" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+	<!-- [[CSS]] -->
+</head>
+
+<body>
+	<header class="step-header">
+		<div class="container">
+			<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="">
+		</div>
+	</header>
+	<div class="step-header__banner">
+		<h1>Find the Best Hearing Aids For You</h1>
+	</div>
+	<div class="step-header__subbanner">
+		<h3>Virtually-invisible? Try it for yourself - Receive a free hearing check today!</h3>
+	</div>
+	<div class="main-step">
+		<div class="main-step__form-container">
+			<form action="[[FORM_URL]]" method="post" novalidate data-parsley-validate class="question">
+				[[UUID_TAG]]
+				<div class="progressbar primary-border-color" data-progress-bar="true" data-show-progress-string="true" data-progress-text="Progress">
+					<div class="progressbar-visual" aria-valuenow="0" data-progress-bar-visual="true" style="width: 0%; transition: width 1s ease-out 0s;"></div>
+					<div class="progressbar-text" data-progress-bar-text="true"><span>Progress</span> <span>0%</span></div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Your age:</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age1" value="49 or under" class="btn-check">
+										<label for="age1" class="btn-radio" id="select-option">49 or under</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age2" value="50 to 59" class="btn-check">
+										<label for="age2" class="btn-radio" id="select-option">50 to 59</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age3" value="60 to 64" class="btn-check">
+										<label for="age3" class="btn-radio" id="select-option">60 to 64</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age4" value="65 or over" class="btn-check">
+										<label for="age4" class="btn-radio" id="select-option">65 or over</label>
+									</div>
+								</div>
+								<div class="error-container" id="ageBracket-error-container"></div>
+								<div class="question__navigation">
+									<button class="btn-next" id="age" type="button">
+										<span>Change Your Life</span>
+										<span class="small">It only takes a minute!</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Are you:</h2>
+								<div class="question__answers d-flex">
+									<div class="question__answers--gender">
+										<input type="radio" id="male" class="btn-check gender" data-parsley-required-message="Please select a gender." required name="gender" data-parsley-group="gender" value="Male" data-parsley-errors-container="#genderErrorContainer">
+										<label class="btn-gender" for="male">
+											<img src="https://coreg-landers.s3.amazonaws.com/1adbc301126a4a3f8ba65c24b9c2d874.png" alt="Male">
+											<span>Male</span>
+										</label>
+									</div>
+									<div class="question__answers--gender">
+										<input type="radio" id="female" class="btn-check gender" data-parsley-required-message="Please select a gender." required name="gender" data-parsley-group="gender" value="Female" data-parsley-errors-container="#genderErrorContainer">
+										<label class="btn-gender" for="female">
+											<img src="https://coreg-landers.s3.amazonaws.com/a74d6850269c49b89090b5b253b73115.png" alt="Female">
+											<span>Female</span>
+										</label>
+									</div>
+								</div>
+								<div class="error-container mt-2" id="genderErrorContainer"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="gender">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Do you already have hearing aids?</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="radio" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" data-parsley-group="hearing_aids" id="hearing_aids1" value="Yes" data-parsley-errors-container="#hearing_aids_error_container" class="btn-check">
+										<label for="hearing_aids1" class="btn-radio">Yes</label>
+									</div>
+									<div class="question__answers--item">
+										<input type="radio" data-parsley-required-message="Please answer either yes or no" required name="hearing_aids" data-parsley-group="hearing_aids" id="hearing_aids2" value="No" data-parsley-errors-container="#hearing_aids_error_container" class="btn-check">
+										<label for="hearing_aids2" class="btn-radio">No</label>
+									</div>
+								</div>
+								<div class="error-container" id="hearing_aids_error_container"></div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="hearing_aids">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Enter your postcode:</h2>
+								<h5 class="question__subtitle">Find local clinics in your area</h5>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="tel" autocomplete="off" class="custom-input lg" id="post_code" data-parsley-group="post_code" name="post_code" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-required-message="Don't forget me!" data-parsley-errors-container="#postcode-error-container" data-parsley-trigger="change" placeholder="e.g. 2148" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" required>
+									</div>
+									<div class="error-container input" id="postcode-error-container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="post_code">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h3 class="question__title my-2 text-center">Hold on - we're finding clinics in your area...</h3>
+								<div class="loading-message my-3">
+									<img class="img-fluid d-block mx-auto" style="max-width: 180px;" src="https://coreg-landers.s3.amazonaws.com/40e8c285ddf04612baf999967eeec136.gif" alt="loading...">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Enter your email address:</h2>
+								<div class="question__answers">
+									<div class="question__answers--item">
+										<input type="email" autocomplete="off" class="custom-input" id="email" name="email" parsley-trigger="change" data-parsley-error-message="Invalid email address" data-parsley-required-message="Don't forget me!" data-parsley-errors-container="#email_error_container" data-parsley-trigger="change" data-parsley-group="email" placeholder="Your email address" required>
+									</div>
+									<div class="error-container input" id="email_error_container"></div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="button" id="email">
+										<span>Continue</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="question__inner">
+								<h2 class="question__title">Almost there! Take your first steps towards helping hearing.</h2>
+								<h5 class="question__subtitle">Please leave your details below and we’ll contact you shortly via phone with more information.</h5>
+								<div class="question__answers">
+									<div class="row">
+										<div class="col-md-6 my-2">
+											<input type="text" class="custom-input" placeholder="First name" autocomplete="off" name="first_name" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+											<!-- <label for="first_name">First Name</label> -->
+											<div class="error-container input" id="first_name_error_container"></div>
+										</div>
+										<div class="col-md-6 my-2">
+											<input type="text" class="custom-input" placeholder="Last name" autocomplete="off" name="last_name" id="last_name" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+											<!-- <label for="last_name">Last Name</label> -->
+											<div class="error-container input" id="last_name_error_container"></div>
+										</div>
+										<div class="col-md-12 my-2">
+											<input type="tel" class="custom-input" placeholder="Phone number" autocomplete="off" name="phone_number" id="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" data-parsley-group="question_three" data-parsley-trigger="change" required>
+											<!-- <label for="phone_number">Phone Number</label> -->
+											<div class="error-container input" id="phone_number_error_container"></div>
+										</div>
+									</div>
+								</div>
+								<div class="question__navigation">
+									<button class="btn-next" type="submit" id="postcode">
+										<span>FINNISH YOUR BOOKING</span>
+										<span class="small">WE'LL BE IN TOUCH SOON</span>
+									</button>
+									<button type="button" class="swiper-navigation__prev">
+										<i class="fas fa-angle-left"></i> Previous
+									</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="question__meta">
+					<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="step-content">
+		<div class="container">
+			<h2 class="step-content__title">The Auditorey.com - Simple Steps to Better Hearing.</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="step-content__item">
+						<h3 class="step-content__item--title">Complete Our Quick Questionnaire and Speak to an Expert.</h3>
+						<p>Audiologists have devised a quick questionnaire to help in assessing you online for the best hearing solution for you .. it only takes a minute and will help the team to match you to the best options for you. We'll give you a call with free professional advice after you complete the forms.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="step-content__item">
+						<h3 class="step-content__item--title">Take a Hearing Test and Try New Hearing Aids</h3>
+						<p>You'll visit a local storefront clinic for a free hearing test with a licensed audiologist and try new hearing aids. If you like what you've found they'll get started on arranging the best solution for you to take home.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="step-content__item">
+						<h3 class="step-content__item--title">Enjoy Better Hearing</h3>
+						<p>Once you have your new hearing aids you'll have full ongoing support, manufacturers warranties and call anytime service. Experience the live changing benefits of better hearing without delay.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="step-content__item">
+						<p>With unlimited support throughout your entire hearing journey - find your hearing aid today!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="step-footer">
+		<div class="container">
+			<div class="row py-3">
+				<div class="col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js" integrity="sha256-XqEmjxbIPXDk11mQpk9cpZxYT+8mRyVIkko8mQzX3y8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="shared/js/main.js"></script>
+	[[JAVASCRIPT]]
+
+</body>
+
+</html>

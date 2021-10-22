@@ -1,0 +1,146 @@
+// footer{
+// 	background:#e3e3e4;
+// 	padding:15px 0;
+// 	width:100%;
+// 	text-align:center;
+// }
+// footer p{
+// 	font-size:11px;
+// }
+
+// footer .footer-links {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	flex-wrap: wrap;
+// }
+
+// footer a{
+// 	font-size:12px;
+// 	color:#000;
+// 	text-decoration:underline;
+// 	margin-bottom:15px;
+// 	display:block;
+// 	margin-right: .5rem;
+// 	border-right: 1px solid;
+//     padding-right: 1rem;
+//     line-height: 1;
+
+// 	&:last-child {
+// 		border-right: none;
+// 	}
+// }
+
+.footer-cta {
+	margin-top: 1.5rem;
+	padding: 1.2rem 0;
+	text-align: center;
+	position: relative;
+	background: $secondary;
+	a {
+		color: #fff;
+		text-decoration: underline;
+		font-size: 1.6rem;
+		font-weight: 700;
+	}
+}
+
+.main-footer {
+	background: $primary;
+	p {
+		text-align: center;
+		color: #fff;
+	}
+	button {
+		background: 0 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    color: #fff;
+	}
+	address {
+		text-align: left;
+		font-size: 1rem;
+		line-height: 1.4;
+		color: #fff;
+	}
+
+	.block-details {
+		&--address {
+			width: 30%;
+			margin-left: 10%;
+		}
+		&--contact {
+			width: 45%;
+			margin-left: 15%;
+			margin-top: 0;
+		}
+	}
+
+	.disclaimer {
+		p {
+			font-size: 0.7rem;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		address {
+			text-align: center;
+		}
+		.block-details {
+			&--address {
+				width: 100%;
+				margin: 0;
+			}
+			&--contact {
+				width: 100%;
+				margin-left: 0;
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+
+.block-contact-area {
+	border-bottom: #fff solid 1px;
+	padding: 1.4rem 0;
+	@include media-breakpoint-up(md) {
+		display: flex;
+	}
+}
+
+.ccpa-policy {
+	width: 100%;
+	text-align: center;
+	padding: 0.8rem 0;
+	border-top: #fff solid 1px;
+}
+
+
+.step-footer {
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	padding: 1em 0;
+	font-size: .8rem;
+	a {
+		color: #fff;
+		&:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+	.footer-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&>a {
+			padding-left: 8px;
+		}
+		&>a:not(:last-of-type) {
+			padding-right: 8px;
+			border-right: 1px solid;
+		}
+	}
+}
