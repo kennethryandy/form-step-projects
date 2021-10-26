@@ -1,0 +1,152 @@
+
+
+
+.step-content {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__headline {
+		margin-top: 25px;
+		font-size: 52px;
+		font-weight: 900;
+	}
+
+	&__subheadline {
+		font-size: 24px;
+		font-weight: 400;
+		&>img {
+			max-width: 38px;
+		}
+	}
+
+	&__progress-wrap {
+		width: 100%;
+		.progress {
+			height: 15px;
+			margin: 8px auto 3px auto;
+			max-width: 190px;
+			border: 1px solid #cccccc;
+		}
+		.progress-bar {
+			background-image: linear-gradient(
+				45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); 
+			background-color: #5cb85c;
+			animation: progress-bar-stripes 2s linear infinite;
+		}
+		.progress-claimed {
+			color: #555555;
+		}
+	}
+
+	&__landing-banner {
+		max-width: 380px;
+	}
+
+	&__btn-container {
+		width: 100%;
+		&>a {
+			padding: 24px 0;
+			letter-spacing: 1.5px;
+			max-width: 550px;
+			font-size: 32px;
+		}
+	}
+
+	&__footer {
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		font-size: 16px;
+		.field-content {
+			letter-spacing: 0.3px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-weight: 500;
+		}
+		.limit {
+			font-style: italic;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		&__headline {
+			font-size: 34px;
+			margin-bottom: 0;
+		}
+		&__subheadline {
+			font-size: 16px;
+		}
+		&__footer {
+			.field-content {
+				font-size: 14px;
+			}
+			.limit {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+
+.step-content__step-banner {
+	border: 1px solid #dbe6e7;
+	box-shadow: 0 2px 4px rgb(99 99 99 / 20%);
+	background-color: $primary-light;
+	background-image: url(https://coreg-landers.s3.amazonaws.com/e2675aec2f0a4c79b3d4b184584fe261.png);
+	padding: 20px;
+	margin-bottom: 20px;
+
+	&--img-container {
+		max-width: 200px;
+	}
+	&--content {
+		padding: 30px 0 0 18px;
+		.title {
+			font-size: 21px;
+    	margin-bottom: 10px;
+			font-weight: 600;
+			border-bottom: 1px solid;
+			color: #555;
+			&>i {
+				color: #2db75f;
+			}
+		}
+		.text {
+			font-size: 19px;
+    	line-height: 32px;
+		}
+	}
+	.paper {
+		padding: 8px 16px;
+		display: flex;
+		max-width: 560px;
+    border-radius: 25px;
+	}
+
+	@include media-breakpoint-down(md) {
+		&--img-container {
+			max-width: 120px;
+			margin: auto;
+		}
+		&--content {
+			padding: 8px;
+			text-align: center;
+			.title {
+				font-size: 13px;
+			}
+			.text {
+				line-height: 22px;
+				font-size: 13px;
+			}
+		}
+		.paper {
+			flex-direction: column;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+
+
+.main-footer {
+	background: #2e2e2e;
+	border-top: 10px solid $primary;
+	color: #ffffff;
+	width: 100%;
+	padding: 15px 0;
+
+	&__wrapper {
+		text-align: center;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		a {
+			padding: 10px 0;
+			width: 100%;
+			text-align: center;
+			color: #ffffff;
+			font-size: 11px;
+    	letter-spacing: 0.1px;
+			text-decoration: none;
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__copy {
+		font-size: 10px;
+		letter-spacing: 0.1px;
+    color: #efefef;
+    margin: 15px 0;
+	}
+
+	&__phone {
+		font-size: 10px;
+		letter-spacing: 0.1px;
+		color: #efefef;
+	}
+}

@@ -1,0 +1,121 @@
+
+
+.primary-btn {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	padding: 14px 0;
+	font-size: 28px;
+	letter-spacing: 1.2px;
+	max-width: 400px;
+
+	font-weight: 700;
+	border-radius: 11px;
+	background: linear-gradient(180deg, #fd585b, #ff4447);
+	box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+	border: 1px solid #bb2a23;
+	color: #ffffff;
+	outline: none;
+	margin: 20px 0 10px 0;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	height: auto;
+
+	&:hover {
+		background: linear-gradient(180deg, #e65053, #de3b3e);
+		box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+		border: 1px solid #bb2a23;
+		color: #ffffff;
+		outline: none;
+	}
+
+	@include media-breakpoint-down(md) {
+		&>span {
+			font-size: 18px;
+			&.small {
+				font-size: .9rem !important;
+			}
+		}
+	}
+}
+
+.btn-radio {
+	box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+	outline: none;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #ced4da;
+	padding: 0.875rem 1rem;
+	text-align: start;
+	transition: all 300ms ease;
+	&:focus {
+		box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+	}
+	&::before {
+		content: "\f111";
+		display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    color: #868e96;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+	}
+	&:hover {
+		border: 1px solid $primary;
+		&::before {
+			content: "\f058";
+			font-weight: 900;
+			color: $primary;
+		}
+	}
+}
+
+
+.form-wrapper {
+	label {
+		font-size: 18px;
+		letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 8px;
+		display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+	}
+
+	input {
+		display: block;
+		padding: 15px 15px;
+    font-size: 18px;
+		margin: 0;
+    height: 100%;
+		width: 100%;
+		&:not([type=tel]),&:not([type=email]) {
+			text-transform: capitalize;
+		}
+		&:focus {
+			border-color: $primary;
+			outline: none;
+			box-shadow: none;
+		}
+		&.parsley-error {
+			border: 1px solid #d30408;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		label {
+			font-size: 12px;
+		}
+		input {
+			padding: 12px 13px 9px;
+			font-size: 16px;
+		}
+	}
+}
