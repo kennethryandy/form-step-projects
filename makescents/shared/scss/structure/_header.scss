@@ -1,0 +1,62 @@
+
+
+.main-header {
+	width: 16rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
+
+	@include media-breakpoint-down(md) {
+		width: 12rem;
+	}
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 89vh;
+}
+
+.step-header {
+	padding: 1.25rem;
+	height: 5.9375rem;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-bottom: .0625rem solid #cdcdcd;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	.logo {
+		width: 100%;
+		max-width: 16rem;
+		height: auto;
+	}
+
+	.profile {
+		width: 5rem;
+    height: 5rem;
+		border-radius: 50%;
+		border: 1px solid #eee;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%);
+	}
+
+	@include media-breakpoint-down(md) {
+		height: 3.75rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+		.logo {
+			width: 100px;
+		}
+		.profile {
+			width: 3.125rem;
+    	height: 3.125rem;
+		}
+	}
+}

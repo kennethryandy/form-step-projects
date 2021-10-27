@@ -1,0 +1,25 @@
+
+
+.badge {
+	box-shadow: 0 0.625rem 2.5rem -0.625rem rgb(46 159 233 / 36%);
+	background-color: #2e9fe9;
+	color: #fff;
+	border-color: #2e9fe9;
+	font-size: 1.25rem;
+	line-height: 1.1;
+	font-family: "Lato";
+	font-weight: 900;
+	text-transform: uppercase;
+	width: 100%;
+	max-width: 25rem;
+	margin: 3.125rem auto 0;
+	transition: all .2s,transform .5s;
+	border-radius: 1.25rem;
+	padding: .1875rem .625rem;
+	visibility: visible;
+
+	@include media-breakpoint-down(md) {
+		font-size: .9rem;
+    width: 85vw;
+	}
+}

@@ -1,0 +1,47 @@
+
+
+.question {
+
+	&__title {
+		color: $secondary;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+		margin-bottom: 3rem;
+		&.landing {
+			font-size: 25px;
+			font-weight: 700;
+			font-family: "Roboto Slab";
+		}
+	}
+
+	&__answers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 1.5625rem;
+		&.age {
+			display: block;
+			max-width: 800px;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	&__meta {
+		font-size: 11px;
+		a {
+			color: $primary;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			font-size: 1.5625rem;
+			line-height: 1.2;
+		}
+	}
+}
