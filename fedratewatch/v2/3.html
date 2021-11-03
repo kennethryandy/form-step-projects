@@ -12,73 +12,93 @@
 
 
 	<link rel="stylesheet" href="../shared/css/style.css">
+	[[CSS]]
 </head>
 
 <body>
+	<div class="page">
+		<header class="logo-container">
+			<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
+		</header>
 
-	<header class="logo-container">
-		<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="Auditorey">
-	</header>
-
-	<div class="custom-container">
-		<div class="header">
-			<h1 class="header__title">
-				We’re looking for people
-				in Australia who would like
-				to try this revolutionary hearing aid!
-			</h1>
+		<div class="custom-container">
+			<div class="header">
+				<h1 class="header__title">
+					We’re looking for people
+					in Australia who would like
+					to try this revolutionary hearing aid!
+				</h1>
+			</div>
 		</div>
-	</div>
 
-	<div class="custom-container">
-		<div>
-			<form action="/fedratewatch2example/3" class="question" novalidate data-parsley-validate>
-				<input type="hidden" name="uuid" value="9f05a808-f595-11eb-a8df-9e44a839bc14" />
+		<div class="custom-container">
+			<div>
+				<form action="[[FORM_URL]]" method="post" class="question" novalidate data-parsley-validate>
+					[[UUID_TAG]]
 
-				<div class="question__item paper-yellow">
-					<div class="custom-progress">
-						Question 3 / 4
+					<div class="question__item paper-yellow">
+						<div class="custom-progress">
+							Question 3 / 4
+						</div>
+						<h3 class="question__title">Please enter your postcode.</h3>
+						<label for="postcode" class="mb-1 fw-bold">Postcode</label>
+						<input type="text" class="form-control" autocomplete="off" id="post_code" data-parsley-group="post_code" name="post_code" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-errors-container="#post_code-error-container" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" data-parsley-trigger="change" placeholder="Your postcode" required>
+						<div class="error-container mt-2" id="post_code-error-container"></div>
+						<div class="question__btn mt-3">
+							<button class="btn btn-primary" type="submit" id="post_code">Next</button>
+						</div>
+						<div class="question__meta mt-2">
+							<p style="font-size: 12px;color:gray;font-style:italic;"> <i class="fa fa-lock fa-1x"></i> Your privacy is important to us. By submitting this form, you consent to Belgrave Ventures Pty Ltd and up to 1 Hearing Aid <a href="#" data-toggle="modal" data-target="#basicModal"><span data-toggle="tooltip" title="-- HEARING AID PROVIDERS -- AUDIKA NEW ZEALAND LIMITED Bloom Hearing Specialists New Zealand DILWORTH HEARING LIMITED">supplier</span> </a> contacting you by email, phone calls (including automated calls) and/or SMS via details provided above. I authorize that these marketing communications may be delivered to me using an automatic telephone dialing system or by a prerecorded message even if my number is on the "Do Not Call" list. I understand that my consent is not a condition of purchase and that standard message and data rates may apply. I agree to the <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>. </p>
+						</div>
 					</div>
-					<h3 class="question__title">Please enter your postcode.</h3>
-					<label for="postcode" class="mb-1 fw-bold">Postcode</label>
-					<input type="text" class="form-control" autocomplete="off" id="post_code" data-parsley-group="post_code" name="post_code" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-errors-container="#post_code-error-container" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" data-parsley-trigger="change" placeholder="Your postcode" required>
-					<div class="error-container mt-2" id="post_code-error-container"></div>
-					<div class="question__btn mt-3">
-						<button class="btn btn-primary" type="submit" id="post_code">Next</button>
+
+				</form>
+			</div>
+		</div>
+
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p>
+							Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+							Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+						</p>
+						<p>Copyright 2018 Auditorey.com</p>
+						<div class="footer-links">
+							<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+							<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+							<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+							<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+							<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+							<a href="#">Cookies</a>
+						</div>
+						<p>Telephone 1800 512 783 (Toll Free)</p>
 					</div>
 				</div>
-
-			</form>
-		</div>
+			</div>
+		</footer>
 	</div>
 
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<p>
-						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
-						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
-					</p>
-					<p>Copyright 2018 Auditorey.com</p>
-					<div class="footer-links">
-						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
-						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
-						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
-						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
-						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
-						<a href="#">Cookies</a>
-					</div>
-					<p>Telephone 1800 512 783 (Toll Free)</p>
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="min-height:250px;">
+				<div class="modal-body">
+					<h2> Hearing Aids Providers <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button></h2>
+					Audika Australia Pty Ltd <br>
+					INDUSTRIAL HEARING SPECIALISTS PTY LTD <br>
+					NATIONAL HEARING CENTRES PTY LTD
 				</div>
 			</div>
 		</div>
-	</footer>
-
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script>
 		const form = $('.question').parsley({
 			errorClass: function () {

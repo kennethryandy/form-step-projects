@@ -1,7 +1,7 @@
 
 
 
-.progress-bar {
+.question__progress-bar {
 	position: absolute;
 	left: 50%;
 	top: -14px;
@@ -9,7 +9,7 @@
 	display: flex;
 	align-items: center;
 
-	&__item {
+	&--item {
 		width: 6.25vw;
 		height: 6.25vw;
 		border-radius: 50%;
@@ -45,7 +45,7 @@
 
 
 	@include media-breakpoint-up(md) {
-		&__item {
+		&--item {
 			width: 25px;
     		height: 25px;
 			border-top: 3px solid #666;

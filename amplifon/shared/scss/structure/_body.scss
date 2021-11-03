@@ -8,6 +8,10 @@ body {
 	font-size: 14px;
 }
 
+*, ::after, ::before {
+	box-sizing: content-box;
+}
+
 .rf-container {
 	max-width: 768px;
 	padding-right: 15px;

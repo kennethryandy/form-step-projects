@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,14 @@
 
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="/shared/css/style.css">
+	<link rel="stylesheet" href="/shared/css/new_style.min.css">
 </head>
+
 <body>
 
 	<header class="page-navbar">
@@ -22,9 +26,9 @@
 	<header class="page-header">
 		<h1 class="page-header__title">WANTED: 350 PEOPLE</h1>
 		<h2 class="page-header__subtitle">
-			to try a virtually invisible 
+			to try a virtually invisible
 			<br class="mobile">
-			hearing aid 
+			hearing aid
 			<br class="desktop">RISK-FREE*
 			<br class="mobile">
 			this month!
@@ -34,16 +38,16 @@
 	<div class="rf-container">
 		<div class="question-wrapper">
 			<div class="question">
-				<div class="progress-bar">
-					<span class="progress-bar__item active"></span>
+				<div class="question__progress-bar">
+					<span class="question__progress-bar--item active"></span>
 					<div class="line"></div>
-					<span class="progress-bar__item"></span>
+					<span class="question__progress-bar--item"></span>
 					<div class="line"></div>
-					<span class="progress-bar__item"></span>
+					<span class="question__progress-bar--item"></span>
 					<div class="line"></div>
-					<span class="progress-bar__item"></span>
+					<span class="question__progress-bar--item"></span>
 					<div class="line"></div>
-					<span class="progress-bar__item"></span>
+					<span class="question__progress-bar--item"></span>
 				</div>
 				<h3 class="question__title">Please Select Your Age.</h3>
 				<div class="question__item">
@@ -69,7 +73,8 @@
 						</div>
 						<div class="error-container" id="ageBracket-error-container"></div>
 						<div class="question__meta">
-							<p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p>
+							<!-- <p> <i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></p> -->
+							<p style="font-size: 12px;color:gray;"> <i class="fa fa-lock fa-1x"></i> Your privacy is important to us. By submitting this form, you consent to Belgrave Ventures Pty Ltd and up to 1 Hearing Aid <a href="#" data-toggle="modal" data-target="#basicModal"><span data-toggle="tooltip" title="-- HEARING AID PROVIDERS -- AUDIKA NEW ZEALAND LIMITED Bloom Hearing Specialists New Zealand DILWORTH HEARING LIMITED">supplier</span> </a> contacting you by email, phone calls (including automated calls) and/or SMS via details provided above. I authorize that these marketing communications may be delivered to me using an automatic telephone dialing system or by a prerecorded message even if my number is on the "Do Not Call" list. I understand that my consent is not a condition of purchase and that standard message and data rates may apply. I agree to the <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>. </p>
 						</div>
 					</form>
 				</div>
@@ -192,11 +197,26 @@
 			</div>
 		</div>
 	</footer>
-	
+
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="min-height:250px;">
+				<div class="modal-body">
+					<h2> Hearing Aids Providers <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button></h2>
+					Audika Australia Pty Ltd <br>
+					INDUSTRIAL HEARING SPECIALISTS PTY LTD <br>
+					NATIONAL HEARING CENTRES PTY LTD
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	<script>
 		jQuery(document).ready(function ($) {
@@ -208,12 +228,12 @@
 				// autoplay: true,
 				autoplayTimeout: 4000,
 				autoplayHoverPause: true,
-				nav:true,
+				nav: true,
 			});
 
 			$('.owl-prev').after('<p class="owl-steps">1/3</p>');
 			$('.owl-nav').append('<hr>')
-			owl.on('changed.owl.carousel', function(event) {
+			owl.on('changed.owl.carousel', function (event) {
 				const i = event.item.index === 1 ? 1 : event.item.index - 1;
 				const step = i + '/' + event.item.count;
 				$('.owl-steps').html(step);
@@ -221,4 +241,5 @@
 		});
 	</script>
 </body>
+
 </html>
