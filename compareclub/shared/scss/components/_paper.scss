@@ -1,0 +1,30 @@
+.paper {
+	padding: 4rem 2rem;
+	&__inner {
+		margin: auto;
+		background: #fff;
+		box-shadow: 0 20px 50px rgb(25 53 96 / 15%);
+		border-radius: 20px;
+		width: 58rem;
+		padding: 2rem;
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+
+	&__content {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		&__inner {
+			width: 100%;
+		}
+	}
+}

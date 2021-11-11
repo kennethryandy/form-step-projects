@@ -1,0 +1,102 @@
+.main-header {
+	display: flex;
+	align-items: center;
+	height: auto;
+	padding-bottom: 0.3125rem;
+	padding-top: 0.3125rem;
+	padding-left: 3em;
+	padding-right: 3em;
+	background: #fff;
+	max-width: 120rem;
+	margin: 0 auto;
+
+	&__logo-container {
+		display: flex;
+		align-items: center;
+		.logo {
+			width: 200px;
+		}
+		.divider {
+			height: 2rem;
+			width: 2px;
+			margin: 0 1rem;
+		}
+		.tag {
+			font-size: 18px;
+			font-weight: 800;
+		}
+	}
+
+	&__contact {
+		margin-left: auto;
+	}
+
+	@include media-breakpoint-down(md){
+		height: 4rem;
+		padding: 0 1em;
+		&__logo-container {
+			.logo {
+				width: 160px;
+			}
+			.divider, .tag { display: none; } 
+		}
+	}
+}
+
+.contact-details {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+	padding: 0 1rem;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #193560;
+	font-weight: 700;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+	&__tel {
+		display: block;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+		i {
+			font-size: 1rem;
+			color: $secondary;
+		}
+	}
+	&__btn {
+		background: $secondary;
+		display: inline-block;
+		padding: 0.125rem 0.75rem;
+		border-radius: 0.125rem;
+		font-weight: 700;
+		font-size: 0.75rem;
+		color: #fff;
+	}
+	&__sched {
+		display: block;
+		font-weight: 600;
+		font-size: 0.75rem;
+		line-height: 1rem;
+		max-width: 12rem;
+		text-align: right;
+	}
+	&__mobile {
+		display: flex;
+		align-items: center;
+		i {
+			color: $secondary;
+			font-size: 24px;
+		}
+		span {
+			margin-right: 0.625rem;
+			font-size: .75rem;
+			line-height: .75rem;
+			text-align: right;
+		}
+	}
+	&:hover {
+		color: inherit;
+	}
+}

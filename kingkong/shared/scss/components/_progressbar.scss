@@ -1,0 +1,73 @@
+
+
+.progressbar {
+	overflow: hidden;
+	counter-reset: step;
+	margin: 20px auto;
+	padding-left: 0;
+	max-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li {
+		list-style-type: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 10%;
+    float: left;
+    position: relative;
+    padding-left: 0;
+		margin-bottom: 4rem;
+		display: block;
+		box-sizing: border-box;
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			display: block;
+			font-size: 10px;
+			font-weight: 600;
+			color: #fff;
+			background: #c7c7c7;
+			border-radius: 15px;
+			padding: 1px;
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			border: none;
+			left: 50%;
+			margin-left: -10px;
+		}
+		&:not(:first-of-type) {
+			&::after {
+				content: "";
+				width: 100%;
+				height: 3px;
+				background: #c7c7c7;
+				position: absolute;
+				left: -50%;
+				top: 10px;
+				z-index: 1;
+			}
+		}
+		&.active {
+			&::before, &::after {
+				background: #cff128;
+				color: #fff;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		li {
+			margin-bottom: 2rem;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+}

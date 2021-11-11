@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check | Auditorey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../shared/css/style.css">
+	[[CSS]]
+</head>
+
+<body>
+	<div class="quiz-sec" id="scroll-btn">
+		<div class="container">
+			<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" width="240" class="quiz-logo" />
+			<form action="[[FORM_URL]]" method="post" autocomplete="off" novalidate data-parsley-validate>
+				<div class="quiz-box">
+					<div class="quiz-hdng">
+						<h1 style="margin-bottom:34px;">Please enter your postcode:</h1>
+						<div class="progressbar">
+							<div class="prgress-1" style="width: 40%;"><img src="https://coreg-landers.s3.amazonaws.com/78362d2455cf4580949f741c080b2e34.png" width="50" style="margin:-30px -20px 0;"/></div>
+						</div>
+					</div>
+					<div class="quiz-optnBx">
+						<div class="day-fld-box">
+							<div class="form-field">
+								<input type="tel" class="input-fld" autocomplete="off" id="post_code" data-parsley-group="post_code" name="post_code" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-required-message="Enter your Postcode" data-parsley-errors-container="#post_code_error_container" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" data-parsley-trigger="change" placeholder="Postcode" required>
+							</div>
+						</div>
+						<div class="error-container" style="max-width:480px;margin:0 auto;" id="post_code_error_container"></div>
+						<button class="continue-btn btn1">
+							Continue
+							<div class="btn-arw"><img src="https://coreg-landers.s3.amazonaws.com/31bbe11a15cb4f90859fad225653eeb6.png" /></div>
+						</button>
+					</div>
+					<div class="waranty-dv">
+						<p class="warnty-txt1"><img src="https://coreg-landers.s3.amazonaws.com/a27c3bf8cc284243870279808137c50f.png" />Safe, Secure, &amp; Confidential</p>
+						<p class="warnty-txt2"><img src="https://coreg-landers.s3.amazonaws.com/239a34c4ce9d4cf9976257fa768f649e.png" /><span>15,750 car buyers</span> found the perfect car!</p>
+					</div>
+				</div>
+			</form>
+			
+			<img src="https://coreg-landers.s3.amazonaws.com/3898331a55d34a9c824f994d8fe9321f.png" class="secure-logo" />
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../shared/js/app.js"></script>
+	[[JAVASCRIPT]]
+</body>
+
+</html>

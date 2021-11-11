@@ -1,0 +1,36 @@
+
+
+footer{
+	border-top: .625rem solid $secondary;
+	background: $primary;
+	padding:4rem 2rem;
+	width:100%;
+	text-align:center;
+}
+footer p{
+	color: #fff;
+	font-size:14px;
+}
+
+footer .footer-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+footer a{
+	font-size:16px;
+	color:#fff;
+	text-decoration:underline;
+	margin-bottom:15px;
+	display:block;
+	margin-right: .5rem;
+	border-right: 1px solid;
+    padding-right: 1rem;
+    line-height: 1;
+
+	&:last-child {
+		border-right: none;
+	}
+} 

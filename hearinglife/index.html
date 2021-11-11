@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book A Free Hearing Health Check | Auditorey</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="shared/css/style.css">
+</head>
+
+<body>
+	<header class="main-header">
+		<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" alt="" class="logo">
+		<h1 class="main-header__title">WE’RE LOOKING FOR PEOPLE</h1>
+		<h3 class="main-header__subtitle">TO TRY THIS REVOLUTIONARY HEARING AID</h3>
+		<img src="https://coreg-landers.s3.amazonaws.com/78362d2455cf4580949f741c080b2e34.png" alt="" class="main-header__hearingaid">
+	</header>
+	<main>
+		<div class="form-container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="form-container__img img-fluid" src="https://coreg-landers.s3.amazonaws.com/d8c03ae6f044434e8d9d54222f963d01.jpg" alt="">
+					</div>
+					<div class="col-md-6 bg-color">
+						<form action="[[FORM_URL]]" method="post" class="question">
+							[[UUID_TAG]]
+							<div class="question__header">
+								<h2>Answer 5 short questions to find out more about our 30-day risk-free trial**</h2>
+								<p>Hear what you've been missing.</p>
+							</div>
+							<div class="question__inner">
+								<div class="question__wrapper">
+
+									<div class="question__step active">
+										<div class="question-count"><span>Question 1</span></div>
+										<div class="question-box first">
+											<h2 class="question__title">Please Select Your Age To Begin</h2>
+											<div class="question__answers">
+												<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age1" value="49 or under">
+												<label class="btn-radio" for="age1">
+													<span>49 or under</span>
+												</label>
+
+												<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age2" value="50 to 59">
+												<label class="btn-radio" for="age2">
+													<span>50 to 59</span>
+												</label>
+
+												<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age3" value="60 to 64">
+												<label class="btn-radio" for="age3">
+													<span>60 to 64</span>
+												</label>
+
+
+												<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age4" value="65 or over">
+												<label class="btn-radio" for="age4">
+													<span>65 or over</span>
+												</label>
+											</div>
+											<div class="error-container mt-2" id="ageBracket-error-container"></div>
+										</div>
+									</div>
+
+									<div class="question__step">
+										<div class="question-count completed"><span>Question 2</span></div>
+										<div class="question-box">
+											<h2 class="question__title">Do you already have hearing aids?</h2>
+											<div class="question__answers">
+												<input type="radio" id="hearing_aids1" name="hearing_aids" value="Yes" class="btn-check" data-parsley-required-message="Please answer either yes or no" data-parsley-errors-container="#hearing_aids_error_container" data-parsley-group="hearing_aids" required>
+												<label class="btn-radio" for="hearing_aids1">
+													<span>Yes</span>
+												</label>
+
+												<input type="radio" id="hearing_aids2" name="hearing_aids" value="No" class="btn-check" data-parsley-required-message="Please answer either yes or no" data-parsley-errors-container="#hearing_aids_error_container" data-parsley-group="hearing_aids" required>
+												<label class="btn-radio" for="hearing_aids2">
+													<span>No</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="question__step">
+										<div class="question-count"><span>Question 3</span></div>
+										<div class="question-box">
+											<h2 class="question__title"></h2>
+											<div class="question__answers">
+												<div class="input-group custom-input-group mb-4">
+													<div class="input-group-prepend">
+														<div class="input-group-text h-100"><i class="fa fa-map-marked-alt fa-lg" aria-hidden="true"></i></div>
+													</div>
+													<input type="tel" class="form-control" id="post_code" name="post_code" data-parsley-group="post_code" placeholder="Postcode" data-parsley-error-message="Please enter your 3 or 4 digit postcode" data-parsley-errors-container="#post_code_error_container" data-parsley-pattern="\d+" data-parsley-length="[3, 4]" required="">
+												</div>
+												<div class="question__btn-next"><button class="btn-next" id="post_code" type="button">NEXT</button></div>
+												<div class="error-container mt-2" id="post_code_error_container"></div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="question__step">
+										<div class="question-count"><span>Question 4</span></div>
+										<div class="question-box">
+											<h2 class="question__title"></h2>
+											<div class="question__answers">
+
+												<div class="input-group input-group-lg custom-input-group mb-4" id="email_group">
+													<div class="input-group-prepend">
+														<div class="input-group-text h-100"><i class="far fa-envelope-open fa-lg" aria-hidden="true"></i></div>
+													</div>
+													<input type="email" class="form-control" name="email" placeholder="Email Address" parsley-trigger="change" data-parsley-group="email" data-parsley-required-message="Please add your email address" data-parsley-errors-container="#email_error_container" required="">
+												</div>
+												<div class="question__btn-next"><button class="btn-next" id="email" type="button">NEXT</button></div>
+												<div class="error-container mt-2" id="email_error_container"></div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="question__step">
+										<div class="question-count"><span>Question 5</span></div>
+										<div class="question-box">
+											<h2 class="question__title"></h2>
+											<div class="question__answers">
+
+												<div class="row">
+													<div class="col-md-6 ps-0 pe-1">
+														<input class="form-control" type="text" name="first_name" id="Firstname" placeholder="First name" data-input-type="FirstName" parsley-trigger="change" data-parsley-class-handler="#first_name_group" data-parsley-required-message="Please add your first name" data-parsley-errors-container="#first_name_error_container" required="">
+														<div class="error-container mt-2" id="first_name_error_container"></div>
+													</div>
+													<div class="col-md-6 pe-0 ps-1">
+														<input class="form-control" type="text" name="last_name" id="Lastname" placeholder="Last name" data-input-type="LastName" parsley-trigger="change" data-parsley-class-handler="#last_name_group" data-parsley-required-message="Please add your last name" data-parsley-errors-container="#last_name_error_container" required="">
+														<div class="error-container mt-2" id="last_name_error_container"></div>
+													</div>
+													<div class="col-md-12 ps-0 pe-0 py-3">
+														<input class="form-control" type="tel" name="phone_number" data-parsley-minlength="10" pattern="^[\d\+\-\.\(\)\/\s]*$" placeholder="Phone Number" data-parsley-class-handler="#phone_number_group" data-parsley-error-message="Please add an 10 digit phone number" data-parsley-errors-container="#phone_number_error_container" required="">
+														<div class="error-container mt-2" id="phone_number_error_container"></div>
+													</div>
+													<div class="question__btn-next"><button class="btn-next" type="submit">NEXT</button></div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="check-item">
+			<ul class="check-item__list">
+				<li class="check-item__list-item">
+					<span class="cricle"><i class="fas fa-check"></i></span>
+					<h4>Sits discreetly behind the ear</h4>
+				</li>
+				<li class="check-item__list-item">
+					<span class="cricle"><i class="fas fa-check"></i></span>
+					<h4>Better speech understanding with less effort</h4>
+				</li>
+				<li class="check-item__list-item">
+					<span class="cricle"><i class="fas fa-check"></i></span>
+					<h4>BrainHearing™ technology helps you remember more</h4>
+				</li>
+				<li class="check-item__list-item">
+					<span class="cricle"><i class="fas fa-check"></i></span>
+					<h4>Effortless wireless connectivity options</h4>
+				</li>
+			</ul>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>
+						Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.<br>
+						Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+					</p>
+					<p>Copyright 2018 Auditorey.com</p>
+					<div class="footer-links">
+						<a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a>
+						<a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						<a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a>
+						<a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a>
+						<a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p>Telephone 1800 512 783 (Toll Free)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="supplier" tabindex="-1" role="dialog" aria-labelledby="supplierTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="min-height:250px;">
+				<div class="modal-body">
+					<h2> Hearing Aids Providers <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button></h2>
+					Audika Australia Pty Ltd <br>
+					Amplifon Australia <br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="shared/js/app.js"></script>
+</body>
+
+</html>
