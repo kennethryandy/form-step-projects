@@ -1,0 +1,76 @@
+
+
+.main-header {
+	background-image: linear-gradient(120deg, #1C1466 0%, #00B0B2 100%);
+	padding: .6em 0 .6em;
+	font-size: 1.2em;
+	height: 30px;
+	.logo {
+		display: block;
+		filter: brightness(100);
+	}
+	@include media-breakpoint-down(xl) {
+		height: auto;
+	}
+	@include media-breakpoint-down(md) {
+		.logo {
+			margin: 0 auto;
+			filter: none;
+		}
+		background: #fff;
+		background-image: none;
+	}
+}
+
+.section {
+	&__title {
+		background-image: linear-gradient(120deg, #1C1466 0%, #00B0B2 100%);
+		text-align: center;
+		color: #fff;
+		padding: .6em 0 .6em;
+		h1 {
+			font-size: 2.2em;
+			margin: 0;
+			font-weight: 700;
+			padding: 2px 6px;
+		}
+	}
+	&__subtitle {
+		background-color: #f0f8ff;
+		color: #33335F;
+		padding: 1em 0;
+		position: relative;
+		h3 {
+			margin: 0 auto;
+			max-width: 700px;
+			font-size: 1.5em;
+			padding: 0.2em;
+			text-shadow: 1px 0 rgb(255 255 255 / 50%), -1px 0 rgb(255 255 255 / 50%), 0 1px rgb(255 255 255 / 50%), 0 -1px rgb(255 255 255 / 50%);
+			text-align: center;
+			font-weight: 800;
+		}
+		&::before {
+			content: '';
+    	display: block;
+			border: solid 12px transparent;
+			border-top-width: 6px;
+			border-bottom-width: 0;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			border-top-color: #3d7ca8;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__title {
+			h1 { font-size: 1.6em; }
+		}
+		&__subtitle {
+			display: none;
+		}
+	}
+}

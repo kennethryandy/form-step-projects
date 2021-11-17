@@ -1,0 +1,51 @@
+
+
+
+.landing {
+	background: url(https://coreg-landers.s3.amazonaws.com/87fb5b85d6f74bebba4b6d8e084a7143.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__form {
+		background: #fff;
+		box-shadow: 0 5px 24px 0 #212121;
+		width: 45%;
+		margin: 0 auto;
+		padding: 16px 24px;
+		min-height: 400px;
+		border-radius: 14px;
+		.question {
+			&__items {
+				margin-bottom: 90px;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				&>label {
+					width: 48%;
+					padding-left: 1%;
+					padding-right: 1%;
+					margin: 6px auto;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__form {
+			width: 65%;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		&__form {
+			width: 90%;
+			.question {
+				&__items {
+					&>label {
+						width: 98%;
+					}
+				}
+			}
+		}
+	}
+}

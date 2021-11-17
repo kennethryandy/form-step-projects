@@ -1,0 +1,24 @@
+
+$keys: (
+	first: (20px: 21%), 
+	second: (21%: 46%), 
+	third: (46%: 73%), 
+	fourth: (73%: 88%),
+	fifth: (88%: 100%)
+);
+@each $name, $values in $keys {
+	@each $from, $to in $values {
+		@keyframes animate-#{$name} {
+			from {
+				width: $from;
+			}
+			to {
+				width: $to;
+			}
+		}
+		.prog-#{$name} {
+			animation: animate-#{$name} 1s linear 350ms;
+			width: $to;
+		}
+	}
+}

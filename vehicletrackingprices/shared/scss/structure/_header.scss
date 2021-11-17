@@ -1,0 +1,41 @@
+
+
+.main-header {
+	padding-top: 0.5em;
+	padding-bottom: clamp(1em,2vmin,60px);
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		&>li{
+			margin: 0 .5em;
+			&>img {
+				filter: invert(1) contrast(.5) sepia(1) hue-rotate(200deg);
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&__logos {
+			display: none;
+		}
+	}
+}
+
+.page-title {
+	margin-bottom: .25em;
+	text-align: center;
+	h1 { 
+		font-size: 25px;
+		color: #787878;
+		font-weight: 400;
+	}
+}

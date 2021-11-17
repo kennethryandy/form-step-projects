@@ -1,0 +1,19 @@
+
+
+.social-content {
+	margin: 40px auto;
+	text-align: center;
+
+	&__title {
+		font-size: 1.75em;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+		line-height: 1.5;
+		width: 100%;
+		font-weight: 700;
+	}
+
+	&__item {
+		padding: 20px;
+	}
+}
