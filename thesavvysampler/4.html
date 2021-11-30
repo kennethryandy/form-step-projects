@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Savvy Sampler</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+	<!-- <link rel="stylesheet" href="shared/css/style.css"> -->
+[[CSS]]
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav>
+				<img src="https://coreg-landers.s3.amazonaws.com/5dd205dc5f754a4d9490158aea59cdb9.png" width="70" alt="" class="logo">
+				<div class="progress-step">
+					<div class="steps active"><span>1</span></div>
+					<div class="steps active"><span>2</span></div>
+					<div class="steps"><span>3</span></div>
+					<div class="steps"><span>4</span></div>
+					<div class="cart-step">
+						<img src="https://coreg-landers.s3.amazonaws.com/5097122047c541429ed2726a3c3e64a5.png" class="cart-img" alt="">
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="cart">
+		<img src="https://coreg-landers.s3.amazonaws.com/6d3c99ab2e2948debf70ff52c69547fd.png" alt="">
+		<div class="cart__content">
+			<div class="cart__headline">Order In Process <i class="fas fa-check" aria-hidden="true"></i></div>
+			<div class="cart__cost line-item">Cost: $0.00</div>
+			<div class="cart__ship line-item">Shipping : $0.00</div>
+			<div class="cart__total line-item">Total: $0.00</div>
+		</div>
+	</div>
+
+	<div class="form-container">
+		<form action="[[FORM_URL]]" class="question" method="post" data-parsley-validate>
+			<div class="question__header">
+				<h2 class="question__headline">Thank you!</h2>
+				<h2 class="question__title">Where do we ship your <strong>free</strong> item?</h2>
+			</div>
+			<div class="question__answers input">
+				<label for="streetaddress">Street Address:</label>
+				<input data-parsley-trigger="focusout change" data-parsley-required="true" data-parsley-required-message="Enter your Street Address" autocomplete="address-1" data-webform-required-error="Enter your Street Address" data-drupal-selector="edit-street1" class="form-text required form-control" type="text" id="edit-street1--vdJBOqHCpRw" name="street1" value="" size="60" maxlength="35" required="required" aria-required="true" data-parsley-errors-container="#streetaddress_error_container" data-parsley-group="address">
+				<div class="parsley-error-container" id="streetaddress_error_container"></div>
+
+				<label for="streetaddress2">Address 2:</label>
+				<input data-parsley-trigger="focusout change" data-parsley-required="true" data-parsley-required-message="Enter your Street Address" autocomplete="address-1" data-webform-required-error="Enter your Street Address" data-drupal-selector="edit-street1" class="form-text required form-control" type="text" id="edit-street1--vdJBOqHCpRw" name="street1" value="" size="60" maxlength="35" required="required" aria-required="true" placeholder="Apt, Suite, Unit, Building (optional)" data-parsley-errors-container="#streetaddress2_error_container" data-parsley-group="address">
+				<div class="parsley-error-container" id="streetaddress2_error_container"></div>
+
+				<div class="two-cols">
+					<div>
+						<label for="city">State:</label>
+						<input data-parsley-trigger="focusout change" data-parsley-required="true" data-parsley-required-message="Enter your City" autocomplete="city" data-webform-required-error="Enter your City" data-drupal-selector="edit-city" class="form-text required form-control parsley-success" type="text" id="edit-city--UtpY_vJ9_L4" name="city" value="" size="60" maxlength="255" required="required" aria-required="true" data-parsley-id="35" data-parsley-errors-container="#city_error_container" data-parsley-group="address">
+						<div class="parsley-error-container" id="city_error_container"></div>
+					</div>
+
+					<div>
+						<label for="state">State:</label>
+						<select data-parsley-trigger="focusout change" data-parsley-required="true" data-parsley-required-message="Enter your State" autocomplete="state" data-webform-required-error="Enter your State" data-drupal-selector="edit-state-initials" class="form-select required form-control parsley-success" id="edit-state-initials--NksOLwDS9Po" name="state_initials" required="required" aria-required="true" data-parsley-id="37" data-parsley-errors-container="#state_error_container" data-parsley-group="address">
+							<option value="" selected="selected" disabled="disabled" >State</option>
+							<option value="al">Alabama</option>
+							<option value="ak">Alaska</option>
+							<option value="az">Arizona</option>
+							<option value="ar">Arkansas</option>
+							<option value="ca">California</option>
+							<option value="co">Colorado</option>
+							<option value="ct">Connecticut</option>
+							<option value="de">Delaware</option>
+							<option value="dc">District of Columbia</option>
+							<option value="fl">Florida</option>
+							<option value="ga">Georgia</option>
+							<option value="gu">Guam</option>
+							<option value="hi">Hawaii</option>
+							<option value="id">Idaho</option>
+							<option value="il">Illinois</option>
+							<option value="in">Indiana</option>
+							<option value="ia">Iowa</option>
+							<option value="ks">Kansas</option>
+							<option value="ky">Kentucky</option>
+							<option value="la">Louisiana</option>
+							<option value="me">Maine</option>
+							<option value="md">Maryland</option>
+							<option value="ma">Massachusetts</option>
+							<option value="mi">Michigan</option>
+							<option value="mn">Minnesota</option>
+							<option value="ms">Mississippi</option>
+							<option value="mo">Missouri</option>
+							<option value="mt">Montana</option>
+							<option value="ne">Nebraska</option>
+							<option value="nv">Nevada</option>
+							<option value="nh">New Hampshire</option>
+							<option value="nj">New Jersey</option>
+							<option value="nm">New Mexico</option>
+							<option value="ny">New York</option>
+							<option value="nc">North Carolina</option>
+							<option value="nd">North Dakota</option>
+							<option value="oh">Ohio</option>
+							<option value="ok">Oklahoma</option>
+							<option value="or">Oregon</option>
+							<option value="pa">Pennsylvania</option>
+							<option value="ri">Rhode Island</option>
+							<option value="sc">South Carolina</option>
+							<option value="sd">South Dakota</option>
+							<option value="tn">Tennessee</option>
+							<option value="tx">Texas</option>
+							<option value="ut">Utah</option>
+							<option value="vt">Vermont</option>
+							<option value="va">Virginia</option>
+							<option value="wa">Washington</option>
+							<option value="wv">West Virginia</option>
+							<option value="wi">Wisconsin</option>
+							<option value="wy">Wyoming</option>
+						</select>
+						<div class="parsley-error-container" id="state_error_container"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="question__meta">By clicking the Continue button, I have read and agree to SavvySampler.com's <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms &amp; Conditions</a> and agree to receive emails from SavvySampler.com and its <a href="#">affiliates</a>.</div>
+			<div class="question__msg">
+				<p>Don't forget to double-check your address.</p>
+				<p>This will go on your shipping label.</p>
+			</div>
+			<div class="question__nav">
+				<button class="btn btn-next" id="address">CONTINUE</button>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+
+		<div>
+
+			<div class="container-fluid">
+				<div class="footer-wrap">
+
+					<div>
+						<div>
+							<div>
+
+								<div>
+									<div class="footer-wrap">
+										<div class="footer-links">
+											<div class="main-footer-links">
+												<ul>
+													<li><a href="#" target="_blank">Privacy Policy</a></li>
+													<li><a href="#" target="_blank">Terms &amp; Conditions</a></li>
+												</ul>
+											</div>
+											<div class="ca-footer-links">
+												<ul>
+													<li><a href="#" target="_blank">CA Consumers: Do Not Sell My Personal Information</a></li>
+													<li><a href="#" target="_blank">CA Consumers: Privacy Policy</a></li>
+													<li><a href="#" target="_blank">Nevada Consumers: Do Not Sell My Personal Information</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="footer-copy">
+											Deals, coupons, freebies, samples, and other offers (collectively "Offers") change often. We cannot guarantee that you will receive any of the Offers that you request, as Offers are subject to availability and are often made by other entities. Offers distributed by The Savvy Sampler are limited in quantity, and The Savvy Sampler reserves the right to substitute sample product based on availability. Offers that are not distributed by The Savvy Sampler are monitored by other entities, and we are not responsible if such Offers are no longer available, change, if you do not receive the Offers, if you do not qualify for the Offers, or if any other issues arise. The third-party product names, logos, brands, and trademarks shown on this website are the property of their respective owners. These companies are not affiliated with The Savvy Sampler. These third parties do not sponsor or endorse this website, its content or services.
+										</div>
+										<div class="footer-site">© 2011-2021 TheSavvySampler.com</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="shared/js/main.js"></script> -->
+[[JAVASCRIPT]]
+</body>
+
+</html>

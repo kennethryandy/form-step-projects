@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Savvy Sampler</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="../shared/css/style.css">
+[[CSS]]
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav>
+				<img src="https://coreg-landers.s3.amazonaws.com/0f6837d203ac4f4484706665268273db.png" width="240" alt="" class="logo">
+				<div class="progress-step">
+					<div class="steps active"><span>1</span></div>
+					<div class="steps"><span>2</span></div>
+					<div class="steps"><span>3</span></div>
+					<div class="steps"><span>4</span></div>
+					<div class="cart-step">
+						<img src="https://coreg-landers.s3.amazonaws.com/5097122047c541429ed2726a3c3e64a5.png" class="cart-img" alt="">
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="cart">
+		<img src="https://coreg-landers.s3.amazonaws.com/d8c03ae6f044434e8d9d54222f963d01.jpg" alt="">
+		<div class="cart__content">
+			<div class="cart__headline">Revolutionary hearing aid! <i class="fas fa-check" aria-hidden="true"></i></div>
+			<div class="line-item">Invisible-in-the-canal <strong>(IIC)</strong></div>
+			<div class="line-item">Behind-the-Ear <strong>(BTE)</strong></div>
+			<div class="line-item">Receiver-in-Canal <strong>(RIC)</strong></div>
+			<div class="line-item">In-the-Ear <strong>(ITE)</strong></div>
+			<div class="line-item">Completely-in-Canal <strong>(CIC)</strong></div>
+			<div class="cart__total line-item">Revolutionary technology</div>
+		</div>
+	</div>
+
+	<div class="form-container">
+		<form action="[[FORM_URL]]" class="question" method="post" data-parsley-validate>
+			[[UUID_TAG]]
+			<div class="question__header">
+				<h2 class="question__headline">Welcome!</h2>
+				<h2 class="question__title">Select your age for a <strong>free</strong> hearing check.</h2>
+			</div>
+			<div class="question__answers radio">
+				<label for="age1">
+					<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" 
+					data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age1" value="49 or under" onchange="this.form.submit();">
+					<span></span>
+					49 or under
+					<i class="fas fa-users"></i>
+				</label>
+				<label for="age2">
+					<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" 
+					data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age2" value="50 to 59" onchange="this.form.submit();">
+					<span></span>
+					50 to 59
+					<i class="fas fa-users"></i>
+				</label>
+				<label for="age3">
+					<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" 
+					data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age3" value="60 to 64" onchange="this.form.submit();">
+					<span></span>
+					60 to 64
+					<i class="fas fa-users"></i>
+				</label>
+				<label for="age4">
+					<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" 
+					data-parsley-errors-container="#ageBracket-error-container" required data-parsley-group="age" id="age4" value="65 or over" onchange="this.form.submit();">
+					<span></span>
+					65 or over
+					<i class="fas fa-users"></i>
+				</label>
+			</div>
+			<div class="parsley-error-container text-center" id="ageBracket-error-container"></div>
+			<div class="question__meta text-center mt-4">
+				<i class="fa fa-lock fa-1x"></i> Your information is secure. <a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+			</div>
+			<div class="question__nav">
+				<button class="btn btn-next" id="age">CONTINUE</button>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+
+		<div>
+
+			<div class="container-fluid">
+				<div class="footer-wrap">
+
+					<div>
+						<div>
+							<div>
+
+								<div>
+									<div class="footer-wrap">
+										<div class="footer-links">
+											<div class="main-footer-links">
+												<ul>
+													<li><a href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a></li>
+													<li><a href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a></li>
+													<li><a href="https://www2.auditorey.com/contact-us/" target="_blank">Contact Us</a></li>
+													<li><a href="https://www2.auditorey.com/blog/" target="_blank">Our Blog</a></li>
+													<li><a href="https://www2.auditorey.com/device-types/" target="_blank">FAQs</a></li>
+													<li><a href="#">Cookies</a></li>
+													<li><p>Telephone 1800 512 783 (Toll Free)</p></li>
+												</ul>
+											</div>
+										</div>
+										<div class="footer-copy">
+											Please note that, while we will do our best to accommodate you, we can only conduct hearing screens in geographical areas where a clinic is present.
+											Free hearing checks also only apply to people over the age of 26. If you have a child with hearing problems, we recommend you seek medical assistance for a more comprehensive checkup. Hearing Aids shown in all advertisements are examples of available styles you may be able to try and purchase.
+										</div>
+										<div class="footer-site">© Copyright 2018 Auditorey.com</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../shared/js/main.js"></script>
+[[JAVASCRIPT]]
+</body>
+
+</html>

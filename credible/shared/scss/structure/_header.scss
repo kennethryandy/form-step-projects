@@ -1,0 +1,154 @@
+
+
+.main-header {
+	height: 80px;
+	img {
+		width: 240px;
+		margin: auto 0;
+	}
+	&.step {
+		height: 100%;
+		&>.container {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	}
+}
+
+.progress-step {
+	height: 4px;
+	width: 100%;
+	background-color: #e5e5e5;
+	&__bar {
+		height: 4px;
+		background-color: #0f94a1;
+		transition: width .7s cubic-bezier(.4,0,.2,1);
+	}
+}
+
+.stepper {
+	border-left: 4px solid #dadfe3;
+	list-style-type: none;
+	padding-left: 24px;
+	position: relative;
+	margin-left: 8px;
+	height: fit-content;
+	&::before {
+		content: "";
+		position: absolute;
+		left: -4px;
+		height: 0px;
+		width: 4px;
+		background: #0f94a1;
+	}
+	@for $i from 1 through 5 {
+		&.step-#{$i}::before {
+			animation: step-#{$i} 300ms forwards;
+		}
+	}
+	&__item {
+		color: #737373;
+		font-size: 16px;
+		line-height: 1.6;
+		display: flex;
+    margin-bottom: 16px;
+    line-height: 24px;
+		&::before {
+			content: "\f111";
+			color: #dadfe3;
+			position: relative;
+			z-index: 1;
+			margin-left: -38px;
+			font-size: 24px;
+			margin-right: 8px;
+			height: 22px;
+			background: #fff;
+			font-family: "Font Awesome 6 Free";
+			font-weight: 400;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			line-height: 1;
+			text-rendering: auto;
+		}
+		&.active {
+			color: #0f94a1;
+			&::before {
+				content: "\f192";
+				color: #0f94a1;
+			}
+		}
+	}
+}
+
+.hero {
+	background: url(https://coreg-landers.s3.amazonaws.com/f91e869d5d814ce2b62bd7bd3201d517.gif);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 48px 0;
+	min-height: 420px;
+	h1 {
+		margin-bottom: 1.2rem;
+		font-size: 42px;
+		font-weight: 600;
+		color: $primary;
+	}
+	p {
+		font-size: 24px;
+		font-weight: 500;
+		color: #2d2d2f;
+		margin-bottom: 0;
+	}
+	.contents {
+		margin-top: 24px;
+	}
+}
+
+@keyframes step-1 {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 48px;
+	}
+}
+
+@keyframes step-2 {
+	from {
+		height: 48px;
+	}
+	to {
+		height: 96px;
+	}
+}
+
+@keyframes step-3 {
+	from {
+		height: 96px;
+	}
+	to {
+		height: 144px;
+	}
+}
+
+@keyframes step-4 {
+	from {
+		height: 144px;
+	}
+	to {
+		height: 175px;
+	}
+}
+
+@keyframes step-5 {
+	from {
+		height: 175px;
+	}
+	to {
+		height: 210px;
+	}
+}

@@ -1,6 +1,12 @@
 
 
-
+body {
+	background: linear-gradient(293deg, #fda59e 0%, #ffc876 40%, #fff59a 70%, #ffb299 100%);
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333333;
+}
 
 @include media-breakpoint-down(md) {
 	.hidden-mobile {

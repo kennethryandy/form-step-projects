@@ -44,34 +44,38 @@
 	<div class="main-form">
 		<div class="main-form__container">
 			<form action="[[FORM_URL]]" method="post" novalidate class="question" data-parsley-validate data-aos="fade-up" data-aos-delay="500">
-				[[UUID_TAG]]
+				<!-- [[UUID_TAG]] -->
 				<div class="question__progress">
 					<div class="question__progress--bar" style="width: 20px;"></div>
 					<div class="question__progress--text"><span>Progress:</span> <span class="fw-bold">0%</span>
 					</div>
 				</div>
 				<div class="question__answers">
-					<h4 class="question__title"><span class="badge">1</span>Select your age to begin!</h4>
-					<div class="question__radio-group">
-						<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age1" onchange="this.form.submit();" value="49 or under">
-						<label class="btn btn-radio" for="age1">49 or under</label>
+					<div class="sticky-left">
+						<h4 class="question__title"><span class="badge">1</span>Select your age to begin!</h4>
+						<div class="question__radio-group">
+							<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age1" onchange="this.form.submit();" value="49 or under">
+							<label class="btn btn-radio" for="age1">49 or under</label>
 
-						<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age2" onchange="this.form.submit();" value="50 to 59">
-						<label class="btn btn-radio" for="age2">50 to 59</label>
+							<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age2" onchange="this.form.submit();" value="50 to 59">
+							<label class="btn btn-radio" for="age2">50 to 59</label>
 
-						<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age3" onchange="this.form.submit();" value="60 to 64">
-						<label class="btn btn-radio" for="age3">60 to 64</label>
+							<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age3" onchange="this.form.submit();" value="60 to 64">
+							<label class="btn btn-radio" for="age3">60 to 64</label>
 
-						<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age4" onchange="this.form.submit();" value="65 or over">
-						<label class="btn btn-radio" for="age4">65 or over</label>
+							<input type="radio" class="btn-check" name="age" data-parsley-required-message="Please select your age bracket" data-parsley-group="age" data-parsley-errors-container="#ageBracket-error-container" data-parsley-trigger="change" required id="age4" onchange="this.form.submit();" value="65 or over">
+							<label class="btn btn-radio" for="age4">65 or over</label>
+						</div>
+						<div class="error-container" id="ageBracket-error-container"></div>
 					</div>
-					<div class="error-container" id="ageBracket-error-container"></div>
-					<div class="question__navigation">
-						<span class="d-block text-center"><i class="far fa-clock"></i> Complete our short form. It only takes a minute!</span>
-						<button type="submit" class="primary-btn">Get Started</button>
-					</div>
-					<div class="text-muted text-center mt-3" style="font-size:13px;">
-						<i class="fa fa-lock fa-1x"></i> Your information is secure. <a style="color:#fa715e;" href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a style="color:#fa715e;" href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+					<div class="sticky-right">
+						<div class="question__navigation">
+							<span class="d-block text-center"><i class="far fa-clock"></i> Complete our short form. It only takes a minute!</span>
+							<button type="submit" class="primary-btn">Get Started</button>
+						</div>
+						<div class="text-muted text-center mt-3" style="font-size:13px;">
+							<i class="fa fa-lock fa-1x"></i> Your information is secure. <a style="color:#fa715e;" href="https://www.auditorey.com/legal/page/privacy" target="_blank">Privacy Policy</a><span> and </span><a style="color:#fa715e;" href="https://www.auditorey.com/legal/page/terms" target="_blank">Terms of Use</a>
+						</div>
 					</div>
 				</div>
 			</form>
@@ -229,9 +233,29 @@
 	<script src="../shared/js/main.js"></script>
 	[[JAVASCRIPT]]
 	<script>
-		AOS.init({
-			once: true,
-			duration: 350
+		$(document).ready(function () {
+			AOS.init({
+				once: true,
+				duration: 350
+			});
+
+			const form = document.querySelector('.question');
+
+			$(window).on('scroll load', function () {
+				const inView = isInViewport();
+				if (inView) {
+					$(form).removeClass('static-navbar');
+				} else {
+					$(form).addClass('static-navbar');
+				}
+			});
+
+			function isInViewport() {
+				const y = form.offsetTop;
+				const h = form.offsetHeight;
+				const maxH = y + h;
+				return (y < (window.pageYOffset + window.innerHeight)) && (maxH >= window.pageYOffset);
+			}
 		});
 	</script>
 

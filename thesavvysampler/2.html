@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Savvy Sampler</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="shared/css/style.css">
+[[CSS]]
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav>
+				<img src="https://coreg-landers.s3.amazonaws.com/5dd205dc5f754a4d9490158aea59cdb9.png" width="70" alt="" class="logo">
+				<div class="progress-step">
+					<div class="steps active"><span>1</span></div>
+					<div class="steps active"><span>2</span></div>
+					<div class="steps"><span>3</span></div>
+					<div class="steps"><span>4</span></div>
+					<div class="cart-step">
+						<img src="https://coreg-landers.s3.amazonaws.com/5097122047c541429ed2726a3c3e64a5.png" class="cart-img" alt="">
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="cart">
+		<img src="https://coreg-landers.s3.amazonaws.com/6d3c99ab2e2948debf70ff52c69547fd.png" alt="">
+		<div class="cart__content">
+			<div class="cart__headline">Order In Process <i class="fas fa-check" aria-hidden="true"></i></div>
+			<div class="cart__cost line-item">Cost: $0.00</div>
+			<div class="cart__ship line-item">Shipping : $0.00</div>
+			<div class="cart__total line-item">Total: $0.00</div>
+		</div>
+	</div>
+
+	<div class="form-container">
+		<form action="[[FORM_URL]]" class="question" method="post" data-parsley-validate>
+			<div class="question__header">
+				<h2 class="question__headline">Thank you!</h2>
+				<h2 class="question__title">What name goes on this <strong>free</strong> item?</h2>
+			</div>
+			<div class="question__answers input">
+				<label for="firstname">First Name:</label>
+				<input data-parsley-trigger="focusout change" id="firstname" pattern="/^[A-z ]+$/" data-parsley-required="true" data-parsley-required-message="Enter First Name" data-parsley-pattern-message="Enter First Name" class="form-text required form-control" type="text" name="first_name" size="60" maxlength="255" required aria-required="true" data-parsley-group="name" data-parsley-errors-container="#firstname_error_container">
+				<div class="parsley-error-container" id="firstname_error_container"></div>
+				
+				<label for="lastname">Last Name:</label>
+				<input data-parsley-trigger="focusout change" id="lastname" pattern="/^[A-z ]+$/" data-parsley-required="true" data-parsley-required-message="Enter Last Name" data-parsley-pattern-message="Enter Last Name" class="form-text required form-control" data-parsley-group="name" type="text" name="last_name" size="60" maxlength="255" required aria-required="true" data-parsley-errors-container="#lastname_error_container">
+				<div class="parsley-error-container" id="lastname_error_container"></div>
+			</div>
+			<div class="question__nav">
+				<button class="btn btn-next" id="name">CONTINUE</button>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+
+		<div>
+
+			<div class="container-fluid">
+				<div class="footer-wrap">
+
+					<div>
+						<div>
+							<div>
+
+								<div>
+									<div class="footer-wrap">
+										<div class="footer-links">
+											<div class="main-footer-links">
+												<ul>
+													<li><a href="#" target="_blank">Privacy Policy</a></li>
+													<li><a href="#" target="_blank">Terms &amp; Conditions</a></li>
+												</ul>
+											</div>
+											<div class="ca-footer-links">
+												<ul>
+													<li><a href="#" target="_blank">CA Consumers: Do Not Sell My Personal Information</a></li>
+													<li><a href="#" target="_blank">CA Consumers: Privacy Policy</a></li>
+													<li><a href="#" target="_blank">Nevada Consumers: Do Not Sell My Personal Information</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="footer-copy">
+											Deals, coupons, freebies, samples, and other offers (collectively "Offers") change often. We cannot guarantee that you will receive any of the Offers that you request, as Offers are subject to availability and are often made by other entities. Offers distributed by The Savvy Sampler are limited in quantity, and The Savvy Sampler reserves the right to substitute sample product based on availability. Offers that are not distributed by The Savvy Sampler are monitored by other entities, and we are not responsible if such Offers are no longer available, change, if you do not receive the Offers, if you do not qualify for the Offers, or if any other issues arise. The third-party product names, logos, brands, and trademarks shown on this website are the property of their respective owners. These companies are not affiliated with The Savvy Sampler. These third parties do not sponsor or endorse this website, its content or services.
+										</div>
+										<div class="footer-site">© 2011-2021 TheSavvySampler.com</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="shared/js/main.js"></script>
+[[JAVASCRIPT]]
+</body>
+
+</html>

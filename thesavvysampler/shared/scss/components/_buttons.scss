@@ -1,0 +1,30 @@
+
+
+
+.btn-next {
+	border: 2px solid #fbc637;
+	padding: 16px 0 14px;
+	font-size: 34px;
+	max-width: 450px;
+	height: auto;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	letter-spacing: 1.2px;
+	margin: 20px 0 10px 0;
+	width: 100%;
+	font-weight: 700;
+	border-radius: 11px;
+	background: linear-gradient(150deg, #ff1313, #f90660);
+	box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+	text-shadow: -0.5px 0.5px 1px rgb(0 0 0 / 30%);
+	text-transform: uppercase;
+	color: #fff;
+	&:hover {
+		background: linear-gradient(150deg, #f92a2a, #f71d6e);
+		box-shadow: 0 3px 6px rgb(0 0 0 / 40%);
+		color: #fff;
+		outline: none;
+	}
+}

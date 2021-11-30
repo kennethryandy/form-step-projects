@@ -1,0 +1,113 @@
+
+
+
+.input-dollar {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 0;
+	height: 70px;
+	padding: 10px 16px 6px;
+	line-height: normal;
+	font-size: 18px;
+	color: #828282;
+	outline: none;
+	border-radius: 3px;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.cta-container {
+	margin-top: 48px;
+	position: relative;
+	max-width: 615px;
+	&::before {
+		content: "";
+		height: 6px;
+		width: 76px;
+		background-color: #e97831;
+		position: absolute;
+		top: -16px;
+		left: 0;
+	}
+	label {
+		font-size: 18px;
+		line-height: normal;
+    font-weight: 600;
+    color: #2d2d2f;
+		margin-bottom: 24px;
+		margin-top: 16px;
+	}
+	.meta {
+		width: 100%;
+		text-align: right;
+		margin-top: 16px;
+		span {
+			font-size: 13px;
+			line-height: normal;
+			font-weight: 500;
+			color: #666;
+		}
+	}
+	.cta {
+		padding: 26px 31px 20px;
+    font-size: 18px;
+    display: inline-block;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    vertical-align: top;
+		max-height: 70px;
+    box-sizing: border-box;
+		background-color: #f27935;
+    border: 1px solid #f27935;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		width: 30%;
+	}
+	&>form {
+		display: flex;
+		align-items: center;
+		input {
+			width: 70%;
+		}
+	}
+}
+
+.btn-next {
+	font-size: 16px;
+	border-radius: 4px;
+	padding: 12px 15px 14px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 22px;
+	background-color: #f27935;
+	border: 1px solid #f27935;
+}
+// .btn-next {
+// 	padding: 26px 31px 20px;
+// 	font-size: 18px;
+// 	display: inline-block;
+// 	border-top-left-radius: 0;
+// 	border-bottom-left-radius: 0;
+// 	position: relative;
+// 	vertical-align: top;
+// 	max-height: 70px;
+// 	box-sizing: border-box;
+// 	background-color: #f27935;
+// 	border: 1px solid #f27935;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	color: #fff;
+// }
+
+.btn-check:focus+.btn {
+	box-shadow: none;
+}
